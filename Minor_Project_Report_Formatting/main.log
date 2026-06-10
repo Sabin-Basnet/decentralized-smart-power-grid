@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.5) (preloaded format=pdflatex 2026.6.9)  9 JUN 2026 21:41
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.5) (preloaded format=pdflatex 2026.6.9)  10 JUN 2026 11:52
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -467,29 +467,29 @@ Package: titlesec 2025/01/04 v2.17 Sectioning titles
 \titlewidthlast=\dimen285
 \titlewidthfirst=\dimen286
 )
-LaTeX Font Info:    Trying to load font information for OT1+ptm on input line 83.
+LaTeX Font Info:    Trying to load font information for OT1+ptm on input line 88.
  (C:\Users\SABIN\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ot1ptm.fd
 File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
 ) (C:\Users\SABIN\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pdftex.def
 File: l3backend-pdftex.def 2025-10-09 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count327
-) (main.aux (CoverPage.aux) (Abstract.aux) (ListofAbbreviations.aux) (Introduction.aux) (RelatedTheory.aux) (LiteratureReview.aux) (Methodology.aux) (ExpectedResults.aux) (Conclusion.aux) (References.aux) (Appendix.aux))
+) (main.aux (CoverPage.aux) (Introduction.aux) (LiteratureReview.aux) (Methodology.aux) (ExpectedResults.aux) (Timeline.aux) (References.aux))
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 83.
-LaTeX Font Info:    ... okay on input line 83.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 83.
-LaTeX Font Info:    ... okay on input line 83.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 83.
-LaTeX Font Info:    ... okay on input line 83.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 83.
-LaTeX Font Info:    ... okay on input line 83.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 83.
-LaTeX Font Info:    ... okay on input line 83.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 83.
-LaTeX Font Info:    ... okay on input line 83.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 83.
-LaTeX Font Info:    ... okay on input line 83.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 88.
+LaTeX Font Info:    ... okay on input line 88.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 88.
+LaTeX Font Info:    ... okay on input line 88.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 88.
+LaTeX Font Info:    ... okay on input line 88.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 88.
+LaTeX Font Info:    ... okay on input line 88.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 88.
+LaTeX Font Info:    ... okay on input line 88.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 88.
+LaTeX Font Info:    ... okay on input line 88.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 88.
+LaTeX Font Info:    ... okay on input line 88.
  (C:\Users\SABIN\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count328
@@ -552,17 +552,12 @@ Package caption Info: End \AtBeginDocument code.
 <Graphics/TULogo.png, id=4, 394.47375pt x 468.75125pt>
 File: Graphics/TULogo.png Graphic file (type png)
 <use Graphics/TULogo.png>
-Package pdftex.def Info: Graphics/TULogo.png  used on input line 5.
+Package pdftex.def Info: Graphics/TULogo.png  used on input line 6.
 (pdftex.def)             Requested size: 83.36536pt x 99.06293pt.
  [1
 
 
-{C:/Users/SABIN/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}{C:/Users/SABIN/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc} <./Graphics/TULogo.png>])
-\openout2 = `Abstract.aux'.
-
-
-No file Abstract.tex.
-(main.toc
+{C:/Users/SABIN/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}{C:/Users/SABIN/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc} <./Graphics/TULogo.png>]) (main.toc
 LaTeX Font Info:    Trying to load font information for OT1+ztmcm on input line 1.
  (C:\Users\SABIN\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ot1ztmcm.fd
 File: ot1ztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OT1/ztmcm.
@@ -585,127 +580,121 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1.
-)
-\tf@toc=\write4
-\openout4 = `main.toc'.
-
  [1
 
 
+])
+\tf@toc=\write4
+\openout4 = `main.toc'.
 
-
-
-] (main.lof)
-\tf@lof=\write5
-\openout5 = `main.lof'.
-
- [2] (main.lot)
-\tf@lot=\write6
-\openout6 = `main.lot'.
-
- [3]
-\openout2 = `ListofAbbreviations.aux'.
-
- (ListofAbbreviations.tex) [4
-
-
-]
+ [2]
 \openout2 = `Introduction.aux'.
 
  (Introduction.tex
 Chapter 1.
-LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 14.
+
+Overfull \hbox (13.85391pt too wide) in paragraph at lines 8--9
+\OT1/ptm/m/n/12 frame-work that com-pletely de-cou-ples util-ity trans-ac-tion com-pu-ta-tion from cen-tral database
+ []
+
+LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 18.
 (C:\Users\SABIN\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ts1ptm.fd
 File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
-)) [1
+) [1
 
 
-
-
-]
-\openout2 = `RelatedTheory.aux'.
-
- (RelatedTheory.tex
-Chapter 2.
-) [2
-
-
-
-
-]
+]) [2]
 \openout2 = `LiteratureReview.aux'.
 
  (LiteratureReview.tex
-Chapter 3.
+Chapter 2.
+
+Overfull \hbox (46.29105pt too wide) in paragraph at lines 3--4
+\OT1/ptm/m/n/12 po-rate databases. The emerg-ing third gen-er-a-tion|decentralized cyber-physical grids|converges
+ []
+
+
+Overfull \hbox (14.71pt too wide) in paragraph at lines 17--34
+ [][] 
+ []
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
 ) [3
 
 
 
 
-]
+] [4]
 \openout2 = `Methodology.aux'.
 
  (Methodology.tex
-Chapter 4.
-) [4
+Chapter 3.
+<Graphics/Image 1.png, id=32, 561.59813pt x 542.77782pt>
+File: Graphics/Image 1.png Graphic file (type png)
+<use Graphics/Image 1.png>
+Package pdftex.def Info: Graphics/Image 1.png  used on input line 7.
+(pdftex.def)             Requested size: 333.46777pt x 322.2901pt.
+<Graphics/architecture.png, id=33, 461.47406pt x 444.15938pt>
+File: Graphics/architecture.png Graphic file (type png)
+<use Graphics/architecture.png>
+Package pdftex.def Info: Graphics/architecture.png  used on input line 17.
+(pdftex.def)             Requested size: 333.46777pt x 320.95341pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[5
 
 
 
 
-]
+ <./Graphics/Image 1.png>] [6 <./Graphics/architecture.png>] [7]) [8]
 \openout2 = `ExpectedResults.aux'.
 
  (ExpectedResults.tex
-Chapter 5.
-) [5
+Chapter 4.
+) [9
 
 
 
 
 ]
-\openout2 = `Conclusion.aux'.
+\openout2 = `Timeline.aux'.
+
+ (Timeline.tex
+Chapter 5.
+) [10
 
 
-No file Conclusion.tex.
+
+
+]
 \openout2 = `References.aux'.
 
-(References.tex (main.bbl
-
-Package natbib Warning: Empty `thebibliography' environment on input line 24.
-
-)) [6
+ (References.tex) [11
 
 
 
 
-
-
-
-]
-\openout2 = `Appendix.aux'.
-
- (Appendix.tex [7
-
-
-
-]) [8] (main.aux (CoverPage.aux) (Abstract.aux) (ListofAbbreviations.aux) (Introduction.aux) (RelatedTheory.aux) (LiteratureReview.aux) (Methodology.aux) (ExpectedResults.aux) (Conclusion.aux) (References.aux) (Appendix.aux))
+] (main.aux (CoverPage.aux) (Introduction.aux) (LiteratureReview.aux) (Methodology.aux) (ExpectedResults.aux) (Timeline.aux) (References.aux))
  ***********
 LaTeX2e <2025-11-01>
 L3 programming layer <2025-12-24>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 17278 strings out of 467872
- 342094 string characters out of 5418392
- 718517 words of memory out of 5000000
- 45775 multiletter control sequences out of 15000+600000
- 645671 words of font info for 77 fonts, out of 8000000 for 9000
+ 17225 strings out of 467872
+ 339145 string characters out of 5418392
+ 719342 words of memory out of 5000000
+ 45748 multiletter control sequences out of 15000+600000
+ 648546 words of font info for 84 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 84i,6n,104p,1279b,188s stack positions out of 10000i,1000n,20000p,200000b,200000s
-<C:/Users/SABIN/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmb8a.pfb><C:/Users/SABIN/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmr8a.pfb>
-Output written on main.pdf (13 pages, 717963 bytes).
+ 84i,15n,109p,1279b,319s stack positions out of 10000i,1000n,20000p,200000b,200000s
+<C:/Users/SABIN/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/SABIN/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/SABIN/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/SABIN/AppData/Local/Programs/MiKTeX/fonts/type1/urw/symbol/usyr.pfb><C:/Users/SABIN/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmb8a.pfb><C:/Users/SABIN/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><C:/Users/SABIN/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmri8a.pfb>
+Output written on main.pdf (14 pages, 819577 bytes).
 PDF statistics:
- 62 PDF objects out of 1000 (max. 8388607)
+ 94 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 18 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 28 words of extra memory for PDF output out of 10000 (max. 10000000)
 

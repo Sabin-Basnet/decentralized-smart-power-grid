@@ -40,7 +40,12 @@
 \titlespacing{\subsection}{0pt}{16pt}{16pt}
 \titlespacing{\subsubsection}{0pt}{16pt}{16pt}
 
-\titleformat{\chapter}[display]{\centering\fontsize{14pt}{12pt}\bfseries}{\MakeUppercase{\chaptertitlename\ \thechapter}}{12pt}{}
+% \titleformat{\chapter}[display]{\centering\fontsize{14pt}{12pt}\bfseries}{\MakeUppercase{\chaptertitlename\ \thechapter}}{12pt}{}
+\titleformat{\chapter}[block]
+{\centering\fontsize{14pt}{12pt}\bfseries}
+{}
+{0pt}
+{\MakeUppercase}
 \titleformat{\section}{\fontsize{12pt}{16pt}\bfseries\raggedright}{\thesection}{0.5em}{}
 \titleformat{\subsection}{\fontsize{12pt}{16pt}\bfseries\raggedright}{\thesubsection}{0.5em}{}
 \titleformat{\subsubsection}{\fontsize{12pt}{16pt}\bfseries\raggedright}{\thesubsubsection}{0.5em}{}
@@ -83,27 +88,27 @@
 \begin{document}
 
 \include{CoverPage}
-%\include{TitlePage}
+% \include{TitlePage}
 %\include{Copyright}
 %\include{Declaration}
 %\include{Recommendation}
 %\include{DeptAcceptance}
 %\include{Acknowledgement}
-\include{Abstract}
+%\include{Abstract}
 {\centering{\tableofcontents}}\newpage
-{\centering\listoffigures\addcontentsline{toc}{chapter}{LIST OF FIGURES}}
-\newpage
-{\centering\listoftables\addcontentsline{toc}{chapter}{LIST OF TABLES}}
-\newpage
-\include{ListofAbbreviations}
+%{\centering\listoffigures\addcontentsline{toc}{chapter}{LIST OF FIGURES}}
+%\newpage
+%{\centering\listoftables\addcontentsline{toc}{chapter}{LIST OF TABLES}}
+%\newpage
+%\include{ListofAbbreviations}
 \include{Introduction}
-\include{RelatedTheory}
+%\include{RelatedTheory}
 \include{LiteratureReview}
 \include{Methodology}
 \include{ExpectedResults}
-\include{Conclusion}
+\include{Timeline}
 \include{References}
-\include{Appendix}
+%\include{Appendix}
 
 
 \end{document}
