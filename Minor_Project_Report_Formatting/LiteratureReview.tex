@@ -1,11 +1,11 @@
 \chapter{LITERATURE REVIEW}
 \section{Historical Evolution}
-Utility metering evolved from electromechanical induction meters (requiring manual reads) to Advanced Metering Infrastructure (AMI) with digital smart meters and wireless telemetry. While AMI automated logging, it preserved centralized, black-box corporate databases. The emerging third generation—decentralized cyber-physical grids—converges IoT, blockchain, and ML to eliminate central middlemen, and executing automated prepaid billing.
+Utility metering evolved from electromechanical induction meters (requiring manual reads) to Advanced Metering Infrastructure (AMI) with digital smart meters and wireless telemetry. While AMI automated logging, it preserved centralized, black-box corporate databases. The emerging third generation (decentralized cyber-physical grids) converges IoT, blockchain, and ML to eliminate central middlemen, and executing automated prepaid billing. \cite{ref2}
 \section{Algorithms and Models}
 \subsection{Smart Contracts (State Machine)}
 A deterministic Solidity contract dynamically switches between Active (power authorized) and Inactive (credit depleted) states based on real-time hardware telemetry.
 \subsection{Predictive Budgeting (Linear Regression)}    
-A supervised regression framework processes incoming time-series data against historical logs to forecast the exact time of account balance exhaustion.
+A supervised regression framework processes incoming time-series data against historical logs to forecast the exact time of account balance exhaustion.\cite{ref3}
 \subsection{Anomaly Detection (Isolation Forest)}    
 An unsupervised model maps regular usage profiles and immediately isolates statistical deviations (e.g., sudden voltage drops indicating meter-bypassing).
 
@@ -34,4 +34,4 @@ The system processes two distinct data pipelines: live analog telemetry from the
 \end{table}
 
 \section{Gaps and Challenge}
-Existing AMI frameworks rely on vulnerable centralized databases, while pure Web3 frameworks lack physical control systems to enforce ledger states on actual power lines. This project bridges this gap by uniting IoT edge enforcement, ML anomaly detection, and blockchain validation into a single, low-latency automated pipeline.
+Existing AMI frameworks rely on vulnerable centralized databases, while pure Web3 frameworks lack physical control systems to enforce ledger states on actual power lines. This project bridges this gap by uniting IoT edge enforcement, ML anomaly detection, and blockchain validation into a single, low-latency automated pipeline.\cite{ref4}

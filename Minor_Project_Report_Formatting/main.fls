@@ -335,10 +335,6 @@ INPUT C:\Users\SABIN\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmr10.tfm
 INPUT C:\Users\SABIN\AppData\Local\Programs\MiKTeX\fonts\vf\adobe\times\zptmcm7y.vf
 INPUT C:\Users\SABIN\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmsy10.tfm
 INPUT C:\Users\SABIN\AppData\Local\MiKTeX\fonts\tfm\public\rsfs\rsfs10.tfm
-INPUT C:\Users\SABIN\AppData\Local\Programs\MiKTeX\fonts\vf\adobe\times\zptmcm7m.vf
-INPUT C:\Users\SABIN\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\times\psyro.tfm
-INPUT C:\Users\SABIN\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmmi10.tfm
-INPUT C:\Users\SABIN\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\times\ptmri8r.tfm
 INPUT .\ExpectedResults.tex
 INPUT .\ExpectedResults.tex
 OUTPUT ExpectedResults.aux
@@ -351,6 +347,13 @@ OUTPUT Timeline.aux
 INPUT .\Timeline.tex
 INPUT .\Timeline.tex
 INPUT Timeline.tex
+INPUT .\Graphics\timeline.jpeg
+INPUT .\Graphics\timeline.jpeg
+INPUT .\Graphics\timeline.jpeg
+INPUT .\Graphics\timeline.jpeg
+INPUT .\Graphics\timeline.jpeg
+INPUT .\Graphics\timeline.jpeg
+INPUT .\Graphics\timeline.jpeg
 INPUT .\References.tex
 INPUT .\References.tex
 OUTPUT References.aux
@@ -358,6 +361,7 @@ INPUT .\References.tex
 INPUT .\References.tex
 INPUT References.tex
 INPUT C:\Users\SABIN\AppData\Local\Programs\MiKTeX\fonts\vf\adobe\times\ptmri7t.vf
+INPUT C:\Users\SABIN\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\times\ptmri8r.tfm
 INPUT main.aux
 INPUT .\CoverPage.aux
 INPUT .\CoverPage.aux
@@ -380,8 +384,6 @@ INPUT Timeline.aux
 INPUT .\References.aux
 INPUT .\References.aux
 INPUT References.aux
-INPUT C:\Users\SABIN\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmmi10.pfb
-INPUT C:\Users\SABIN\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmmi10.pfb
 INPUT C:\Users\SABIN\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmr10.pfb
 INPUT C:\Users\SABIN\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmr10.pfb
 INPUT C:\Users\SABIN\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmsy10.pfb

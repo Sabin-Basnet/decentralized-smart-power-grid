@@ -5,7 +5,7 @@ The system samples physical voltage variations, processes them into consumption 
 \begin{figure}[ht!]
     \centering
     \includegraphics[width=0.8\textwidth]{Graphics/Image 1.png}
-    \caption*{Figure: Proposed Block Diagram of decentralized power grid}
+    \caption*{Figure-1: Proposed Block Diagram of decentralized power grid.\cite{ref4}}
     \label{fig:blockdiagram}
 
 \end{figure}
@@ -15,7 +15,7 @@ The architectural framework of the system is structured across three interconnec
 \begin{figure}[h!]
     \centering
     \includegraphics[width=0.8\textwidth]{Graphics/architecture.png}
-    \caption*{Figure: System Design for decentralized power grid}
+    \caption*{Figure-2: System Design for decentralized power grid. \cite{ref5}}
     \label{fig:architecurediagram}
 \end{figure}
 \section{Tools and Techniques}
@@ -37,7 +37,7 @@ To properly train the predictive budgeting and anomaly detection models, a compr
 \subsection{Hardware Layer Implementation}
 The physical edge node is built around an ESP32 microcontroller configured within the Arduino IDE using C++. The firmware initializes a continuous hardware execution loop that samples analog signals from the potentiometer via the onboard Analog-to-Digital Converter (ADC) pin.
 \subsection{Blockchain Ledger Implementation}
-The transaction layer relies on an automated Solidity smart contract compiled, tested, and optimized within a local Hardhat. The contract design establishes state variables that map specific user cryptographic wallet addresses to their remaining token credits and device state logs (Active or Inactive). Prepaid balance tracking is processed immutably using the deduction calculation:$$\text{Bal}_{\text{new}} = \text{Bal}_{\text{current}} - (\Delta\text{E} \times \text{R}_{\text{fees}})$$
+The transaction layer relies on an automated Solidity smart contract compiled, tested, and optimized within a local Hardhat. The contract design establishes state variables that map specific user cryptographic wallet addresses to their remaining token credits and device state logs (Active or Inactive). Prepaid balance tracking is processed immutably using the deduction calculation:  \cite{ref6}$$\text{Bal}_{\text{new}} = \text{Bal}_{\text{current}} - (\Delta\text{E} \times \text{R}_{\text{fees}})$$
 \subsection{Backend Middleware and ML Integration}
-The central logic coordination hub is built using the FastAPI framework in Python. The backend uses the Web3.py library to maintain a persistent connection to the local blockchain environment, listening continuously for emitted ledger events. When telemetry packets arrive from the ESP32, the FastAPI gateway routes the metrics into a Scikit-Learn data pipeline.The machine learning engine concurrently processes the data through two independent models: a supervised Linear Regression algorithm that evaluates current balance depletion velocities against the inputs to update the countdown time ($T_{\text{remaining}} = \text{Bal}_{\text{new}} / f(\mathbf{X})$), and an unsupervised Isolation Forest algorithm that monitors usage profiles for data anomalies. If a critical anomaly flag or a zero-balance state is confirmed, the backend bypasses standard queues to instantly push an active cutoff signal to the ESP32 firmware while sending an immediate warning alert to the frontend dashboard.
+The central logic coordination hub is built using the FastAPI framework in Python. The backend uses the Web3.py library to maintain a persistent connection to the local blockchain environment, listening continuously for emitted ledger events.\cite{ref7}
 
