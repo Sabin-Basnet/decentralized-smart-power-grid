@@ -7,16 +7,14 @@ from sklearn.ensemble import IsolationForest
 from sklearn.model_selection import train_test_split
 from sklearn.metrics import mean_squared_error
 
-# =====================================================================
-# 1. DATA GENERATION PIPELINE (Parameters matched to Proposal Features)
-# =====================================================================
+# 1. DATA GENERATION PIPELINE
 print("Generating synthetic residential grid telemetry...")
 
-# Seed for reproducibility
-np.random.seed(42)
+# seed for reproducibility
+np.random.seed(42)  
 
 # Generate 30 days of 15-minute interval data (4 intervals/hour * 24 hours * 30 days)
-start_date = datetime.datetime(2026, 6, 1)
+start_date = datetime.datetime(2025, 6, 1)
 intervals = 4 * 24 * 30  
 timestamps = [start_date + datetime.timedelta(minutes=15 * i) for i in range(intervals)]
 
@@ -25,6 +23,24 @@ cumulative_energy = 0.0
 current_balance = 100.0  # Starting token balance
 tariff_rate = 0.12       # Tokens per kWh cost rate
 
+def calculate_nea_tariff_rate(monthly_units):
+    """
+    Returns the per-unit price (NPR) based on the total units 
+    consumed so far during the current billing cycle (month).
+    """
+    if monthly_units <= 20:
+        return 4.00   # Base rate for 15A meter standard
+    elif monthly_units <= 30:
+        return 6.50
+    elif monthly_units <= 50:
+        return 8.00
+    elif monthly_units <= 150:
+        return 9.50
+    elif monthly_units <= 250:
+        return 9.50
+    else:
+        return 11.00
+
 # Tracking variables for rolling delta calculation
 prev_load = 0.5
 
@@ -32,9 +48,9 @@ for ts in timestamps:
     hour = ts.hour
     
     # Simulate cyclical daily residential profiles (Hour_tod)
-    if 18 <= hour <= 22:    # Evening Peak (appliances, cooking, lights)
+    if 17 <= hour <= 21:    # Evening Peak(5pm - 9pm)
         base_load = np.random.uniform(2.5, 4.0)
-    elif 7 <= hour <= 9:    # Morning Peak (getting ready)
+    elif 8 <= hour <= 10:    # Morning Peak (8am - 10am)
         base_load = np.random.uniform(1.5, 2.5)
     else:                   # Off-peak / Overnight baseline
         base_load = np.random.uniform(0.3, 0.7)
@@ -51,7 +67,7 @@ for ts in timestamps:
     cumulative_energy += energy_delta
     
     # Compute prepaid token deduction step
-    current_balance -= (energy_delta * tariff_rate)
+    current_balance -= (energy_delta * calculate_nea_tariff_rate(monthly_units=cumulative_energy))
     
     # Simulate user manual recharges when tokens fall below low threshold
     if current_balance <= 5.0:
