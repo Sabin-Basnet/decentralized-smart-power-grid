@@ -1,14 +1,4 @@
-import pandas as pd
-import numpy as np
-import datetime
-import joblib
-from sklearn.linear_model import LinearRegression
-from sklearn.ensemble import IsolationForest
-from sklearn.model_selection import train_test_split
-from sklearn.metrics import mean_squared_error
 
-# 1. DATA GENERATION PIPELINE
-print("Generating synthetic residential grid telemetry...")
 
 # seed for reproducibility
 np.random.seed(42)  
@@ -19,9 +9,11 @@ intervals = 4 * 24 * 30
 timestamps = [start_date + datetime.timedelta(minutes=15 * i) for i in range(intervals)]
 
 data = []
-cumulative_energy = 0.0
-current_balance = 100.0  # Starting token balance
-tariff_rate = 0.12       # Tokens per kWh cost rate
+cumulative_energy = 0.0    # meter reading
+current_balance = np.random.uniform(300.0, 2000.0)  # Random starting balance
+# tariff_rate = 0.12       # Tokens per kWh cost rate
+# Tracking variables for rolling delta calculation
+prev_load = np.random.uniform(0.3, 0.7)
 
 def calculate_nea_tariff_rate(monthly_units):
     """
@@ -41,22 +33,37 @@ def calculate_nea_tariff_rate(monthly_units):
     else:
         return 11.00
 
-# Tracking variables for rolling delta calculation
-prev_load = 0.5
-
+# Create a timeline over 30 days
 for ts in timestamps:
     hour = ts.hour
     
-    # Simulate cyclical daily residential profiles (Hour_tod)
-    if 17 <= hour <= 21:    # Evening Peak(5pm - 9pm)
-        base_load = np.random.uniform(2.5, 4.0)
-    elif 8 <= hour <= 10:    # Morning Peak (8am - 10am)
-        base_load = np.random.uniform(1.5, 2.5)
-    else:                   # Off-peak / Overnight baseline
-        base_load = np.random.uniform(0.3, 0.7)
-        
-    # Add minor Gaussian noise to make data realistic
+    # 1. VACATION LOGIC FIX: Check if it's a new day, and randomly decide if the house is empty today
+    # 5% chance the family is away on vacation, at work all day, or travelling
+    if hour == 0 and ts.minute == 0:
+        is_vacation_day = np.random.rand() < 0.05  # True or False for the whole day
+    
+    # 2. Determine base load based on house occupancy state
+    if is_vacation_day:
+        # Household is on vacation! No appliance peaks. Only idle background devices run.
+        base_load = np.random.uniform(0.05, 0.12)  # Just the fridge or standby routers
+    else:
+        # Standard routine (Family is home)
+        if 18 <= hour <= 22:    # Evening Peak
+            base_load = np.random.uniform(2.5, 4.0)
+        elif 7 <= hour <= 9:    # Morning Peak
+            base_load = np.random.uniform(1.5, 2.5)
+        else:                   # Off-peak baseline
+            base_load = np.random.uniform(0.3, 0.7)
+            
+
     load_curr = max(0.05, base_load + np.random.normal(0, 0.1))
+    
+    # 4. ANOMALY LOGIC UPGRADE: Only flag theft if it's a high-probability drop 
+    # AND the family is actually supposed to be home!
+    theft_label = 0 
+    if not is_vacation_day and (18 <= hour <= 22) and (np.random.rand() < 0.01):
+        load_curr = np.random.uniform(0.05, 0.15)  # Drop looks like theft because they ARE home
+        theft_label = 1
     
     # Calculate delta load over the interval (Delta_load)
     delta_load = load_curr - prev_load
