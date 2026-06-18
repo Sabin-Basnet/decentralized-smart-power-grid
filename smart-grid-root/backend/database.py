@@ -1,45 +1,27 @@
-"""
-database.py - SQLAlchemy configuration and session management for Smart Grid Backend
-"""
-from sqlalchemy import create_engine
-from sqlalchemy.ext.declarative import declarative_base
-from sqlalchemy.orm import sessionmaker
-import os
+import sqlite3
 
-# Database URL - SQLite for local caching
-DATABASE_URL = "sqlite:///./smart_grid.db"
+conn = sqlite3.connect("backend_data.db")
+cursor = conn.cursor()
 
-# Create engine with connection pooling
-engine = create_engine(
-    DATABASE_URL,
-    connect_args={"check_same_thread": False},
-    pool_pre_ping=True,
-    echo=False  # Set to True for SQL debugging
-)
+cursor.execute("""
+    CREATE TABLE IF NOT EXISTS Accounts(
+        account_id TEXT PRIMARY_KEY,
+        token_balance REAL,
+        cummulative_energy_month REAL,
+        system_status TEXT
+    )
+""")
 
-# Session factory
-SessionLocal = sessionmaker(
-    autocommit=False,
-    autoflush=False,
-    bind=engine
-)
-
-# Base class for models
-Base = declarative_base()
-
-# Dependency injection for FastAPI
-def get_db():
-    """
-    Provides database session to FastAPI dependencies.
-    Ensures proper session cleanup after each request.
-    """
-    db = SessionLocal()
-    try:
-        yield db
-    finally:
-        db.close()
-
-# Initialize database tables
-def init_db():
-    """Create all tables in the database."""
-    Base.metadata.create_all(bind=engine)
+cursor.execute("""
+    CREATE TABLE IF NOT EXISTS Meter_History (
+        log_id INTEGER PRIMARY KEY AUTOINCREMENT,
+        account_id TEXT,
+        timestamp TEXT,
+        load_phase REAL,
+        load_neutral REAL,
+        mismatch REAL
+    )
+""")
+print("Database created...")
+conn.commit()
+conn.close()
