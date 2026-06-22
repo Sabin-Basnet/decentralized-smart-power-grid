@@ -1,0 +1,48 @@
+
+%==============================================================
+%  3. SPECIFIC REQUIREMENTS
+%==============================================================
+\section{Specific Requirements}
+
+\subsection{External Interface Requirements}
+\subsubsection{User Interfaces}
+A browser-based interface with a catalogue search page, a librarian dashboard,
+and a member account page.
+\subsubsection{Hardware Interfaces}
+Standard PC / server hardware; optionally a barcode scanner for ISBNs.
+\subsubsection{Software Interfaces}
+A relational database (e.g., PostgreSQL) accessed by the application.
+\subsubsection{Communication Interfaces}
+HTTPS for all client-server traffic.
+
+\subsection{Functional Requirements}
+% Each requirement: an ID, a single testable "shall" statement, and a priority.
+% Copy a row to add more. Keep IDs unique and sequential.
+\renewcommand{\arraystretch}{1.35}
+\begin{tabularx}{\textwidth}{|c|X|c|}
+\hline
+\reqheader{ID}{Functional Requirement}{Priority}
+FR-1 & The system shall allow a librarian to add, edit, and remove books in the catalogue. & High \\ \hline
+FR-2 & The system shall allow a member to search the catalogue by title or author. & High \\ \hline
+FR-3 & The system shall allow a librarian to issue an available book to a registered member. & High \\ \hline
+FR-4 & The system shall reject an issue when the member already holds the maximum allowed books. & High \\ \hline
+FR-5 & The system shall set a due date 14 days from the issue date. & Medium \\ \hline
+FR-6 & The system shall allow a member to reserve a book that is currently unavailable. & Low \\ \hline
+% FR-7 & [ your requirement ] & [ High/Med/Low ] \\ \hline
+\end{tabularx}
+
+\subsection{Non-functional Requirements}
+\renewcommand{\arraystretch}{1.35}
+\begin{tabularx}{\textwidth}{|c|X|c|}
+\hline
+\reqheader{ID}{Non-functional Requirement}{Category}
+NFR-1 & A catalogue search shall return results within 2 seconds for a 10,000-book catalogue. & Performance \\ \hline
+NFR-2 & Passwords shall be stored only as salted hashes. & Security \\ \hline
+NFR-3 & The system shall be usable on a 1366$\times$768 screen without horizontal scrolling. & Usability \\ \hline
+NFR-4 & The system shall be available 99\% of the time during library opening hours. & Reliability \\ \hline
+% NFR-5 & [ your requirement ] & [ category ] \\ \hline
+\end{tabularx}
+
+\subsection{Other Requirements}
+% Anything that doesn't fit above (e.g., data retention, legal, localisation).
+If any.

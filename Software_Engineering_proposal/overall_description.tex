@@ -1,0 +1,44 @@
+\section{Overall Description}
+
+\subsection{Product Perspective}
+% Is it standalone or part of a larger system? Describe its context.
+The \projecttitle{} is a standalone web application backed by a relational
+database. It interacts with library staff and members through a browser.
+
+\subsection{Product Functions}
+% A short bulleted summary of the major functions (detailed in Section 3).
+\begin{itemize}[leftmargin=*]
+  \item Manage the book catalogue (add / edit / remove books).
+  \item Search the catalogue by title or author.
+  \item Issue and return books, enforcing borrowing limits and due dates.
+  \item Reserve unavailable books.
+  \item Manage member records.
+\end{itemize}
+
+\subsection{User Characteristics}
+\begin{itemize}[leftmargin=*]
+  \item \textbf{Librarian:} trained staff member; performs all catalogue and loan operations.
+  \item \textbf{Member:} general user; searches and reserves books.
+  \item \textbf{System Administrator:} Maintains servers, backups, and user accounts.
+\end{itemize}
+
+\subsection{Key Entities}
+\begin{itemize}[leftmargin=*]
+  \item \textbf{Book:} ISBN, title, author, publisher, year, quantity, available copies.
+  \item \textbf{Member:} Member ID, name, contact, maximum allowed books.
+  \item \textbf{Transaction:} Issue date, due date, return date, book copy, member.
+  \item \textbf{Reservation:} Book ID, member ID, reservation date, status.
+\end{itemize}
+
+\subsection{Constraints}
+% Technology, regulatory, hardware, or institutional limits.
+\begin{itemize}[leftmargin=*]
+  \item Must run on the institution's existing server infrastructure.
+  \item Passwords must be stored only as salted hashes.
+\end{itemize}
+
+\subsection{Assumptions and Dependencies}
+\begin{itemize}[leftmargin=*]
+  \item Members are registered before they can reserve books.
+  \item A network connection to the database server is available.
+\end{itemize}

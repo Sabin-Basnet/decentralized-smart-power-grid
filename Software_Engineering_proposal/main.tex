@@ -1,0 +1,78 @@
+\documentclass[11pt,a4paper]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{newtxtext,newtxmath}
+\usepackage[
+    top=1in,
+    bottom=1in,
+    left=1.2in,
+    right=1in
+]{geometry}
+\usepackage[table]{xcolor}
+\usepackage{tabularx}
+\usepackage{array}
+\usepackage{booktabs}
+\usepackage{enumitem}
+\usepackage{graphicx}
+\usepackage{titlesec}
+\usepackage{fancyhdr}
+\usepackage{parskip}
+\usepackage[hidelinks]{hyperref}
+ 
+
+\definecolor{srsnavy}{HTML}{1B4332}
+\definecolor{srsblue}{HTML}{2D6A4F}
+\definecolor{srsgrey}{HTML}{495057}
+ 
+\titleformat{\section}{\Large\bfseries\color{srsnavy}}{\thesection}{0.6em}{}
+\titleformat{\subsection}{\large\bfseries\color{srsblue}}{\thesubsection}{0.6em}{}
+\titleformat{\subsubsection}{\normalsize\bfseries\color{srsgrey}}{\thesubsubsection}{0.6em}{}
+ 
+
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\footrulewidth}{0.4pt}
+\fancyhead[L]{\small\textcolor{srsgrey}{\labtitle}}
+\fancyhead[R]{\small\textcolor{srsgrey}{\coursename}}
+\fancyfoot[L]{\small\textcolor{srsgrey}{\institution}}
+\fancyfoot[R]{\small\textcolor{srsgrey}{Page \thepage}}
+ 
+
+\newcommand{\reqheader}[3]{%
+  \rowcolor{srsnavy}
+  \textcolor{white}{\textbf{#1}} &
+  \textcolor{white}{\textbf{#2}} &
+  \textcolor{white}{\textbf{#3}} \\ \hline}
+ 
+
+\newcommand{\institution}{IOE, Purwanchal Campus}      % used in the footer
+\newcommand{\department}{Department of Computer \& Electronics Engineering}
+% \newcommand{\logofile}{graphics/asdf.png}
+\newcommand{\coursename}{Software Engineering (Practical)}
+\newcommand{\coursecode}{ ENCT 352 }
+\newcommand{\labtitle}{Lab 1 -- Software Requirements Specification}
+\newcommand{\projecttitle}{Decentralized Smart Power Grid}   % <-- your project
+\newcommand{\submissiondate}{\today}
+\newcommand{\teamname}{440 V}
+%==============================================================
+
+\begin{document}
+ 
+\include{coverpage}
+
+\clearpage
+\tableofcontents
+\clearpage
+
+\include{introduction}
+\include{objectives}
+\include{project_domain_analysis}
+\include{software_process_model}
+\include{overall_description}
+\include{specific_requirements}
+\include{conclusion}
+\include{references}
+
+\end{document}

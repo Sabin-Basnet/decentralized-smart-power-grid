@@ -1,0 +1,35 @@
+
+\section{Project Domain Analysis}
+
+\subsection{Domain Description}
+A library maintains a collection of books, registers members, and tracks loans. Typical operations: add new books, register members, issue books, return books, and handle reservations. The domain involves two primary actors: Librarian (staff) and Member (patron).
+
+\subsection{Existing System Overview}
+Currently, the library uses a paper‑based register. The librarian manually records book issues, due dates, and returns. Searching for a book requires browsing shelves or card catalogues. Reservation is not possible; members must visit physically to check availability.
+
+\subsection{Problems in Existing System}
+
+The existing library management system is largely manual and relies on paper-based records for maintaining book inventories, member information, and borrowing transactions. This approach presents several challenges:
+
+\begin{itemize}[leftmargin=*]
+\item \textbf{Time-consuming operations:} Recording book issues, returns, and member details manually requires significant time and effort.
+
+\item \textbf{Difficulty in searching records:} Locating information about a particular book or member from physical registers is slow and inefficient.
+
+\item \textbf{Human errors:} Manual data entry can lead to mistakes in book records, issue dates, return dates, and member information.
+
+\item \textbf{Poor tracking of book availability:} Determining whether a book is available, issued, or reserved is difficult without real-time updates.
+
+\item \textbf{Inefficient management of overdue books:} Tracking due dates and identifying overdue books requires manual checking, which may result in delays and inaccuracies.
+
+\item \textbf{Risk of data loss:} Physical records can be damaged, misplaced, or lost due to accidents or improper handling.
+
+\item \textbf{Limited accessibility:} Members must visit the library physically to check book availability or obtain information about library resources.
+
+\item \textbf{Scalability issues:} Managing a large collection of books and a growing number of members becomes increasingly difficult using manual methods.
+
+\end{itemize}
+
+\subsection{Proposed System}
+The proposed LMS is a web application with a relational database. It automates catalogue management, enforces borrowing rules, provides instant search, and allows online reservations. It reduces manual errors and improves accessibility.
+
