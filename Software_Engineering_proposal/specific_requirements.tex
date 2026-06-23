@@ -6,14 +6,29 @@
 
 \subsection{External Interface Requirements}
 \subsubsection{User Interfaces}
-A browser-based interface with a catalogue search page, a librarian dashboard,
-and a member account page.
+A responsive web application consisting of a Consumer View (featuring live energy gauges, transaction histories, and credit countdown elements) and an Admin View (displaying real-time anomaly warning flags).
+
 \subsubsection{Hardware Interfaces}
-Standard PC / server hardware; optionally a barcode scanner for ISBNs.
+\begin{itemize}[leftmargin=*]
+    \item ESP32 Microcontroller.
+    \item Linear Potentiometer (for analog grid load simulation).
+    \item Electromechanical Relay (for circuit line disconnection).  
+    \item I2C LCD Display (for localized device status metrics). 
+\end{itemize}
+
 \subsubsection{Software Interfaces}
-A relational database (e.g., PostgreSQL) accessed by the application.
+\begin{itemize}[leftmargin=*]
+    \item \textbf{Database:} SQLite for quick historical logging.
+    \item \textbf{Blockchain Dev-Env:} Hardhat for running localized Solidity testnets.
+    \item \textbf{ML Environment:} Scikit-Learn (Python) for execution of regression and Isolation Forest pipelines.
+\end{itemize}
+
 \subsubsection{Communication Interfaces}
-HTTPS for all client-server traffic.
+\begin{itemize}[leftmargin=*]
+    \item HTTP REST protocol for ESP32 data ingestion into FastAPI.  
+    \item WebSockets for streaming live telemetry updates to the React interface.
+    \item JSON-RPC protocol for backend communication with the blockchain ledger via Web3.py. 
+\end{itemize}
 
 \subsection{Functional Requirements}
 % Each requirement: an ID, a single testable "shall" statement, and a priority.
@@ -22,12 +37,12 @@ HTTPS for all client-server traffic.
 \begin{tabularx}{\textwidth}{|c|X|c|}
 \hline
 \reqheader{ID}{Functional Requirement}{Priority}
-FR-1 & The system shall allow a librarian to add, edit, and remove books in the catalogue. & High \\ \hline
-FR-2 & The system shall allow a member to search the catalogue by title or author. & High \\ \hline
-FR-3 & The system shall allow a librarian to issue an available book to a registered member. & High \\ \hline
-FR-4 & The system shall reject an issue when the member already holds the maximum allowed books. & High \\ \hline
-FR-5 & The system shall set a due date 14 days from the issue date. & Medium \\ \hline
-FR-6 & The system shall allow a member to reserve a book that is currently unavailable. & Low \\ \hline
+FR-1 & The ESP32 node shall continuously sample load data and transmit it to the backend as structured JSON data packets. & High \\ \hline
+FR-2 & The smart contract shall execute immutable token balance deductions based on consumption telemetry. & High \\ \hline
+FR-3 & The system shall immediately isolate the physical relay if the user's smart contract credit balance drops to $\le 0$. & High \\ \hline
+FR-4 & The system shall compute a time-to-exhaustion projection using a supervised Linear Regression framework. & Medium \\ \hline
+FR-5 & The machine learning engine shall flag potential grid theft if an abrupt, unprompted drop ($\Delta_{load}$) occurs without a break. & Medium \\ \hline
+FR-6 & The system shall update the localized on-chip LCD screen to reflect live power usage and balance status changes. & Low \\ \hline
 % FR-7 & [ your requirement ] & [ High/Med/Low ] \\ \hline
 \end{tabularx}
 
@@ -36,13 +51,13 @@ FR-6 & The system shall allow a member to reserve a book that is currently unava
 \begin{tabularx}{\textwidth}{|c|X|c|}
 \hline
 \reqheader{ID}{Non-functional Requirement}{Category}
-NFR-1 & A catalogue search shall return results within 2 seconds for a 10,000-book catalogue. & Performance \\ \hline
-NFR-2 & Passwords shall be stored only as salted hashes. & Security \\ \hline
-NFR-3 & The system shall be usable on a 1366$\times$768 screen without horizontal scrolling. & Usability \\ \hline
-NFR-4 & The system shall be available 99\% of the time during library opening hours. & Reliability \\ \hline
+NFR-1 & The smart contract transaction confirmation and billing logic run-time must update within 3 seconds of telemetry ingestion. & Performance \\ \hline
+NFR-2 & Grid circuit isolation commands must trigger the physical relay within 500 milliseconds of contract exhaustion confirmation. & Performance \\ \hline
+NFR-3 & Consumer smart contract states and account keys must be managed through secure, cryptographically validated signatures. & Security \\ \hline
+NFR-4 & The predictive budgeting algorithm must maintain an evaluation accuracy boundary below an acceptable Root Mean Squared Error (RMSE) limit. & Reliability \\ \hline
 % NFR-5 & [ your requirement ] & [ category ] \\ \hline
 \end{tabularx}
 
 \subsection{Other Requirements}
 % Anything that doesn't fit above (e.g., data retention, legal, localisation).
-If any.
+None.

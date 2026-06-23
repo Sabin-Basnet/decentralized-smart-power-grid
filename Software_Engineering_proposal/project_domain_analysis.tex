@@ -2,34 +2,26 @@
 \section{Project Domain Analysis}
 
 \subsection{Domain Description}
-A library maintains a collection of books, registers members, and tracks loans. Typical operations: add new books, register members, issue books, return books, and handle reservations. The domain involves two primary actors: Librarian (staff) and Member (patron).
+Electrical utility infrastructure revolves around generation, high-voltage transmission, and localized distribution domains. The distribution layer relies heavily on tracking consumer energy consumption (measured in Watt-hours), validating ledger records, and executing billing routines. The domain encompasses two central structural entities: the Utility Administration and the Grid Consumer.
 
 \subsection{Existing System Overview}
-Currently, the library uses a paper‑based register. The librarian manually records book issues, due dates, and returns. Searching for a book requires browsing shelves or card catalogues. Reservation is not possible; members must visit physically to check availability.
+Conventional electrical utility setups rely on centralized Advanced Metering Infrastructure (AMI). Telemetry is piped into closed, private corporate databases managed entirely by a central authority. Consumers have no visibility into backend billing mathematics, and payment models operate predominantly on postpaid structures.
 
 \subsection{Problems in Existing System}
 
-The existing library management system is largely manual and relies on paper-based records for maintaining book inventories, member information, and borrowing transactions. This approach presents several challenges:
+The highly centralized architecture introduces deep systemic operational challenges:
 
 \begin{itemize}[leftmargin=*]
-\item \textbf{Time-consuming operations:} Recording book issues, returns, and member details manually requires significant time and effort.
+\item \textbf{Information Asymmetry:} Consumers cannot independently verify billing logs, causing trust deficits and hidden charge disputes.
 
-\item \textbf{Difficulty in searching records:} Locating information about a particular book or member from physical registers is slow and inefficient.
+\item \textbf{Revenue Collection Risks:} Postpaid billing causes payment delays and frequent defaults, trapping utility companies in inefficient debt-recovery cycles.
 
-\item \textbf{Human errors:} Manual data entry can lead to mistakes in book records, issue dates, return dates, and member information.
+\item \textbf{Unresolved Distribution Leakages:} Line-tampering, meter-bypassing, and infrastructure anomalies go unflagged due to a lack of automated edge-analysis tools.
 
-\item \textbf{Poor tracking of book availability:} Determining whether a book is available, issued, or reserved is difficult without real-time updates.
-
-\item \textbf{Inefficient management of overdue books:} Tracking due dates and identifying overdue books requires manual checking, which may result in delays and inaccuracies.
-
-\item \textbf{Risk of data loss:} Physical records can be damaged, misplaced, or lost due to accidents or improper handling.
-
-\item \textbf{Limited accessibility:} Members must visit the library physically to check book availability or obtain information about library resources.
-
-\item \textbf{Scalability issues:} Managing a large collection of books and a growing number of members becomes increasingly difficult using manual methods.
+\item \textbf{Data Integrity Risks:} Central databases are single-point-of-failure vulnerabilities open to internal manipulation or external security threats.
 
 \end{itemize}
 
 \subsection{Proposed System}
-The proposed LMS is a web application with a relational database. It automates catalogue management, enforces borrowing rules, provides instant search, and allows online reservations. It reduces manual errors and improves accessibility.
+The proposed framework is a multi-layered decentralized ecosystem fusing IoT physical enforcement, localized middleware APIs, blockchain ledgers, and Machine Learning models. It features an automated prepaid smart contract system that isolates power lines instantly when balances are depleted, alongside a responsive user dashboard tracking live metrics and anomaly events.
 

@@ -2,43 +2,41 @@
 
 \subsection{Product Perspective}
 % Is it standalone or part of a larger system? Describe its context.
-The \projecttitle{} is a standalone web application backed by a relational
-database. It interacts with library staff and members through a browser.
+The system operates as a hybrid cyber-physical pipeline. The local ESP32 edge layer captures load telemetry and routes data to a FastAPI middleware backend, which queries and interacts securely with an immutable local blockchain ledger and a React analytical dashboard.
 
 \subsection{Product Functions}
 % A short bulleted summary of the major functions (detailed in Section 3).
 \begin{itemize}[leftmargin=*]
-  \item Manage the book catalogue (add / edit / remove books).
-  \item Search the catalogue by title or author.
-  \item Issue and return books, enforcing borrowing limits and due dates.
-  \item Reserve unavailable books.
-  \item Manage member records.
+  \item \textbf{Automated Telemetry Processing:} Sampling continuous analog voltages to compute real-time power metrics.
+  \item \textbf{Immutable Transaction Management:} Handling token balance updates directly on-chain using secure deduction math.
+  \item \textbf{Autonomous Edge Control:} Instantly opening hardware relays to isolate load lines when credit profiles drop to zero.
+  \item \textbf{Predictive Budget Forecasting:} Applying linear regression to project exact user balance depletion horizons.
+  \item \textbf{Grid Anomaly Detection:} Using Isolation Forest algorithms to flag sudden line-tampering anomalies.
 \end{itemize}
 
 \subsection{User Characteristics}
 \begin{itemize}[leftmargin=*]
-  \item \textbf{Librarian:} trained staff member; performs all catalogue and loan operations.
-  \item \textbf{Member:} general user; searches and reserves books.
-  \item \textbf{System Administrator:} Maintains servers, backups, and user accounts.
+  \item \textbf{Grid Consumer:} Views real-time demand figures, reads live remaining credit time-frames, and tops up token balances.
+  \item \textbf{Grid Administrator:} Monitors macro-level distribution feeds, tracks network transaction latency, and acts on real-time theft warning flags.
 \end{itemize}
 
 \subsection{Key Entities}
 \begin{itemize}[leftmargin=*]
-  \item \textbf{Book:} ISBN, title, author, publisher, year, quantity, available copies.
-  \item \textbf{Member:} Member ID, name, contact, maximum allowed books.
-  \item \textbf{Transaction:} Issue date, due date, return date, book copy, member.
-  \item \textbf{Reservation:} Book ID, member ID, reservation date, status.
+  \item \textbf{Smart Meter Node:} Unique MAC/Device ID, connected hardware address, real-time load, status state (Active/Inactive).
+  \item \textbf{Consumer Wallet:} Cryptographic wallet address, remaining credit balance ($Bal_{token}$), allocated device link.
+  \item \textbf{Telemetry Frame:} $Load_{curr}$, $Energy_{cum}$, $\Delta_{load}$, $Hour_{tod}$.
+  \item \textbf{System Ledger Record:} Unique blockchain transaction hash, deduction amount, timestamp.
 \end{itemize}
 
 \subsection{Constraints}
 % Technology, regulatory, hardware, or institutional limits.
 \begin{itemize}[leftmargin=*]
-  \item Must run on the institution's existing server infrastructure.
-  \item Passwords must be stored only as salted hashes.
+  \item The hardware node must rely entirely on the operational constraints of the ESP32 processing chip.
+  \item All blockchain calculations must operate within a local test environment (Hardhat) to bypass live transaction network costs.
 \end{itemize}
 
 \subsection{Assumptions and Dependencies}
 \begin{itemize}[leftmargin=*]
-  \item Members are registered before they can reserve books.
-  \item A network connection to the database server is available.
+  \item The backend engine relies on a persistent connection to the blockchain environment via Web3.py.
+  \item The physical edge device requires a reliable Wi-Fi network connection to stream JSON packets to the API gateway.
 \end{itemize}

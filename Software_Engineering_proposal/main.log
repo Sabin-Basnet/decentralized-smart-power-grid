@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.5) (preloaded format=pdflatex 2026.6.9)  22 JUN 2026 22:09
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.5) (preloaded format=pdflatex 2026.6.9)  23 JUN 2026 08:46
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -721,7 +721,7 @@ LaTeX Font Info:    Font shape `T1/ntxtlf/b/n' will be
 
  (objectives.tex
 LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
-(Font)              scaled to size 8.0pt on input line 5.
+(Font)              scaled to size 8.0pt on input line 4.
 ) [3
 
 
@@ -757,21 +757,21 @@ LaTeX Font Info:    Font shape `TS1/ntxtlf/m/n' will be
 ]
 \openout2 = `specific_requirements.aux'.
 
- (specific_requirements.tex) [7
+ (specific_requirements.tex [7
 
 
 
-]
+{C:/Users/SABIN/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/newtx/ntx-ot1-tlf.enc}]) [8]
 \openout2 = `conclusion.aux'.
 
- (conclusion.tex) [8
+ (conclusion.tex) [9
 
 
 
 ]
 \openout2 = `references.aux'.
 
- (references.tex) [9
+ (references.tex) [10
 
 
 
@@ -784,17 +784,17 @@ Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: 3831F8083ACDBAA73187D1CE9CC763A9;5201.
  ) 
 Here is how much of TeX's memory you used:
- 15745 strings out of 467872
- 242960 string characters out of 5418392
- 651126 words of memory out of 5000000
+ 15755 strings out of 467872
+ 243050 string characters out of 5418392
+ 653127 words of memory out of 5000000
  44272 multiletter control sequences out of 15000+600000
- 673017 words of font info for 80 fonts, out of 8000000 for 9000
+ 675941 words of font info for 87 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  74i,12n,88p,1277b,536s stack positions out of 10000i,1000n,20000p,200000b,200000s
-<C:/Users/SABIN/AppData/Local/Programs/MiKTeX/fonts/type1/public/tex-gyre/qtmr.pfb><C:/Users/SABIN/AppData/Local/Programs/MiKTeX/fonts/type1/public/newtx/txsys.pfb><C:/Users/SABIN/AppData/Local/Programs/MiKTeX/fonts/type1/public/newtx/ztmb.pfb><C:/Users/SABIN/AppData/Local/Programs/MiKTeX/fonts/type1/public/newtx/ztmr.pfb><C:/Users/SABIN/AppData/Local/Programs/MiKTeX/fonts/type1/public/newtx/ztmri.pfb>
-Output written on main.pdf (10 pages, 364637 bytes).
+<C:/Users/SABIN/AppData/Local/Programs/MiKTeX/fonts/type1/public/newtx/NewTXMI.pfb><C:/Users/SABIN/AppData/Local/Programs/MiKTeX/fonts/type1/public/newtx/NewTXMI7.pfb><C:/Users/SABIN/AppData/Local/Programs/MiKTeX/fonts/type1/public/tex-gyre/qtmr.pfb><C:/Users/SABIN/AppData/Local/Programs/MiKTeX/fonts/type1/public/newtx/txmiaX.pfb><C:/Users/SABIN/AppData/Local/Programs/MiKTeX/fonts/type1/public/newtx/txsys.pfb><C:/Users/SABIN/AppData/Local/Programs/MiKTeX/fonts/type1/public/newtx/ztmb.pfb><C:/Users/SABIN/AppData/Local/Programs/MiKTeX/fonts/type1/public/newtx/ztmr.pfb><C:/Users/SABIN/AppData/Local/Programs/MiKTeX/fonts/type1/public/newtx/ztmri.pfb>
+Output written on main.pdf (11 pages, 397158 bytes).
 PDF statistics:
- 268 PDF objects out of 1000 (max. 8388607)
- 52 named destinations out of 1000 (max. 500000)
+ 292 PDF objects out of 1000 (max. 8388607)
+ 54 named destinations out of 1000 (max. 500000)
  278 words of extra memory for PDF output out of 10000 (max. 10000000)
 
