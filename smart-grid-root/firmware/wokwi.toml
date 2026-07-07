@@ -1,0 +1,4 @@
+[wokwi]
+version = 1
+firmware = 'build/firmware.ino.bin'
+elf = 'build/firmware.ino.elf'
