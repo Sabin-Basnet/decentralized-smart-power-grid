@@ -3,27 +3,51 @@
   "author": "Custom Smart Grid Engine",
   "editor": "wokwi",
   "parts": [
-    { "type": "board-esp32-devkit-c-v4", "id": "esp", "top": 0, "left": 0, "attrs": {} },
-    { "type": "wokwi-slide-potentiometer", "id": "pot1", "top": -150, "left": 200, "attrs": { "travelLength": "30" } },
-    { "type": "wokwi-slide-potentiometer", "id": "pot2", "top": 50, "left": 200, "attrs": { "travelLength": "30" } },
-    { "type": "wokwi-slide-switch", "id": "sw1", "top": -50, "left": 350, "attrs": {} },
-    { "type": "wokwi-relay-module", "id": "relay1", "top": -100, "left": -200, "attrs": {} },
-    { "type": "wokwi-led", "id": "led1", "top": 100, "left": -150, "attrs": { "color": "red" } }
+    { "type": "board-esp32-devkit-c-v4", "id": "esp", "top": -374.4, "left": -14.36, "attrs": {} },
+    {
+      "type": "wokwi-slide-potentiometer",
+      "id": "pot1",
+      "top": -484.6,
+      "left": -375.4,
+      "attrs": { "travelLength": "30" }
+    },
+    {
+      "type": "wokwi-slide-potentiometer",
+      "id": "pot2",
+      "top": -158.2,
+      "left": -346.6,
+      "attrs": { "travelLength": "30" }
+    },
+    { "type": "wokwi-slide-switch", "id": "sw1", "top": -43.6, "left": 3.1, "attrs": {} },
+    { "type": "wokwi-relay-module", "id": "relay1", "top": -163, "left": 288, "attrs": {} },
+    {
+      "type": "wokwi-resistor",
+      "id": "r1",
+      "top": -4.8,
+      "left": 393.05,
+      "rotate": 90,
+      "attrs": { "value": "1000" }
+    },
+    { "type": "wokwi-led", "id": "led1", "top": -3.6, "left": 378.2, "attrs": { "color": "red" } }
   ],
   "connections": [
-    [ "pot1:GND", "esp:GND.2", "black", [] ],
-    [ "pot1:VCC", "esp:3V3", "red", [] ],
-    [ "pot1:SIG", "esp:34", "green", [] ],
-    [ "pot2:GND", "esp:GND.2", "black", [] ],
-    [ "pot2:VCC", "esp:3V3", "red", [] ],
-    [ "pot2:SIG", "esp:35", "orange", [] ],
-    [ "sw1:1", "esp:GND.2", "black", [] ],
-    [ "sw1:2", "esp:25", "green", [] ],
-    [ "relay1:VCC", "esp:3V3", "red", [] ],
-    [ "relay1:GND", "esp:GND.2", "black", [] ],
-    [ "relay1:IN", "esp:27", "blue", [] ],
-    [ "relay1:COM", "esp:3V3", "red", [] ],
-    [ "relay1:NO", "led1:A", "green", [] ],
-    [ "led1:C", "esp:GND.2", "black", [] ]
-  ]
+    [ "esp:TX", "$serialMonitor:RX", "", [] ],
+    [ "esp:RX", "$serialMonitor:TX", "", [] ],
+    [ "pot1:GND", "esp:GND.2", "black", [ "h20", "h234.8" ] ],
+    [ "pot1:VCC", "esp:3V3", "green", [ "v96" ] ],
+    [ "pot1:SIG", "esp:34", "gold", [ "h-38.4", "v114.4" ] ],
+    [ "pot2:GND", "esp:GND.2", "black", [ "h5.2", "v-297.6", "h220.8" ] ],
+    [ "pot2:VCC", "esp:3V3", "green", [ "h-19.2", "v-220.8", "h326.4", "v-9.6" ] ],
+    [ "pot2:SIG", "esp:35", "orange", [ "h40", "v-60" ] ],
+    [ "sw1:1", "esp:GND.2", "black", [ "h172.8", "v-384", "h-96" ] ],
+    [ "sw1:2", "esp:25", "cyan", [ "h-38.3", "v-345.6" ] ],
+    [ "relay1:VCC", "esp:3V3", "limegreen", [ "h-19.2", "v-172.8", "h-307.35" ] ],
+    [ "relay1:GND", "esp:GND.2", "black", [ "v-307.6", "h-230.4" ] ],
+    [ "relay1:IN", "esp:27", "blue", [ "h-40", "v100" ] ],
+    [ "relay1:COM", "esp:3V3", "green", [ "h-10", "v-241.4", "h-430.55" ] ],
+    [ "relay1:NO", "r1:1", "purple", [ "v40", "h-40" ] ],
+    [ "r1:2", "led1:A", "purple", [] ],
+    [ "led1:C", "esp:GND.2", "black", [ "h-182", "v-451.2", "h-124.8" ] ]
+  ],
+  "dependencies": {}
 }
