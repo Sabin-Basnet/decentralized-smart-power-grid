@@ -1,0 +1,35 @@
+\section{Project Domain Analysis}
+
+\subsection{Domain Description}
+
+Electrical power distribution systems are responsible for delivering
+electricity from utility providers to consumers while monitoring energy
+consumption for billing purposes. Traditional systems rely on centralized
+metering infrastructure and manual verification of billing records. The
+proposed project introduces a decentralized approach that combines IoT
+smart meters, blockchain technology, and machine learning to provide
+transparent prepaid energy management, secure transaction records, and
+real-time monitoring.
+
+\subsection{Existing System}
+
+In conventional power distribution systems, smart meters or electricity
+meters send consumption data to a centralized utility database. Billing
+is generally performed using postpaid models, where consumers receive
+their bills after energy has been consumed. Consumers have limited
+visibility into how charges are calculated, and the centralized
+architecture creates a single point of failure for data storage and
+billing operations.
+
+\subsection{Proposed System}
+
+The proposed Decentralized Smart Power Grid continuously receives
+electricity consumption data from ESP32-based smart meter nodes. The
+backend validates the incoming telemetry and forwards billing requests
+to blockchain smart contracts that automatically deduct prepaid credit.
+Machine learning models analyze consumption patterns to estimate
+remaining credit duration and detect possible power theft or abnormal
+usage. The processed information is stored securely and displayed on a
+web dashboard, allowing both consumers and administrators to monitor
+energy usage, account balance, billing history, and system alerts in
+real time.
