@@ -1,0 +1,63 @@
+\section{Requirements Derived from the DFD}
+
+\subsection{Functional Requirements}
+
+\renewcommand{\arraystretch}{1.3}
+
+\begin{tabular}{|p{1.5cm}|p{10.5cm}|p{2cm}|}
+\hline
+\reqheader{ID}{Functional Requirement}{Priority}
+
+FR-1 &
+The system shall receive real-time energy consumption data from ESP32-based smart meters.
+& High \\ \hline
+
+FR-2 &
+The system shall validate and process incoming telemetry data before billing.
+& High \\ \hline
+
+FR-3 &
+The system shall execute prepaid billing using blockchain smart contracts.
+& High \\ \hline
+
+FR-4 &
+The system shall detect abnormal energy consumption and possible power theft using machine learning models.
+& High \\ \hline
+
+FR-5 &
+The system shall update consumer balances, billing records, and transaction history after successful processing.
+& Medium \\ \hline
+
+FR-6 &
+The system shall provide dashboards for consumers and administrators to monitor energy usage, account status, and system alerts.
+& Medium \\ \hline
+
+\end{tabular}
+
+\vspace{0.8cm}
+
+\subsection{Non-functional Requirements}
+
+\renewcommand{\arraystretch}{1.3}
+
+\begin{tabular}{|p{1.7cm}|p{10cm}|p{2.3cm}|}
+\hline
+\reqheader{ID}{Non-functional Requirement}{Category}
+
+NFR-1 &
+The system should process incoming telemetry with minimal delay to support near real-time monitoring.
+& Performance \\ \hline
+
+NFR-2 &
+The dashboard should provide an intuitive interface for viewing energy usage, prepaid balance, and billing history.
+& Usability \\ \hline
+
+NFR-3 &
+The system should securely store billing records and blockchain transaction references.
+& Security \\ \hline
+
+NFR-4 &
+The system should maintain reliable communication between smart meters, backend services, and blockchain nodes.
+& Reliability \\ \hline
+
+\end{tabular}
