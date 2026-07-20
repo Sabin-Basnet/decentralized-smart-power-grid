@@ -1,0 +1,63 @@
+%--------------------------------------------------------------
+%  TITLE PAGE
+%--------------------------------------------------------------
+\begin{titlepage}
+\centering
+\vspace*{0.6cm}
+
+% ---- LOGO (shown if the image file exists; otherwise a placeholder) ----
+\IfFileExists{graphics/asdf.png}{%
+  \includegraphics[width=15cm]{graphics/asdf.png}%
+}{%
+  \fbox{\parbox[c][3cm][c]{3cm}{\centering\footnotesize Place\\ \texttt{graphics/asdf.png}\\ beside this file}}%
+}\par
+
+\vspace{0.6cm}
+
+{\Huge\bfseries\color{srsnavy} UML Design Report\par}
+\vspace{0.3cm}
+
+{\large\itshape Project: \projecttitle\par}
+
+\vspace{0.25cm}
+{\department\par}
+
+\vspace{1.5cm}
+
+% ---- Submission Details ----
+\renewcommand{\arraystretch}{1.4}
+\begin{tabular}{>{\bfseries}l l}
+Course        & \coursename \\
+Course code   & \coursecode \\
+Team          & \teamname \\
+Submitted on  & \submissiondate \\
+\end{tabular}
+
+\vspace{1.2cm}
+
+% ---- Team Members ----
+{\bfseries\color{srsblue} Team Members}\par
+\vspace{0.3cm}
+
+\renewcommand{\arraystretch}{1.3}
+\begin{tabular}{|c|l|l|}
+\hline
+\rowcolor{srsnavy}
+\textcolor{white}{\textbf{S.N.}} &
+\textcolor{white}{\textbf{Name}} &
+\textcolor{white}{\textbf{Roll / ID}} \\ \hline
+
+1 & PRATIMA CHAUDHARY & PUR080BCT064 \\ \hline
+2 & RABIN KATTEL & PUR080BCT067 \\ \hline
+3 & SABIN BASNET & PUR080BCT077 \\ \hline
+4 & SARBESH TIMSINA & PUR080BCT082 \\ \hline
+
+\end{tabular}
+
+\vfill
+
+{\small\color{srsgrey}
+Submitted to: Asst. Prof. Binay Lal Shrestha
+}
+
+\end{titlepage}

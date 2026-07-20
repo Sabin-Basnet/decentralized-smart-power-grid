@@ -1,0 +1,123 @@
+\documentclass[11pt,a4paper]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{newtxtext,newtxmath}
+
+\usepackage[
+    top=1in,
+    bottom=1in,
+    left=1.2in,
+    right=1in
+]{geometry}
+
+\usepackage[table]{xcolor}
+\usepackage{tabularx}
+\usepackage{array}
+\usepackage{booktabs}
+\usepackage{enumitem}
+\usepackage{graphicx}
+\usepackage{titlesec}
+\usepackage{fancyhdr}
+\usepackage{parskip}
+\usepackage{float}
+\usepackage[hidelinks]{hyperref}
+
+%==============================================================
+% Colors
+%==============================================================
+
+\definecolor{srsnavy}{HTML}{1B4332}
+\definecolor{srsblue}{HTML}{2D6A4F}
+\definecolor{srsgrey}{HTML}{495057}
+
+%==============================================================
+% Section Formatting
+%==============================================================
+
+\titleformat{\section}
+{\Large\bfseries\color{srsnavy}}
+{\thesection}{0.6em}{}
+
+\titleformat{\subsection}
+{\large\bfseries\color{srsblue}}
+{\thesubsection}{0.6em}{}
+
+\titleformat{\subsubsection}
+{\normalsize\bfseries\color{srsgrey}}
+{\thesubsubsection}{0.6em}{}
+
+%==============================================================
+% Header & Footer
+%==============================================================
+
+\pagestyle{fancy}
+\fancyhf{}
+
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\footrulewidth}{0.4pt}
+
+\fancyhead[L]{\small\textcolor{srsgrey}{\labtitle}}
+\fancyhead[R]{\small\textcolor{srsgrey}{\coursename}}
+
+\fancyfoot[L]{\small\textcolor{srsgrey}{\institution}}
+\fancyfoot[R]{\small\textcolor{srsgrey}{Page \thepage}}
+
+%==============================================================
+% Table Header Helper
+%==============================================================
+
+\newcommand{\reqheader}[3]{%
+\rowcolor{srsnavy}
+\textcolor{white}{\textbf{#1}} &
+\textcolor{white}{\textbf{#2}} &
+\textcolor{white}{\textbf{#3}} \\ \hline
+}
+
+%==============================================================
+% Project Information
+%==============================================================
+
+\newcommand{\institution}{IOE, Purwanchal Campus}
+\newcommand{\department}{Department of Computer \& Electronics Engineering}
+
+\newcommand{\coursename}{Software Engineering (Practical)}
+\newcommand{\coursecode}{ENCT 352}
+
+\newcommand{\labtitle}{UML Design Report}
+
+\newcommand{\projecttitle}{Decentralized Smart Power Grid}
+
+\newcommand{\submissiondate}{July 21, 2026}
+
+\newcommand{\teamname}{440 V}
+
+%==============================================================
+
+\begin{document}
+
+\input{coverpage}
+
+\clearpage
+\tableofcontents
+\clearpage
+
+\input{introduction}
+
+\input{project_domain_analysis}
+
+\input{usecase}
+
+\input{sequence_diagram_design}
+
+\input{activity_diagram_design}
+
+\input{class_diagram_design}
+
+\input{requirements}
+
+\input{conclusion}
+
+\input{references}
+
+\end{document}
