@@ -16,6 +16,9 @@ const char* password = "";
 // Route targeting your local FastAPI backend server on port 8000
 const char* serverUrl = "http://host.wokwi.internal:8000/api/v1/telemetry";
 
+
+
+
 unsigned long lastTransmissionTime = 0;
 const unsigned long transmissionInterval = 3000; // Send telemetry every 3 seconds
 
