@@ -1,8 +1,4 @@
 require("@nomicfoundation/hardhat-toolbox");
-require("@nomicfoundation/hardhat-waffle");
-require("@nomiclabs/hardhat-ethers");
-require("hardhat-gas-reporter");
-require("solidity-coverage");
 
 /** @type import('hardhat/config').HardhatUserConfig */
 module.exports = {
@@ -18,9 +14,6 @@ module.exports = {
   networks: {
     hardhat: {
       chainId: 31337,
-      forking: {
-        enabled: false,
-      },
       allowUnlimitedContractSize: true,
     },
     localhost: {

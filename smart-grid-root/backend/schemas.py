@@ -1,20 +1,29 @@
-from pydantic import BaseModel, Field
+from typing import Optional
 
-# 1. Telemetry input coming from the Wokwi ESP32
+from pydantic import AliasChoices, BaseModel, Field
+
+
 class MeterHistoryInput(BaseModel):
-    account_id: str
-    load_phase: float
-    load_neutral: float
+    device_id: str = Field(
+        ...,
+        validation_alias=AliasChoices("device_id", "account_id"),
+        description="Unique device identifier from the ESP32 meter",
+    )
+    load: float = Field(..., ge=0, description="Electrical load in amps")
+    energy: float = Field(..., ge=0, description="Energy consumed in kWh")
     is_tampered: int = Field(default=0, description="0 = Normal, 1 = Hardware Tampered")
+    account_id: Optional[str] = Field(default=None, exclude=True)
+
+    @property
+    def meter_id(self) -> str:
+        return self.device_id or self.account_id or ""
 
 
-# 2. Client Input when buying energy tokens on the dashboard
 class TokenPurchaseInput(BaseModel):
     account_id: str
     amount_npr: float = Field(..., gt=0, description="Amount in Nepalese Rupees to top up")
 
 
-# 3. User Authentication Input (For Login/Signup screens)
 class UserAuthInput(BaseModel):
     username: str
     password: str
