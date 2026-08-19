@@ -1,6 +1,7 @@
 import json
 import math
 import os
+from collections import defaultdict, deque
 from pathlib import Path
 
 from eth_account import Account
@@ -8,6 +9,7 @@ from fastapi import HTTPException
 from web3 import Web3
 
 from backend.database import append_meter_data, get_info_by_account_id, update_account
+from backend.ml_engine import detect_load_drop, predict_time_to_exhaustion
 from backend.schemas import MeterHistoryInput
 
 Account.enable_unaudited_hdwallet_features()
@@ -16,6 +18,20 @@ ROOT_DIR = Path(__file__).resolve().parent.parent
 BLOCKCHAIN_DIR = ROOT_DIR / "blockchain"
 DEPLOYMENT_PATH = BLOCKCHAIN_DIR / "deployment.json"
 ABI_PATH = BLOCKCHAIN_DIR / "contract-abi.json"
+LOAD_HISTORY = defaultdict(lambda: deque(maxlen=100))
+
+
+def _ml_outputs(meter_id: str, load: float, available_energy: float) -> dict:
+    history = LOAD_HISTORY[meter_id]
+    history.append(load)
+    time_to_exhaustion, forecast_rmse = predict_time_to_exhaustion(
+        list(history), available_energy
+    )
+    return {
+        "time_to_exhaustion": int(time_to_exhaustion),
+        "theft_flag": detect_load_drop(list(history)),
+        "forecast_rmse": float(forecast_rmse),
+    }
 
 
 def _get_contract():
@@ -104,13 +120,15 @@ def handle_smart_meter_telemetry(data: MeterHistoryInput) -> dict:
     if data.is_tampered:
         update_account(meter_id, token_balance, monthly_units, "TAMPER_DETECTED")
         append_meter_data(meter_id, data.load, 0.0, abs(data.load), 1)
-        return {
+        response = {
             "device_id": meter_id,
             "command": "DISCONNECT",
             "reason": "Hardware tamper detected",
             "remaining_balance": float(token_balance),
             "isolate_circuit": True,
         }
+        response.update(_ml_outputs(meter_id, data.load, token_balance))
+        return response
 
     deduction_result = _deduct_blockchain_energy(meter_id, data.energy)
     remaining_balance = deduction_result["remaining_balance"]
@@ -120,20 +138,24 @@ def handle_smart_meter_telemetry(data: MeterHistoryInput) -> dict:
     if isolate_circuit:
         update_account(meter_id, remaining_balance, updated_units, "OUT_OF_CREDIT")
         append_meter_data(meter_id, data.load, 0.0, abs(data.load), 0)
-        return {
+        response = {
             "device_id": meter_id,
             "command": "DISCONNECT",
             "reason": "Prepaid balance depleted",
             "remaining_balance": remaining_balance,
             "isolate_circuit": True,
         }
+        response.update(_ml_outputs(meter_id, data.load, remaining_balance))
+        return response
 
     update_account(meter_id, remaining_balance, updated_units, current_status)
     append_meter_data(meter_id, data.load, 0.0, abs(data.load), 0)
-    return {
+    response = {
         "device_id": meter_id,
         "command": "KEEP_ALIVE",
         "reason": "All systems normal",
         "remaining_balance": remaining_balance,
         "isolate_circuit": False,
     }
+    response.update(_ml_outputs(meter_id, data.load, remaining_balance))
+    return response

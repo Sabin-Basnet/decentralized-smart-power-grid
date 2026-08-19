@@ -5,10 +5,67 @@ Implements Isolation Forest (unsupervised anomaly detection) and Linear Regressi
 import numpy as np
 from sklearn.ensemble import IsolationForest
 from sklearn.linear_model import LinearRegression
+from sklearn.metrics import mean_squared_error
 from sklearn.preprocessing import StandardScaler
 from collections import deque
 from datetime import datetime, timedelta
 import json
+
+
+def predict_time_to_exhaustion(load_data, available_energy=0.0):
+    """Predict whole hours until the available energy is exhausted.
+
+    Consecutive load observations form supervised training pairs: each load
+    predicts the following load. The returned RMSE is the held-out validation
+    error for callers that need to inspect model quality.
+    """
+    loads = np.asarray(load_data, dtype=float).reshape(-1)
+    if loads.size == 0:
+        return 0, 0.0
+    if np.any(loads < 0) or not np.isfinite(loads).all():
+        raise ValueError("load_data must contain finite, non-negative values")
+
+    if loads.size < 3:
+        predicted_load = float(np.mean(loads))
+        rmse = 0.0
+    else:
+        features = loads[:-1].reshape(-1, 1)
+        targets = loads[1:]
+        split_index = max(1, int(len(features) * 0.8))
+        model = LinearRegression().fit(features[:split_index], targets[:split_index])
+        validation_predictions = model.predict(features[split_index:])
+        validation_targets = targets[split_index:]
+        rmse = float(
+            np.sqrt(mean_squared_error(validation_targets, validation_predictions))
+        ) if validation_targets.size else 0.0
+        model.fit(features, targets)
+        predicted_load = float(model.predict([[loads[-1]]])[0])
+        predicted_load = max(predicted_load, 0.0)
+
+    if available_energy <= 0 or predicted_load <= 0:
+        return 0, rmse
+    return int(available_energy / predicted_load), rmse
+
+
+def detect_load_drop(telemetry, contamination=0.1):
+    """Return whether the newest telemetry value is an Isolation Forest anomaly."""
+    loads = np.asarray(telemetry, dtype=float).reshape(-1)
+    if loads.size < 4:
+        return False
+    if np.any(loads < 0) or not np.isfinite(loads).all():
+        raise ValueError("telemetry must contain finite, non-negative values")
+
+    drops = np.diff(loads, prepend=loads[0])
+    features = np.column_stack((loads, drops))
+    model = IsolationForest(
+        contamination=min(max(contamination, 0.01), 0.5),
+        random_state=42,
+        n_estimators=100,
+    )
+    model.fit(features[:-1])
+    baseline_load = float(np.median(loads[:-1]))
+    abrupt_drop = drops[-1] < 0 and loads[-1] < baseline_load * 0.5
+    return bool(model.predict(features[-1:])[0] == -1 or abrupt_drop)
 
 class MLPipeline:
     """
