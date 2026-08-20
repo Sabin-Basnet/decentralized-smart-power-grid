@@ -1,98 +1,13 @@
 \chapter{LITERATURE REVIEW}
 
-\section{Smart Grid and Smart Energy Management}
+\section{The Evolution of Advanced Metering Infrastructure (AMI)}
 
-Smart grid research has focused on improving the monitoring, communication, and management of electrical energy through the integration of digital technologies. Conventional power systems mainly depend on centralized monitoring and billing mechanisms, whereas smart grid approaches introduce real-time data collection, automated control, and improved interaction between consumers and energy-management systems.
+Historically, utility metering transitioned from electromechanical induction meters, which required manual and labor-intensive meter reading, to digital Advanced Metering Infrastructure (AMI). The integration of the Internet of Things (IoT) enabled AMI systems to automate data logging and support wireless telemetry for monitoring electricity consumption.
 
-Existing smart energy management approaches have demonstrated the usefulness of digital monitoring for understanding electricity consumption patterns and improving energy efficiency. However, many systems concentrate primarily on monitoring and visualization and do not integrate prepaid balance management, blockchain-based authorization, and machine-learning-based analysis within a single software architecture.
+While these technological developments significantly improved the efficiency and frequency of energy-data collection, the underlying architecture of many AMI systems remains largely centralized. Consumer telemetry is typically transmitted to utility-controlled databases for storage, processing, and billing. This centralized approach limits consumers' ability to independently verify the processing of their consumption data and may contribute to concerns regarding data integrity, billing transparency, and system reliability.
 
+\section{Decentralization and the Physical-to-Digital Gap}
+Decentralization and the Physical-to-Digital Gap
+To eliminate the vulnerabilities of centralized databases, recent research has explored Web3 and blockchain frameworks for utility management. Decentralized ledgers offer an immutable, transparent method for recording transactions and executing automated prepaid billing without a central authority. However, a significant architectural gap exists in current implementations. Existing AMI frameworks rely on vulnerable centralized databases, while pure Web3 frameworks lack the physical control systems necessary to enforce ledger states on actual power lines.
 
-\section{Smart Metering and Energy Monitoring}
-
-Smart metering systems provide electronic measurement and monitoring of electricity consumption. These systems can collect energy-related measurements and transmit them to a central application for analysis and visualization. Real-time monitoring can improve consumer awareness and help identify unusual changes in energy consumption.
-
-Although smart metering provides an important foundation for intelligent energy management, measurement and visualization alone do not provide a complete prepaid electricity-management mechanism. The proposed project therefore extends the monitoring concept by incorporating prepaid balance management, anomaly detection, forecasting, and authorization control into the software architecture.
-
-
-\section{Prepaid Electricity Systems}
-
-Prepaid electricity systems have been developed as an alternative to conventional postpaid billing. In these systems, consumers obtain electricity credit before consumption, and the credit is reduced according to energy usage. Prepaid systems can improve payment management and encourage consumers to maintain greater awareness of their electricity consumption.
-
-However, traditional prepaid systems generally depend on utility-operated centralized infrastructure to maintain customer balances and manage authorization. This creates a strong dependency on a central service for important account operations. The proposed project explores a blockchain-based approach in which prepaid balance and authorization-related operations are implemented through a smart contract.
-
-
-\section{Blockchain in Energy Management}
-
-Blockchain technology has been explored in the energy sector for applications such as peer-to-peer energy trading, transaction recording, energy certification, and decentralized energy management. One of the main advantages of blockchain in these applications is the ability to maintain verifiable transaction records and execute predefined rules through smart contracts.
-
-For prepaid electricity management, blockchain can provide a transparent mechanism for recording token purchases and balance-related transactions. However, blockchain-based energy systems may introduce additional complexity related to transaction processing, smart-contract design, and integration with conventional application services.
-
-The proposed project uses blockchain specifically for prepaid balance and authorization management rather than attempting to place the complete application architecture on-chain. This provides a hybrid design in which blockchain handles the decentralized state while conventional software components handle telemetry, data storage, machine learning, and visualization.
-
-
-\section{Blockchain-Based Prepaid Energy Management}
-
-Research and prototype systems have explored the use of blockchain and smart contracts to manage energy transactions and automate payments. Smart contracts can enforce predefined rules for token transfers, account balances, authorization, and transaction records.
-
-A limitation of many such approaches is that blockchain may be treated primarily as a transaction layer without integration with real-time energy-consumption analysis. The proposed system attempts to connect blockchain-based prepaid management with simulated electricity telemetry, allowing consumption-related information to influence balance deduction and authorization decisions.
-
-
-\section{Machine Learning for Electricity Anomaly Detection}
-
-Machine learning has been widely investigated for detecting abnormal electricity-consumption behavior. Anomaly detection techniques can be applied to identify patterns that differ from expected usage and may indicate electricity theft, equipment malfunction, faulty sensors, or unusual user behavior.
-
-Both supervised and unsupervised approaches have been studied for electricity anomaly detection. Unsupervised algorithms are particularly useful when labeled examples of theft or faults are limited. Isolation Forest is one such technique that can identify observations that differ significantly from the majority of the data.
-
-The proposed system uses Isolation Forest to analyze recent electricity-consumption telemetry and produce anomaly information. The detected anomaly can be stored, visualized, and associated with the authorization and cutoff functionality of the blockchain layer.
-
-
-\section{Machine Learning for Energy Consumption Forecasting}
-
-Energy-consumption forecasting has also received significant attention in smart grid research. Forecasting techniques can estimate future electricity usage from historical data and can support planning, demand management, and consumer awareness.
-
-Different forecasting approaches range from statistical methods to machine-learning and deep-learning models. More complex models can provide high predictive capability but may require large datasets and greater computational resources.
-
-The proposed system uses Linear Regression as a comparatively simple forecasting approach. The objective is to demonstrate the integration of consumption forecasting into the prepaid energy-management workflow and to estimate the approximate remaining usage duration from the available balance and predicted consumption rate.
-
-
-\section{Web-Based Energy Monitoring Systems}
-
-Web-based dashboards are commonly used in energy-management applications to present consumption information, system status, historical trends, and alerts. Visualization can help users interpret electricity-related data and make informed decisions about energy usage.
-
-However, many monitoring dashboards primarily act as visualization layers and do not directly integrate blockchain-based prepaid management and machine-learning results. The proposed system integrates these functions into a single dashboard, allowing users to view consumption, prepaid balance, estimated remaining time, forecasted consumption, and anomaly information together.
-
-
-\section{Hybrid Architectures for Smart Energy Applications}
-
-A fully decentralized architecture is not always practical for all smart energy-management functions. Data ingestion, machine-learning processing, database operations, and web services are often more efficiently handled using conventional application architectures, while blockchain can be reserved for operations that benefit from distributed verification and transaction traceability.
-
-The proposed system therefore follows a hybrid architecture. The FastAPI backend handles telemetry processing and application logic, SQLite provides local persistent storage, machine-learning components perform anomaly detection and forecasting, and the blockchain layer manages prepaid balance and authorization-related state.
-
-This separation of responsibilities allows the system to combine centralized application services with blockchain-based decentralization without requiring all data and processing operations to be executed on-chain.
-
-
-\section{Research Gap}
-
-The review of existing approaches indicates that smart metering, prepaid electricity management, blockchain-based energy transactions, machine-learning anomaly detection, energy forecasting, and web-based monitoring have each been studied independently or in different combinations.
-
-However, there remains an opportunity to integrate these capabilities into a single lightweight software prototype. In particular, a system that combines:
-
-\begin{itemize}
-    \item prepaid electricity management through blockchain-based smart contracts,
-    \item simulated real-time electricity telemetry,
-    \item machine-learning-based anomaly detection,
-    \item short-term electricity consumption forecasting,
-    \item authorization and anomaly-triggered cutoff mechanisms, and
-    \item a unified web-based monitoring dashboard
-\end{itemize}
-
-can provide a more comprehensive software demonstration of intelligent prepaid electricity management.
-
-The proposed Decentralized Prepaid Smart Power Grid addresses this gap by integrating these components into a hybrid software architecture. The project does not attempt to replace physical electricity infrastructure. Instead, it demonstrates the interaction among blockchain, backend services, machine learning, database management, and web-based monitoring using simulated electricity telemetry.
-
-
-\section{Summary}
-
-The reviewed approaches demonstrate that smart metering, prepaid electricity, blockchain, machine learning, and web-based monitoring can each contribute to improved electricity management. Nevertheless, these technologies are often implemented as separate solutions or with limited integration between prepaid management and intelligent consumption analysis.
-
-The proposed project combines these concepts into a unified software prototype. Blockchain is used for decentralized prepaid balance and authorization management, machine learning is used for anomaly detection and consumption forecasting, and conventional backend and frontend technologies are used for telemetry processing, storage, and visualization. This integrated approach forms the basis for the methodology presented in the following chapter.
+A decentralized smart contract can mathematically update a user's token balance to zero, but without a dedicated hardware execution layer, it cannot physically stop the flow of electricity. Furthermore, these software-only systems fail to address localized power theft (such as line bypassing) because they lack real-time edge anomaly detection. This project addresses these exact research gaps by unifying IoT edge enforcement, machine learning anomaly detection, and blockchain validation into a single automated pipeline.

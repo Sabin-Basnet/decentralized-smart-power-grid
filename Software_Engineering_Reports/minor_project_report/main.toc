@@ -1,72 +1,65 @@
-\contentsline {chapter}{LIST OF FIGURES}{v}{}%
-\contentsline {chapter}{LIST OF TABLES}{vi}{}%
-\contentsline {chapter}{LIST OF ABBREVIATIONS}{vii}{}%
+\contentsline {chapter}{LIST OF FIGURES}{iv}{}%
+\contentsline {chapter}{LIST OF TABLES}{v}{}%
+\contentsline {chapter}{LIST OF ABBREVIATIONS}{vi}{}%
 \contentsline {chapter}{\numberline {1}INTRODUCTION}{1}{}%
 \contentsline {section}{\numberline {1.1}Background}{1}{}%
-\contentsline {section}{\numberline {1.2}Motivation}{1}{}%
-\contentsline {section}{\numberline {1.3}Objectives}{2}{}%
-\contentsline {chapter}{\numberline {2}RELATED THEORY}{3}{}%
-\contentsline {section}{\numberline {2.1}Smart Grid}{3}{}%
-\contentsline {section}{\numberline {2.2}Prepaid Electricity Management}{3}{}%
-\contentsline {section}{\numberline {2.3}Blockchain Technology}{3}{}%
-\contentsline {section}{\numberline {2.4}Smart Contracts}{4}{}%
-\contentsline {section}{\numberline {2.5}Blockchain-Based Decentralization}{4}{}%
-\contentsline {section}{\numberline {2.6}Internet of Things}{5}{}%
-\contentsline {section}{\numberline {2.7}Telemetry and Real-Time Monitoring}{5}{}%
-\contentsline {section}{\numberline {2.8}Machine Learning}{6}{}%
-\contentsline {section}{\numberline {2.9}Anomaly Detection}{6}{}%
-\contentsline {section}{\numberline {2.10}Isolation Forest}{6}{}%
-\contentsline {section}{\numberline {2.11}Energy Consumption Forecasting}{7}{}%
-\contentsline {section}{\numberline {2.12}Linear Regression}{7}{}%
-\contentsline {section}{\numberline {2.13}RESTful API}{7}{}%
-\contentsline {section}{\numberline {2.14}FastAPI Backend}{8}{}%
-\contentsline {section}{\numberline {2.15}Database Management}{8}{}%
-\contentsline {section}{\numberline {2.16}Web-Based Monitoring Dashboard}{8}{}%
-\contentsline {section}{\numberline {2.17}Software-Based Smart Grid Simulation}{9}{}%
-\contentsline {section}{\numberline {2.18}Summary}{9}{}%
-\contentsline {chapter}{\numberline {3}LITERATURE REVIEW}{10}{}%
-\contentsline {section}{\numberline {3.1}Smart Grid and Smart Energy Management}{10}{}%
-\contentsline {section}{\numberline {3.2}Smart Metering and Energy Monitoring}{10}{}%
-\contentsline {section}{\numberline {3.3}Prepaid Electricity Systems}{11}{}%
-\contentsline {section}{\numberline {3.4}Blockchain in Energy Management}{11}{}%
-\contentsline {section}{\numberline {3.5}Blockchain-Based Prepaid Energy Management}{12}{}%
-\contentsline {section}{\numberline {3.6}Machine Learning for Electricity Anomaly Detection}{12}{}%
-\contentsline {section}{\numberline {3.7}Machine Learning for Energy Consumption Forecasting}{12}{}%
-\contentsline {section}{\numberline {3.8}Web-Based Energy Monitoring Systems}{13}{}%
-\contentsline {section}{\numberline {3.9}Hybrid Architectures for Smart Energy Applications}{13}{}%
-\contentsline {section}{\numberline {3.10}Research Gap}{14}{}%
-\contentsline {section}{\numberline {3.11}Summary}{14}{}%
-\contentsline {chapter}{\numberline {4}METHODOLOGY}{16}{}%
-\contentsline {section}{\numberline {4.1}Overview}{16}{}%
-\contentsline {section}{\numberline {4.2}System Architecture}{16}{}%
-\contentsline {section}{\numberline {4.3}Telemetry Simulation}{17}{}%
-\contentsline {section}{\numberline {4.4}Backend Development}{17}{}%
-\contentsline {section}{\numberline {4.5}Database Management}{18}{}%
-\contentsline {subsection}{\numberline {4.5.1}Telemetry Log}{18}{}%
-\contentsline {subsection}{\numberline {4.5.2}User Balance}{18}{}%
-\contentsline {subsection}{\numberline {4.5.3}Anomaly Alert}{18}{}%
-\contentsline {section}{\numberline {4.6}Blockchain Implementation}{18}{}%
-\contentsline {section}{\numberline {4.7}Prepaid Balance Management}{19}{}%
-\contentsline {section}{\numberline {4.8}Anomaly Detection}{19}{}%
-\contentsline {section}{\numberline {4.9}Energy Consumption Forecasting}{20}{}%
-\contentsline {section}{\numberline {4.10}Blockchain and Anomaly Management}{20}{}%
-\contentsline {section}{\numberline {4.11}Web-Based Monitoring System}{21}{}%
-\contentsline {section}{\numberline {4.12}System Workflow}{21}{}%
-\contentsline {section}{\numberline {4.13}Testing and Evaluation}{22}{}%
-\contentsline {section}{\numberline {4.14}Scope of Implementation}{22}{}%
-\contentsline {section}{\numberline {4.15}Summary}{23}{}%
-\contentsline {chapter}{\numberline {5}EXPECTED RESULTS}{24}{}%
-\contentsline {section}{\numberline {5.1}Overview}{24}{}%
-\contentsline {section}{\numberline {5.2}Prepaid Electricity Management}{24}{}%
-\contentsline {section}{\numberline {5.3}Blockchain-Based Balance and Authorization}{24}{}%
-\contentsline {section}{\numberline {5.4}Electricity Consumption Monitoring}{24}{}%
-\contentsline {section}{\numberline {5.5}Anomaly Detection}{25}{}%
-\contentsline {section}{\numberline {5.6}Electricity Consumption Forecasting}{25}{}%
-\contentsline {section}{\numberline {5.7}Web-Based Monitoring}{25}{}%
-\contentsline {section}{\numberline {5.8}Integration of System Components}{26}{}%
-\contentsline {section}{\numberline {5.9}Expected Benefits}{26}{}%
-\contentsline {section}{\numberline {5.10}Project Deliverables}{26}{}%
-\contentsline {section}{\numberline {5.11}Scope of Expected Results}{27}{}%
-\contentsline {chapter}{\numberline {6}CONCLUSION}{28}{}%
-\contentsline {chapter}{REFERENCES}{30}{}%
-\contentsline {chapter}{APPENDIX}{31}{}%
+\contentsline {section}{\numberline {1.2}Problem Statement}{1}{}%
+\contentsline {section}{\numberline {1.3}Motivation}{2}{}%
+\contentsline {section}{\numberline {1.4}Objectives}{2}{}%
+\contentsline {section}{\numberline {1.5}Scope}{3}{}%
+\contentsline {chapter}{\numberline {2}LITERATURE REVIEW}{4}{}%
+\contentsline {section}{\numberline {2.1}The Evolution of Advanced Metering Infrastructure (AMI)}{4}{}%
+\contentsline {section}{\numberline {2.2}Decentralization and the Physical-to-Digital Gap}{4}{}%
+\contentsline {chapter}{\numberline {3}RELATED THEORY}{6}{}%
+\contentsline {section}{\numberline {3.1}Smart Grid}{6}{}%
+\contentsline {section}{\numberline {3.2}Prepaid Electricity Management}{6}{}%
+\contentsline {section}{\numberline {3.3}Blockchain Technology}{6}{}%
+\contentsline {section}{\numberline {3.4}Smart Contracts}{7}{}%
+\contentsline {section}{\numberline {3.5}Blockchain-Based Decentralization}{7}{}%
+\contentsline {section}{\numberline {3.6}Internet of Things}{8}{}%
+\contentsline {section}{\numberline {3.7}Telemetry and Real-Time Monitoring}{8}{}%
+\contentsline {section}{\numberline {3.8}Machine Learning}{9}{}%
+\contentsline {section}{\numberline {3.9}Anomaly Detection}{9}{}%
+\contentsline {section}{\numberline {3.10}Isolation Forest}{9}{}%
+\contentsline {section}{\numberline {3.11}Energy Consumption Forecasting}{10}{}%
+\contentsline {section}{\numberline {3.12}Linear Regression}{10}{}%
+\contentsline {section}{\numberline {3.13}RESTful API}{10}{}%
+\contentsline {section}{\numberline {3.14}FastAPI Backend}{11}{}%
+\contentsline {section}{\numberline {3.15}Database Management}{11}{}%
+\contentsline {section}{\numberline {3.16}Web-Based Monitoring Dashboard}{11}{}%
+\contentsline {section}{\numberline {3.17}Software-Based Smart Grid Simulation}{12}{}%
+\contentsline {section}{\numberline {3.18}Summary}{12}{}%
+\contentsline {chapter}{\numberline {4}METHODOLOGY}{13}{}%
+\contentsline {section}{\numberline {4.1}Overview}{13}{}%
+\contentsline {section}{\numberline {4.2}System Architecture}{13}{}%
+\contentsline {section}{\numberline {4.3}Telemetry Simulation}{14}{}%
+\contentsline {section}{\numberline {4.4}Backend Development}{14}{}%
+\contentsline {section}{\numberline {4.5}Database Management}{15}{}%
+\contentsline {subsection}{\numberline {4.5.1}Telemetry Log}{15}{}%
+\contentsline {subsection}{\numberline {4.5.2}User Balance}{15}{}%
+\contentsline {subsection}{\numberline {4.5.3}Anomaly Alert}{15}{}%
+\contentsline {section}{\numberline {4.6}Blockchain Implementation}{15}{}%
+\contentsline {section}{\numberline {4.7}Prepaid Balance Management}{16}{}%
+\contentsline {section}{\numberline {4.8}Anomaly Detection}{16}{}%
+\contentsline {section}{\numberline {4.9}Energy Consumption Forecasting}{17}{}%
+\contentsline {section}{\numberline {4.10}Blockchain and Anomaly Management}{17}{}%
+\contentsline {section}{\numberline {4.11}Web-Based Monitoring System}{18}{}%
+\contentsline {section}{\numberline {4.12}System Workflow}{18}{}%
+\contentsline {section}{\numberline {4.13}Testing and Evaluation}{19}{}%
+\contentsline {section}{\numberline {4.14}Scope of Implementation}{19}{}%
+\contentsline {section}{\numberline {4.15}Summary}{20}{}%
+\contentsline {chapter}{\numberline {5}EXPECTED RESULTS}{21}{}%
+\contentsline {section}{\numberline {5.1}Overview}{21}{}%
+\contentsline {section}{\numberline {5.2}Prepaid Electricity Management}{21}{}%
+\contentsline {section}{\numberline {5.3}Blockchain-Based Balance and Authorization}{21}{}%
+\contentsline {section}{\numberline {5.4}Electricity Consumption Monitoring}{21}{}%
+\contentsline {section}{\numberline {5.5}Anomaly Detection}{22}{}%
+\contentsline {section}{\numberline {5.6}Electricity Consumption Forecasting}{22}{}%
+\contentsline {section}{\numberline {5.7}Web-Based Monitoring}{22}{}%
+\contentsline {section}{\numberline {5.8}Integration of System Components}{23}{}%
+\contentsline {section}{\numberline {5.9}Expected Benefits}{23}{}%
+\contentsline {section}{\numberline {5.10}Project Deliverables}{23}{}%
+\contentsline {section}{\numberline {5.11}Scope of Expected Results}{24}{}%
+\contentsline {chapter}{\numberline {6}CONCLUSION}{25}{}%
+\contentsline {chapter}{REFERENCES}{27}{}%
+\contentsline {chapter}{APPENDIX}{28}{}%
