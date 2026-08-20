@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.5) (preloaded format=pdflatex 2026.6.9)  20 AUG 2026 21:30
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.5) (preloaded format=pdflatex 2026.6.9)  20 AUG 2026 23:17
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -473,7 +473,7 @@ File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
 ) (C:\Users\SABIN\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pdftex.def
 File: l3backend-pdftex.def 2025-10-09 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count327
-) (main.aux (CoverPage.aux) (letter_approval.aux) (Abstract.aux) (ListofAbbreviations.aux) (Introduction.aux) (RelatedTheory.aux) (LiteratureReview.aux) (Methodology.aux) (ExpectedResults.aux) (ProjectSchedule.aux) (Budget.aux) (Conclusion.aux) (References.aux) (Appendix.aux))
+) (main.aux)
 \openout1 = `main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 82.
@@ -603,25 +603,28 @@ Overfull \hbox (14.38222pt too wide) in paragraph at lines 9--10
 
 
 
-]) (main.toc [1
-
-
-] [2] [3])
+])
+No file main.toc.
 \tf@toc=\write4
 \openout4 = `main.toc'.
 
- [4] (main.lof)
+[1
+
+
+]
+No file main.lof.
 \tf@lof=\write5
 \openout5 = `main.lof'.
 
- [5] (main.lot)
+[2]
+No file main.lot.
 \tf@lot=\write6
 \openout6 = `main.lot'.
 
- [6]
+[3]
 \openout2 = `ListofAbbreviations.aux'.
 
- (ListofAbbreviations.tex) [7
+ (ListofAbbreviations.tex) [4
 
 
 ]
@@ -645,179 +648,103 @@ Overfull \hbox (4.21945pt too wide) in paragraph at lines 13--14
 
 
 ]
-LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 24.
+LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 22.
  (C:\Users\SABIN\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ts1ptm.fd
 File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
-)) [2]
-\openout2 = `RelatedTheory.aux'.
-
- (RelatedTheory.tex
-Chapter 2.
-[3
-
-
-
-
-]
-LaTeX Font Info:    Trying to load font information for OT1+pcr on input line 28.
- (C:\Users\SABIN\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ot1pcr.fd
-File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
 )
-Overfull \hbox (6.83542pt too wide) in paragraph at lines 37--38
-[]\OT1/pcr/m/n/12 triggerAnomalyCutoff() \OT1/ptm/m/n/12 for trig-ger-ing a cut-off when a sig-nif-i-cant anomaly
+Introduction.tex:22: Misplaced alignment tab character &.
+l.22     \item Information Asymmetry &
+                                       Trust Deficits: Because traditional m...
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+[2])
+Overfull \hbox (1.25426pt too wide) in paragraph at lines 45--98
+\OT1/ptm/m/n/12 quires in-dus-trial cer-ti-fi-ca-tion, the phys-i-cal hard-ware layer is con-strained to a low-voltage
  []
 
+[3]
+\openout2 = `LiteratureReview_Theory.aux'.
 
-Overfull \hbox (22.43544pt too wide) in paragraph at lines 38--39
-[]\OT1/pcr/m/n/12 clearAnomalyAndReauthorize() \OT1/ptm/m/n/12 for restor-ing au-tho-riza-tion af-ter an anomaly
- []
-
-[4] [5] [6] [7] [8]
-Overfull \hbox (1.1226pt too wide) in paragraph at lines 136--137
-[]\OT1/ptm/m/n/12 Since phys-i-cal elec-tri-cal mea-sure-ment and power-control hard-ware are out-side the scope
- []
-
-) [9]
-\openout2 = `LiteratureReview.aux'.
-
- (LiteratureReview.tex
-Chapter 3.
-
-Overfull \hbox (21.78635pt too wide) in paragraph at lines 14--15
-\OT1/ptm/m/n/12 age-ment, mea-sure-ment and vi-su-al-iza-tion alone do not pro-vide a com-plete pre-paid electricity-
- []
-
-[10
+ (LiteratureReview_Theory.tex
+Chapter 2.
+[4
 
 
 
 
 ]
-Overfull \hbox (8.9953pt too wide) in paragraph at lines 21--22
-\OT1/ptm/m/n/12 project ex-plores a blockchain-based ap-proach in which pre-paid bal-ance and authorization-
+Overfull \hbox (0.60559pt too wide) in paragraph at lines 18--19
+[]\OT1/ptm/m/n/12 The Lo-cal-iza-tion Gap: Tra-di-tional anomaly de-tec-tion sys-tems of-ten rely on cloud-
  []
 
-[11]
-Overfull \hbox (30.8823pt too wide) in paragraph at lines 42--43
-[]\OT1/ptm/m/n/12 Machine learn-ing has been widely in-ves-ti-gated for de-tect-ing ab-nor-mal electricity-consumption
+[5] [6]
+Overfull \hbox (25.45871pt too wide) in paragraph at lines 38--38
+\OT1/ptm/m/n/12 must equal the cur-rent re-turn-ing through the neu-tral wire. To de-tect en-ergy theft|specifically
  []
 
-[12]
-Overfull \hbox (7.74712pt too wide) in paragraph at lines 60--61
-[]\OT1/ptm/m/n/12 Web-based dash-boards are com-monly used in energy-management ap-pli-ca-tions to present
- []
-
-
-Overfull \hbox (8.33325pt too wide) in paragraph at lines 67--68
-[]\OT1/ptm/m/n/12 A fully de-cen-tral-ized ar-chi-tec-ture is not al-ways prac-ti-cal for all smart energy-management
- []
-
-[13]
-Overfull \hbox (23.50221pt too wide) in paragraph at lines 78--79
-[]\OT1/ptm/m/n/12 However, there re-mains an op-por-tu-nity to in-te-grate these ca-pa-bil-i-ties into a sin-gle lightweight
- []
-
-
-Overfull \hbox (10.81837pt too wide) in paragraph at lines 96--97
-[]\OT1/ptm/m/n/12 The re-viewed ap-proaches demon-strate that smart me-ter-ing, pre-paid elec-tric-ity, blockchain,
- []
-
-[14])
-Overfull \hbox (20.25096pt too wide) in paragraph at lines 98--100
-[]\OT1/ptm/m/n/12 The pro-posed project com-bines these con-cepts into a uni-fied soft-ware pro-to-type. Blockchain
- []
-
-
-Overfull \hbox (0.31871pt too wide) in paragraph at lines 98--100
-\OT1/ptm/m/n/12 is used for de-cen-tral-ized pre-paid bal-ance and au-tho-riza-tion man-age-ment, ma-chine learn-
- []
-
-[15]
+[7]) [8]
 \openout2 = `Methodology.aux'.
 
  (Methodology.tex
-Chapter 4.
+Chapter 3.
+[9
 
-Overfull \hbox (0.7143pt too wide) in paragraph at lines 28--29
-[]\OT1/ptm/m/n/12 Since phys-i-cal elec-tric-ity me-ters and power mea-sure-ment hard-ware are not im-ple-mented
+
+
+
+]
+Overfull \hbox (14.11726pt too wide) in paragraph at lines 33--34
+[]\OT1/ptm/m/n/12 It for-mats the con-sol-i-dated re-sults (the up-dated to-ken bal-ance, the time-to-exhaustion
  []
 
+[10] [11]) [12]
+\openout2 = `ExpectedResults.aux'.
+
+ (ExpectedResults.tex
+Chapter 4.
+
+Overfull \hbox (1.17822pt too wide) in paragraph at lines 10--11
+[]\OT1/ptm/m/n/12 During nor-mal sim-u-lated op-
+ []
+
+[13
+
+
+
+
+]
+Overfull \hbox (1.21371pt too wide) in paragraph at lines 14--15
+[]\OT1/ptm/m/n/12 The su-per-vised Lin-ear Re-gres-sion model suc-cess-fully
+ []
+
+
+Overfull \hbox (111.92981pt too wide) in paragraph at lines 24--38
+ [][] 
+ []
+
+[14]) [15]
+\openout2 = `Conclusion.aux'.
+
+ (Conclusion.tex
+Chapter 5.
 [16
 
 
 
 
-] [17] [18] [19] [20] [21]
-Overfull \hbox (13.38573pt too wide) in paragraph at lines 226--227
-[]\OT1/ptm/m/n/12 The im-ple-men-ta-tion in-cludes sim-u-lated elec-tric-ity teleme-try, back-end pro-cess-ing, database
- []
-
-[22])
-Overfull \hbox (14.02231pt too wide) in paragraph at lines 235--101
-\OT1/ptm/m/n/12 related op-er-a-tions while the back-end man-ages teleme-try pro-cess-ing, data stor-age, machine-
- []
-
-[23]
-\openout2 = `ExpectedResults.aux'.
-
- (ExpectedResults.tex
-Chapter 5.
-[24
-
-
-
-
-] [25] [26])
-Overfull \hbox (14.35854pt too wide) in paragraph at lines 103--102
-[]\OT1/ptm/m/n/12 Physical hard-ware in-te-gra-tion, real elec-tric-ity me-ter-ing, de-ploy-ment on a pub-lic blockchain
- []
-
-[27]
-\openout2 = `ProjectSchedule.aux'.
-
-
-No file ProjectSchedule.tex.
-\openout2 = `Budget.aux'.
-
-No file Budget.tex.
-\openout2 = `Conclusion.aux'.
-
-(Conclusion.tex
-Chapter 6.
-
-Overfull \hbox (3.16318pt too wide) in paragraph at lines 3--4
-[]\OT1/ptm/m/n/12 The pro-posed De-cen-tral-ized Pre-paid Smart Power Grid is in-tended to pro-vide a software-
- []
-
-
-Overfull \hbox (3.8226pt too wide) in paragraph at lines 11--12
-[]\OT1/ptm/m/n/12 The pro-posed sys-tem is ex-pected to demon-strate the fea-si-bil-ity of in-te-grat-ing blockchain-
- []
-
-
-Overfull \hbox (4.65085pt too wide) in paragraph at lines 11--12
-\OT1/ptm/m/n/12 based pre-paid man-age-ment with machine-learning-based con-sump-tion anal-y-sis and web-
- []
-
-) [28
-
-
-
-
-
-
-
-
-
-
-] [29]
+]) [17]
 \openout2 = `References.aux'.
 
  (References.tex (main.bbl
 
 Package natbib Warning: Empty `thebibliography' environment on input line 24.
 
-)) [30
+)) [18
 
 
 
@@ -825,28 +752,32 @@ Package natbib Warning: Empty `thebibliography' environment on input line 24.
 ]
 \openout2 = `Appendix.aux'.
 
- (Appendix.tex [31
+ (Appendix.tex [19
 
 
 
-]) [32] (main.aux (CoverPage.aux) (letter_approval.aux) (Abstract.aux) (ListofAbbreviations.aux) (Introduction.aux) (RelatedTheory.aux) (LiteratureReview.aux) (Methodology.aux) (ExpectedResults.aux) (ProjectSchedule.aux) (Budget.aux) (Conclusion.aux) (References.aux) (Appendix.aux))
+]) [20] (main.aux (CoverPage.aux) (letter_approval.aux) (Abstract.aux) (ListofAbbreviations.aux) (Introduction.aux) (LiteratureReview_Theory.aux) (Methodology.aux) (ExpectedResults.aux) (Conclusion.aux) (References.aux) (Appendix.aux))
  ***********
 LaTeX2e <2025-11-01>
 L3 programming layer <2025-12-24>
  ***********
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
  ) 
 Here is how much of TeX's memory you used:
- 17413 strings out of 467872
- 346758 string characters out of 5418392
- 721655 words of memory out of 5000000
- 45876 multiletter control sequences out of 15000+600000
- 650388 words of font info for 87 fonts, out of 8000000 for 9000
+ 17276 strings out of 467872
+ 341904 string characters out of 5418392
+ 717423 words of memory out of 5000000
+ 45787 multiletter control sequences out of 15000+600000
+ 651465 words of font info for 89 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 84i,6n,104p,1297b,202s stack positions out of 10000i,1000n,20000p,200000b,200000s
-<C:/Users/SABIN/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/SABIN/AppData/Local/Programs/MiKTeX/fonts/type1/urw/courier/ucrr8a.pfb><C:/Users/SABIN/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmb8a.pfb><C:/Users/SABIN/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><C:/Users/SABIN/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmri8a.pfb>
-Output written on main.pdf (42 pages, 806047 bytes).
+ 84i,10n,104p,1297b,316s stack positions out of 10000i,1000n,20000p,200000b,200000s
+<C:/Users/SABIN/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/SABIN/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/SABIN/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/SABIN/AppData/Local/Programs/MiKTeX/fonts/type1/urw/symbol/usyr.pfb><C:/Users/SABIN/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmb8a.pfb><C:/Users/SABIN/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><C:/Users/SABIN/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmri8a.pfb>
+Output written on main.pdf (27 pages, 796423 bytes).
 PDF statistics:
- 170 PDF objects out of 1000 (max. 8388607)
+ 131 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  18 words of extra memory for PDF output out of 10000 (max. 10000000)
 
