@@ -1,16 +1,16 @@
 \chapter{EXPECTED RESULTS}
-The final prototype will deliver an integrated, low-latency physical automated prepaid grid loop. Operating the linear potentiometer will successfully stream smooth multi-variable JSON consumption telemetry to the FastAPI gateway. The system will achieve complete autonomous enforcement: the exact millisecond the smart contract calculates a zero-token balance, it will emit a ledger event prompting the backend to open the physical ESP32 relay, instantly isolating the consumer's load circuit.
+The final prototype is expected to demonstrate an integrated prepaid grid loop. The ESP32/Wokwi node will send JSON telemetry to the FastAPI gateway, which will validate the meter, process the reading, deduct prepaid credit through the local smart contract, and return a relay command. Tampering or depleted credit will produce an isolation decision that the firmware can apply to the simulated load circuit.
 
-On the software layer, the React-native dashboard will display responsive real-time consumption charts alongside a live, machine-learning-driven countdown timer showing exactly how many hours of power remain. Simultaneously, simulated line-tampering or meter-bypassing events will instantly trigger unsupervised anomaly warning flags on the administrative interface.
+The React web dashboard will display current users, load, meter status, balance, telemetry history, tamper alerts, and an estimated number of hours remaining. The estimate will be presented as a forecast rather than an exact guarantee, because actual exhaustion depends on future consumption. Controlled current differences and explicit tamper inputs will generate explainable anomaly alerts.
 
 The framework's final performance will be quantitatively evaluated using four core engineering metrics:
-\begin {itemize}
+\begin{itemize}
 
-\item Smart Contract Transaction Latency: Time delay between an edge update and ledger balance deduction confirmation.
+\item Smart Contract Transaction Latency: Time between an accepted telemetry update and local ledger deduction confirmation.
 
 \item Balance Deduction Accuracy: Mathematical precision of contract-executed tariff calculations versus theoretical values.
 
-\item Predictive Forecasting Error: The accuracy of the budget exhaustion countdown engine, evaluated using Root Mean Squared Error (RMSE).
+\item Remaining-Time Forecast Error: The accuracy of the service-time estimate, evaluated using Root Mean Squared Error (RMSE) where labelled test data is available.
 
-\item Anomaly Detection Precision: The success rate of the Isolation Forest model in accurately isolating tampering events with minimal false alarms.
+\item Tamper Detection Precision: The success rate of the current-differential rule in identifying controlled tamper cases with minimal false alarms.
 \end{itemize}

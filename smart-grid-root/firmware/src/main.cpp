@@ -60,7 +60,7 @@ void loop() {
       http.addHeader("Content-Type", "application/json");
 
       JsonDocument doc;
-      doc["device_id"] = "NEA-KTM-001";
+      doc["device_id"] = "DHARAN-001";
       doc["load"] = load;
       doc["energy"] = energy;
       doc["is_tampered"] = isTampered;

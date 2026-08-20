@@ -1,64 +1,64 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.5) (preloaded format=pdflatex 2026.6.10)  20 AUG 2026 16:15
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.5) (preloaded format=pdflatex 2026.6.9)  20 AUG 2026 20:46
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**d:/realm/projects/local/projects/decentralized-smart-power-grid/Software_Engineering_Reports/Minor_Project_proposal/main.tex
-(d:/realm/projects/local/projects/decentralized-smart-power-grid/Software_Engineering_Reports/Minor_Project_proposal/main.tex
-LaTeX2e <2026-06-01>
-L3 programming layer <2026-05-26>
-(D:\realm\hoyovserse\light\latex\tex/latex/base\report.cls
+**c:/Users/SABIN/Desktop/decentralized-smart-power-grid/Software_Engineering_Reports/Minor_Project_proposal/main.tex
+(c:/Users/SABIN/Desktop/decentralized-smart-power-grid/Software_Engineering_Reports/Minor_Project_proposal/main.tex
+LaTeX2e <2025-11-01>
+L3 programming layer <2025-12-24>
+(C:\Users\SABIN\AppData\Local\Programs\MiKTeX\tex/latex/base\report.cls
 Document Class: report 2025/01/22 v1.4n Standard LaTeX document class
-(D:\realm\hoyovserse\light\latex\tex/latex/base\size12.clo
+(C:\Users\SABIN\AppData\Local\Programs\MiKTeX\tex/latex/base\size12.clo
 File: size12.clo 2025/01/22 v1.4n Standard LaTeX file (size option)
 )
-\c@part=\count276
-\c@chapter=\count277
-\c@section=\count278
-\c@subsection=\count279
-\c@subsubsection=\count280
-\c@paragraph=\count281
-\c@subparagraph=\count282
-\c@figure=\count283
-\c@table=\count284
+\c@part=\count275
+\c@chapter=\count276
+\c@section=\count277
+\c@subsection=\count278
+\c@subsubsection=\count279
+\c@paragraph=\count280
+\c@subparagraph=\count281
+\c@figure=\count282
+\c@table=\count283
 \abovecaptionskip=\skip49
 \belowcaptionskip=\skip50
-\bibindent=\dimen150
-) (D:\realm\hoyovserse\light\latex\tex/latex/natbib\natbib.sty
+\bibindent=\dimen148
+) (C:\Users\SABIN\AppData\Local\Programs\MiKTeX\tex/latex/natbib\natbib.sty
 Package: natbib 2010/09/13 8.31b (PWD, AO)
 \bibhang=\skip51
 \bibsep=\skip52
 LaTeX Info: Redefining \cite on input line 694.
-\c@NAT@ctr=\count285
-) (D:\realm\hoyovserse\light\latex\tex/latex/base\inputenc.sty
+\c@NAT@ctr=\count284
+) (C:\Users\SABIN\AppData\Local\Programs\MiKTeX\tex/latex/base\inputenc.sty
 Package: inputenc 2024/02/08 v1.3d Input encoding file
 \inpenc@prehook=\toks17
 \inpenc@posthook=\toks18
-) (D:\realm\hoyovserse\light\latex\tex/latex/amsmath\amsmath.sty
-Package: amsmath 2026/05/19 v2.18d AMS math features
+) (C:\Users\SABIN\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsmath.sty
+Package: amsmath 2025/07/09 v2.17z AMS math features
 \@mathmargin=\skip53
 
 For additional information on amsmath, use the `?' option.
-(D:\realm\hoyovserse\light\latex\tex/latex/amsmath\amstext.sty
+(C:\Users\SABIN\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amstext.sty
 Package: amstext 2024/11/17 v2.01 AMS text
- (D:\realm\hoyovserse\light\latex\tex/latex/amsmath\amsgen.sty
+ (C:\Users\SABIN\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0 generic functions
 \@emptytoks=\toks19
-\ex@=\dimen151
-)) (D:\realm\hoyovserse\light\latex\tex/latex/amsmath\amsbsy.sty
+\ex@=\dimen149
+)) (C:\Users\SABIN\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsbsy.sty
 Package: amsbsy 1999/11/29 v1.2d Bold Symbols
-\pmbraise@=\dimen152
-) (D:\realm\hoyovserse\light\latex\tex/latex/amsmath\amsopn.sty
+\pmbraise@=\dimen150
+) (C:\Users\SABIN\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsopn.sty
 Package: amsopn 2022/04/08 v2.04 operator names
 )
-\inf@bad=\count286
+\inf@bad=\count285
 LaTeX Info: Redefining \frac on input line 233.
-\uproot@=\count287
-\leftroot@=\count288
+\uproot@=\count286
+\leftroot@=\count287
 LaTeX Info: Redefining \overline on input line 398.
 LaTeX Info: Redefining \colon on input line 409.
-\classnum@=\count289
-\DOTSCASE@=\count290
+\classnum@=\count288
+\DOTSCASE@=\count289
 LaTeX Info: Redefining \ldots on input line 495.
 LaTeX Info: Redefining \dots on input line 498.
 LaTeX Info: Redefining \cdots on input line 619.
@@ -68,122 +68,122 @@ LaTeX Info: Redefining \big on input line 721.
 LaTeX Info: Redefining \Big on input line 722.
 LaTeX Info: Redefining \bigg on input line 723.
 LaTeX Info: Redefining \Bigg on input line 724.
-\big@size=\dimen153
+\big@size=\dimen151
 LaTeX Font Info:    Redeclaring font encoding OML on input line 742.
 LaTeX Font Info:    Redeclaring font encoding OMS on input line 743.
-\macc@depth=\count291
+\macc@depth=\count290
 LaTeX Info: Redefining \bmod on input line 904.
 LaTeX Info: Redefining \pmod on input line 909.
 LaTeX Info: Redefining \smash on input line 939.
 LaTeX Info: Redefining \relbar on input line 969.
 LaTeX Info: Redefining \Relbar on input line 970.
-\c@MaxMatrixCols=\count292
+\c@MaxMatrixCols=\count291
 \dotsspace@=\muskip17
-\c@parentequation=\count293
-\dspbrk@lvl=\count294
+\c@parentequation=\count292
+\dspbrk@lvl=\count293
 \tag@help=\toks20
-\row@=\count295
-\column@=\count296
-\maxfields@=\count297
+\row@=\count294
+\column@=\count295
+\maxfields@=\count296
 \andhelp@=\toks21
-\eqnshift@=\dimen154
-\alignsep@=\dimen155
-\tagshift@=\dimen156
-\tagwidth@=\dimen157
-\totwidth@=\dimen158
-\lineht@=\dimen159
+\eqnshift@=\dimen152
+\alignsep@=\dimen153
+\tagshift@=\dimen154
+\tagwidth@=\dimen155
+\totwidth@=\dimen156
+\lineht@=\dimen157
 \@envbody=\toks22
 \multlinegap=\skip54
 \multlinetaggap=\skip55
 \mathdisplay@stack=\toks23
-LaTeX Info: Redefining \[ on input line 2965.
-LaTeX Info: Redefining \] on input line 2966.
-) (D:\realm\hoyovserse\light\latex\tex/latex/amsfonts\amsfonts.sty
+LaTeX Info: Redefining \[ on input line 2950.
+LaTeX Info: Redefining \] on input line 2951.
+) (C:\Users\SABIN\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\amsfonts.sty
 Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
 \symAMSa=\mathgroup4
 \symAMSb=\mathgroup5
 LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
 LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 (Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
-) (D:\realm\hoyovserse\light\latex\tex/latex/amsfonts\amssymb.sty
+) (C:\Users\SABIN\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\amssymb.sty
 Package: amssymb 2013/01/14 v3.01 AMS font symbols
-) (D:\realm\hoyovserse\light\latex\tex/latex/graphics\graphicx.sty
-Package: graphicx 2026-05-17 v1.2e Enhanced LaTeX Graphics (DPC,SPQR)
- (D:\realm\hoyovserse\light\latex\tex/latex/graphics\keyval.sty
-Package: keyval 2026-05-17 v1.15 key=value parser (DPC)
+) (C:\Users\SABIN\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphicx.sty
+Package: graphicx 2024/12/31 v1.2e Enhanced LaTeX Graphics (DPC,SPQR)
+ (C:\Users\SABIN\AppData\Local\Programs\MiKTeX\tex/latex/graphics\keyval.sty
+Package: keyval 2022/05/29 v1.15 key=value parser (DPC)
 \KV@toks@=\toks24
-) (D:\realm\hoyovserse\light\latex\tex/latex/graphics\graphics.sty
-Package: graphics 2026-05-17 v1.4h Standard LaTeX Graphics (DPC,SPQR)
- (D:\realm\hoyovserse\light\latex\tex/latex/graphics\trig.sty
+) (C:\Users\SABIN\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphics.sty
+Package: graphics 2024/08/06 v1.4g Standard LaTeX Graphics (DPC,SPQR)
+ (C:\Users\SABIN\AppData\Local\Programs\MiKTeX\tex/latex/graphics\trig.sty
 Package: trig 2023/12/02 v1.11 sin cos tan (DPC)
-) (D:\realm\hoyovserse\light\latex\tex/latex/graphics-cfg\graphics.cfg
+) (C:\Users\SABIN\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\graphics.cfg
 File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 )
 Package graphics Info: Driver file: pdftex.def on input line 106.
- (D:\realm\hoyovserse\light\latex\tex/latex/graphics-def\pdftex.def
+ (C:\Users\SABIN\AppData\Local\Programs\MiKTeX\tex/latex/graphics-def\pdftex.def
 File: pdftex.def 2025/09/29 v1.2d Graphics/color driver for pdftex
 ))
-\Gin@req@height=\dimen160
-\Gin@req@width=\dimen161
-) (D:\realm\hoyovserse\light\latex\tex/latex/pgf/frontendlayer\tikz.sty (D:\realm\hoyovserse\light\latex\tex/latex/pgf/basiclayer\pgf.sty (D:\realm\hoyovserse\light\latex\tex/latex/pgf/utilities\pgfrcs.sty (D:\realm\hoyovserse\light\latex\tex/generic/pgf/utilities\pgfutil-common.tex
+\Gin@req@height=\dimen158
+\Gin@req@width=\dimen159
+) (C:\Users\SABIN\AppData\Local\Programs\MiKTeX\tex/latex/pgf/frontendlayer\tikz.sty (C:\Users\SABIN\AppData\Local\Programs\MiKTeX\tex/latex/pgf/basiclayer\pgf.sty (C:\Users\SABIN\AppData\Local\Programs\MiKTeX\tex/latex/pgf/utilities\pgfrcs.sty (C:\Users\SABIN\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfutil-common.tex
 \pgfutil@everybye=\toks25
-\pgfutil@tempdima=\dimen162
-\pgfutil@tempdimb=\dimen163
-) (D:\realm\hoyovserse\light\latex\tex/generic/pgf/utilities\pgfutil-latex.def
+\pgfutil@tempdima=\dimen160
+\pgfutil@tempdimb=\dimen161
+) (C:\Users\SABIN\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfutil-latex.def
 \pgfutil@abb=\box55
-) (D:\realm\hoyovserse\light\latex\tex/generic/pgf/utilities\pgfrcs.code.tex (D:\realm\hoyovserse\light\latex\tex/generic/pgf\pgf.revision.tex)
+) (C:\Users\SABIN\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfrcs.code.tex (C:\Users\SABIN\AppData\Local\Programs\MiKTeX\tex/generic/pgf\pgf.revision.tex)
 Package: pgfrcs 2025-08-29 v3.1.11a (3.1.11a)
 ))
 Package: pgf 2025-08-29 v3.1.11a (3.1.11a)
- (D:\realm\hoyovserse\light\latex\tex/latex/pgf/basiclayer\pgfcore.sty (D:\realm\hoyovserse\light\latex\tex/latex/pgf/systemlayer\pgfsys.sty (D:\realm\hoyovserse\light\latex\tex/generic/pgf/systemlayer\pgfsys.code.tex
+ (C:\Users\SABIN\AppData\Local\Programs\MiKTeX\tex/latex/pgf/basiclayer\pgfcore.sty (C:\Users\SABIN\AppData\Local\Programs\MiKTeX\tex/latex/pgf/systemlayer\pgfsys.sty (C:\Users\SABIN\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgfsys.code.tex
 Package: pgfsys 2025-08-29 v3.1.11a (3.1.11a)
- (D:\realm\hoyovserse\light\latex\tex/generic/pgf/utilities\pgfkeys.code.tex
+ (C:\Users\SABIN\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfkeys.code.tex
 \pgfkeys@pathtoks=\toks26
 \pgfkeys@temptoks=\toks27
- (D:\realm\hoyovserse\light\latex\tex/generic/pgf/utilities\pgfkeyslibraryfiltered.code.tex
+ (C:\Users\SABIN\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfkeyslibraryfiltered.code.tex
 \pgfkeys@tmptoks=\toks28
 ))
-\pgf@x=\dimen164
-\pgf@y=\dimen165
-\pgf@xa=\dimen166
-\pgf@ya=\dimen167
-\pgf@xb=\dimen168
-\pgf@yb=\dimen169
-\pgf@xc=\dimen170
-\pgf@yc=\dimen171
-\pgf@xd=\dimen172
-\pgf@yd=\dimen173
+\pgf@x=\dimen162
+\pgf@y=\dimen163
+\pgf@xa=\dimen164
+\pgf@ya=\dimen165
+\pgf@xb=\dimen166
+\pgf@yb=\dimen167
+\pgf@xc=\dimen168
+\pgf@yc=\dimen169
+\pgf@xd=\dimen170
+\pgf@yd=\dimen171
 \w@pgf@writea=\write3
 \r@pgf@reada=\read2
-\c@pgf@counta=\count298
-\c@pgf@countb=\count299
-\c@pgf@countc=\count300
-\c@pgf@countd=\count301
+\c@pgf@counta=\count297
+\c@pgf@countb=\count298
+\c@pgf@countc=\count299
+\c@pgf@countd=\count300
 \t@pgf@toka=\toks29
 \t@pgf@tokb=\toks30
 \t@pgf@tokc=\toks31
-\pgf@sys@id@count=\count302
- (D:\realm\hoyovserse\light\latex\tex/generic/pgf/systemlayer\pgf.cfg
+\pgf@sys@id@count=\count301
+ (C:\Users\SABIN\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgf.cfg
 File: pgf.cfg 2025-08-29 v3.1.11a (3.1.11a)
 )
 Driver file for pgf: pgfsys-pdftex.def
- (D:\realm\hoyovserse\light\latex\tex/generic/pgf/systemlayer\pgfsys-pdftex.def
+ (C:\Users\SABIN\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgfsys-pdftex.def
 File: pgfsys-pdftex.def 2025-08-29 v3.1.11a (3.1.11a)
- (D:\realm\hoyovserse\light\latex\tex/generic/pgf/systemlayer\pgfsys-common-pdf.def
+ (C:\Users\SABIN\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgfsys-common-pdf.def
 File: pgfsys-common-pdf.def 2025-08-29 v3.1.11a (3.1.11a)
-))) (D:\realm\hoyovserse\light\latex\tex/generic/pgf/systemlayer\pgfsyssoftpath.code.tex
+))) (C:\Users\SABIN\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgfsyssoftpath.code.tex
 File: pgfsyssoftpath.code.tex 2025-08-29 v3.1.11a (3.1.11a)
-\pgfsyssoftpath@smallbuffer@items=\count303
-\pgfsyssoftpath@bigbuffer@items=\count304
-) (D:\realm\hoyovserse\light\latex\tex/generic/pgf/systemlayer\pgfsysprotocol.code.tex
+\pgfsyssoftpath@smallbuffer@items=\count302
+\pgfsyssoftpath@bigbuffer@items=\count303
+) (C:\Users\SABIN\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgfsysprotocol.code.tex
 File: pgfsysprotocol.code.tex 2025-08-29 v3.1.11a (3.1.11a)
-)) (D:\realm\hoyovserse\light\latex\tex/latex/xcolor\xcolor.sty
+)) (C:\Users\SABIN\AppData\Local\Programs\MiKTeX\tex/latex/xcolor\xcolor.sty
 Package: xcolor 2024/09/29 v3.02 LaTeX color extensions (UK)
- (D:\realm\hoyovserse\light\latex\tex/latex/graphics-cfg\color.cfg
+ (C:\Users\SABIN\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\color.cfg
 File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
 Package xcolor Info: Driver file: pdftex.def on input line 274.
- (D:\realm\hoyovserse\light\latex\tex/latex/graphics\mathcolor.ltx)
+ (C:\Users\SABIN\AppData\Local\Programs\MiKTeX\tex/latex/graphics\mathcolor.ltx)
 Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1349.
 Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1353.
 Package xcolor Info: Model `RGB' extended on input line 1365.
@@ -193,163 +193,163 @@ Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1369.
 Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1370.
 Package xcolor Info: Model `Gray' substituted by `gray' on input line 1371.
 Package xcolor Info: Model `wave' substituted by `hsb' on input line 1372.
-) (D:\realm\hoyovserse\light\latex\tex/generic/pgf/basiclayer\pgfcore.code.tex
+) (C:\Users\SABIN\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcore.code.tex
 Package: pgfcore 2025-08-29 v3.1.11a (3.1.11a)
- (D:\realm\hoyovserse\light\latex\tex/generic/pgf/math\pgfmath.code.tex (D:\realm\hoyovserse\light\latex\tex/generic/pgf/math\pgfmathutil.code.tex) (D:\realm\hoyovserse\light\latex\tex/generic/pgf/math\pgfmathparser.code.tex
-\pgfmath@dimen=\dimen174
-\pgfmath@count=\count305
+ (C:\Users\SABIN\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmath.code.tex (C:\Users\SABIN\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathutil.code.tex) (C:\Users\SABIN\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathparser.code.tex
+\pgfmath@dimen=\dimen172
+\pgfmath@count=\count304
 \pgfmath@box=\box56
 \pgfmath@toks=\toks32
 \pgfmath@stack@operand=\toks33
 \pgfmath@stack@operation=\toks34
-) (D:\realm\hoyovserse\light\latex\tex/generic/pgf/math\pgfmathfunctions.code.tex) (D:\realm\hoyovserse\light\latex\tex/generic/pgf/math\pgfmathfunctions.basic.code.tex) (D:\realm\hoyovserse\light\latex\tex/generic/pgf/math\pgfmathfunctions.trigonometric.code.tex) (D:\realm\hoyovserse\light\latex\tex/generic/pgf/math\pgfmathfunctions.random.code.tex) (D:\realm\hoyovserse\light\latex\tex/generic/pgf/math\pgfmathfunctions.comparison.code.tex) (D:\realm\hoyovserse\light\latex\tex/generic/pgf/math\pgfmathfunctions.base.code.tex) (D:\realm\hoyovserse\light\latex\tex/generic/pgf/math\pgfmathfunctions.round.code.tex) (D:\realm\hoyovserse\light\latex\tex/generic/pgf/math\pgfmathfunctions.misc.code.tex) (D:\realm\hoyovserse\light\latex\tex/generic/pgf/math\pgfmathfunctions.integerarithmetics.code.tex) (D:\realm\hoyovserse\light\latex\tex/generic/pgf/math\pgfmathcalc.code.tex) (D:\realm\hoyovserse\light\latex\tex/generic/pgf/math\pgfmathfloat.code.tex
-\c@pgfmathroundto@lastzeros=\count306
-)) (D:\realm\hoyovserse\light\latex\tex/generic/pgf/math\pgfint.code.tex) (D:\realm\hoyovserse\light\latex\tex/generic/pgf/basiclayer\pgfcorepoints.code.tex
+) (C:\Users\SABIN\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.code.tex) (C:\Users\SABIN\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.basic.code.tex) (C:\Users\SABIN\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.trigonometric.code.tex) (C:\Users\SABIN\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.random.code.tex) (C:\Users\SABIN\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.comparison.code.tex) (C:\Users\SABIN\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.base.code.tex) (C:\Users\SABIN\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.round.code.tex) (C:\Users\SABIN\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.misc.code.tex) (C:\Users\SABIN\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.integerarithmetics.code.tex) (C:\Users\SABIN\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathcalc.code.tex) (C:\Users\SABIN\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfloat.code.tex
+\c@pgfmathroundto@lastzeros=\count305
+)) (C:\Users\SABIN\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfint.code.tex) (C:\Users\SABIN\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcorepoints.code.tex
 File: pgfcorepoints.code.tex 2025-08-29 v3.1.11a (3.1.11a)
-\pgf@picminx=\dimen175
-\pgf@picmaxx=\dimen176
-\pgf@picminy=\dimen177
-\pgf@picmaxy=\dimen178
-\pgf@pathminx=\dimen179
-\pgf@pathmaxx=\dimen180
-\pgf@pathminy=\dimen181
-\pgf@pathmaxy=\dimen182
-\pgf@xx=\dimen183
-\pgf@xy=\dimen184
-\pgf@yx=\dimen185
-\pgf@yy=\dimen186
-\pgf@zx=\dimen187
-\pgf@zy=\dimen188
-) (D:\realm\hoyovserse\light\latex\tex/generic/pgf/basiclayer\pgfcorepathconstruct.code.tex
+\pgf@picminx=\dimen173
+\pgf@picmaxx=\dimen174
+\pgf@picminy=\dimen175
+\pgf@picmaxy=\dimen176
+\pgf@pathminx=\dimen177
+\pgf@pathmaxx=\dimen178
+\pgf@pathminy=\dimen179
+\pgf@pathmaxy=\dimen180
+\pgf@xx=\dimen181
+\pgf@xy=\dimen182
+\pgf@yx=\dimen183
+\pgf@yy=\dimen184
+\pgf@zx=\dimen185
+\pgf@zy=\dimen186
+) (C:\Users\SABIN\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcorepathconstruct.code.tex
 File: pgfcorepathconstruct.code.tex 2025-08-29 v3.1.11a (3.1.11a)
-\pgf@path@lastx=\dimen189
-\pgf@path@lasty=\dimen190
-) (D:\realm\hoyovserse\light\latex\tex/generic/pgf/basiclayer\pgfcorepathusage.code.tex
+\pgf@path@lastx=\dimen187
+\pgf@path@lasty=\dimen188
+) (C:\Users\SABIN\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcorepathusage.code.tex
 File: pgfcorepathusage.code.tex 2025-08-29 v3.1.11a (3.1.11a)
-\pgf@shorten@end@additional=\dimen191
-\pgf@shorten@start@additional=\dimen192
-) (D:\realm\hoyovserse\light\latex\tex/generic/pgf/basiclayer\pgfcorescopes.code.tex
+\pgf@shorten@end@additional=\dimen189
+\pgf@shorten@start@additional=\dimen190
+) (C:\Users\SABIN\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcorescopes.code.tex
 File: pgfcorescopes.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 \pgfpic=\box57
 \pgf@hbox=\box58
 \pgf@layerbox@main=\box59
-\pgf@picture@serial@count=\count307
-) (D:\realm\hoyovserse\light\latex\tex/generic/pgf/basiclayer\pgfcoregraphicstate.code.tex
+\pgf@picture@serial@count=\count306
+) (C:\Users\SABIN\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcoregraphicstate.code.tex
 File: pgfcoregraphicstate.code.tex 2025-08-29 v3.1.11a (3.1.11a)
-\pgflinewidth=\dimen193
-) (D:\realm\hoyovserse\light\latex\tex/generic/pgf/basiclayer\pgfcoretransformations.code.tex
+\pgflinewidth=\dimen191
+) (C:\Users\SABIN\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcoretransformations.code.tex
 File: pgfcoretransformations.code.tex 2025-08-29 v3.1.11a (3.1.11a)
-\pgf@pt@x=\dimen194
-\pgf@pt@y=\dimen195
-\pgf@pt@temp=\dimen196
-) (D:\realm\hoyovserse\light\latex\tex/generic/pgf/basiclayer\pgfcorequick.code.tex
+\pgf@pt@x=\dimen192
+\pgf@pt@y=\dimen193
+\pgf@pt@temp=\dimen194
+) (C:\Users\SABIN\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcorequick.code.tex
 File: pgfcorequick.code.tex 2025-08-29 v3.1.11a (3.1.11a)
-) (D:\realm\hoyovserse\light\latex\tex/generic/pgf/basiclayer\pgfcoreobjects.code.tex
+) (C:\Users\SABIN\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcoreobjects.code.tex
 File: pgfcoreobjects.code.tex 2025-08-29 v3.1.11a (3.1.11a)
-) (D:\realm\hoyovserse\light\latex\tex/generic/pgf/basiclayer\pgfcorepathprocessing.code.tex
+) (C:\Users\SABIN\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcorepathprocessing.code.tex
 File: pgfcorepathprocessing.code.tex 2025-08-29 v3.1.11a (3.1.11a)
-) (D:\realm\hoyovserse\light\latex\tex/generic/pgf/basiclayer\pgfcorearrows.code.tex
+) (C:\Users\SABIN\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcorearrows.code.tex
 File: pgfcorearrows.code.tex 2025-08-29 v3.1.11a (3.1.11a)
-\pgfarrowsep=\dimen197
-) (D:\realm\hoyovserse\light\latex\tex/generic/pgf/basiclayer\pgfcoreshade.code.tex
+\pgfarrowsep=\dimen195
+) (C:\Users\SABIN\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcoreshade.code.tex
 File: pgfcoreshade.code.tex 2025-08-29 v3.1.11a (3.1.11a)
-\pgf@max=\dimen198
-\pgf@sys@shading@range@num=\count308
-\pgf@shadingcount=\count309
-) (D:\realm\hoyovserse\light\latex\tex/generic/pgf/basiclayer\pgfcoreimage.code.tex
+\pgf@max=\dimen196
+\pgf@sys@shading@range@num=\count307
+\pgf@shadingcount=\count308
+) (C:\Users\SABIN\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcoreimage.code.tex
 File: pgfcoreimage.code.tex 2025-08-29 v3.1.11a (3.1.11a)
-) (D:\realm\hoyovserse\light\latex\tex/generic/pgf/basiclayer\pgfcoreexternal.code.tex
+) (C:\Users\SABIN\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcoreexternal.code.tex
 File: pgfcoreexternal.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 \pgfexternal@startupbox=\box60
-) (D:\realm\hoyovserse\light\latex\tex/generic/pgf/basiclayer\pgfcorelayers.code.tex
+) (C:\Users\SABIN\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcorelayers.code.tex
 File: pgfcorelayers.code.tex 2025-08-29 v3.1.11a (3.1.11a)
-) (D:\realm\hoyovserse\light\latex\tex/generic/pgf/basiclayer\pgfcoretransparency.code.tex
+) (C:\Users\SABIN\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcoretransparency.code.tex
 File: pgfcoretransparency.code.tex 2025-08-29 v3.1.11a (3.1.11a)
-) (D:\realm\hoyovserse\light\latex\tex/generic/pgf/basiclayer\pgfcorepatterns.code.tex
+) (C:\Users\SABIN\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcorepatterns.code.tex
 File: pgfcorepatterns.code.tex 2025-08-29 v3.1.11a (3.1.11a)
-) (D:\realm\hoyovserse\light\latex\tex/generic/pgf/basiclayer\pgfcorerdf.code.tex
+) (C:\Users\SABIN\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcorerdf.code.tex
 File: pgfcorerdf.code.tex 2025-08-29 v3.1.11a (3.1.11a)
-))) (D:\realm\hoyovserse\light\latex\tex/generic/pgf/modules\pgfmoduleshapes.code.tex
+))) (C:\Users\SABIN\AppData\Local\Programs\MiKTeX\tex/generic/pgf/modules\pgfmoduleshapes.code.tex
 File: pgfmoduleshapes.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 \pgfnodeparttextbox=\box61
-) (D:\realm\hoyovserse\light\latex\tex/generic/pgf/modules\pgfmoduleplot.code.tex
+) (C:\Users\SABIN\AppData\Local\Programs\MiKTeX\tex/generic/pgf/modules\pgfmoduleplot.code.tex
 File: pgfmoduleplot.code.tex 2025-08-29 v3.1.11a (3.1.11a)
-) (D:\realm\hoyovserse\light\latex\tex/latex/pgf/compatibility\pgfcomp-version-0-65.sty
+) (C:\Users\SABIN\AppData\Local\Programs\MiKTeX\tex/latex/pgf/compatibility\pgfcomp-version-0-65.sty
 Package: pgfcomp-version-0-65 2025-08-29 v3.1.11a (3.1.11a)
-\pgf@nodesepstart=\dimen199
-\pgf@nodesepend=\dimen256
-) (D:\realm\hoyovserse\light\latex\tex/latex/pgf/compatibility\pgfcomp-version-1-18.sty
+\pgf@nodesepstart=\dimen197
+\pgf@nodesepend=\dimen198
+) (C:\Users\SABIN\AppData\Local\Programs\MiKTeX\tex/latex/pgf/compatibility\pgfcomp-version-1-18.sty
 Package: pgfcomp-version-1-18 2025-08-29 v3.1.11a (3.1.11a)
-)) (D:\realm\hoyovserse\light\latex\tex/latex/pgf/utilities\pgffor.sty (D:\realm\hoyovserse\light\latex\tex/latex/pgf/utilities\pgfkeys.sty (D:\realm\hoyovserse\light\latex\tex/generic/pgf/utilities\pgfkeys.code.tex)) (D:\realm\hoyovserse\light\latex\tex/latex/pgf/math\pgfmath.sty (D:\realm\hoyovserse\light\latex\tex/generic/pgf/math\pgfmath.code.tex)) (D:\realm\hoyovserse\light\latex\tex/generic/pgf/utilities\pgffor.code.tex
+)) (C:\Users\SABIN\AppData\Local\Programs\MiKTeX\tex/latex/pgf/utilities\pgffor.sty (C:\Users\SABIN\AppData\Local\Programs\MiKTeX\tex/latex/pgf/utilities\pgfkeys.sty (C:\Users\SABIN\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfkeys.code.tex)) (C:\Users\SABIN\AppData\Local\Programs\MiKTeX\tex/latex/pgf/math\pgfmath.sty (C:\Users\SABIN\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmath.code.tex)) (C:\Users\SABIN\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgffor.code.tex
 Package: pgffor 2025-08-29 v3.1.11a (3.1.11a)
-\pgffor@iter=\dimen257
-\pgffor@skip=\dimen258
+\pgffor@iter=\dimen199
+\pgffor@skip=\dimen256
 \pgffor@stack=\toks35
 \pgffor@toks=\toks36
-)) (D:\realm\hoyovserse\light\latex\tex/generic/pgf/frontendlayer/tikz\tikz.code.tex
+)) (C:\Users\SABIN\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tikz\tikz.code.tex
 Package: tikz 2025-08-29 v3.1.11a (3.1.11a)
- (D:\realm\hoyovserse\light\latex\tex/generic/pgf/libraries\pgflibraryplothandlers.code.tex
+ (C:\Users\SABIN\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries\pgflibraryplothandlers.code.tex
 File: pgflibraryplothandlers.code.tex 2025-08-29 v3.1.11a (3.1.11a)
-\pgf@plot@mark@count=\count310
-\pgfplotmarksize=\dimen259
+\pgf@plot@mark@count=\count309
+\pgfplotmarksize=\dimen257
 )
-\tikz@lastx=\dimen260
-\tikz@lasty=\dimen261
-\tikz@lastxsaved=\dimen262
-\tikz@lastysaved=\dimen263
-\tikz@lastmovetox=\dimen264
-\tikz@lastmovetoy=\dimen265
-\tikzleveldistance=\dimen266
-\tikzsiblingdistance=\dimen267
+\tikz@lastx=\dimen258
+\tikz@lasty=\dimen259
+\tikz@lastxsaved=\dimen260
+\tikz@lastysaved=\dimen261
+\tikz@lastmovetox=\dimen262
+\tikz@lastmovetoy=\dimen263
+\tikzleveldistance=\dimen264
+\tikzsiblingdistance=\dimen265
 \tikz@figbox=\box62
 \tikz@figbox@bg=\box63
 \tikz@tempbox=\box64
 \tikz@tempbox@bg=\box65
-\tikztreelevel=\count311
-\tikznumberofchildren=\count312
-\tikznumberofcurrentchild=\count313
-\tikz@fig@count=\count314
- (D:\realm\hoyovserse\light\latex\tex/generic/pgf/modules\pgfmodulematrix.code.tex
+\tikztreelevel=\count310
+\tikznumberofchildren=\count311
+\tikznumberofcurrentchild=\count312
+\tikz@fig@count=\count313
+ (C:\Users\SABIN\AppData\Local\Programs\MiKTeX\tex/generic/pgf/modules\pgfmodulematrix.code.tex
 File: pgfmodulematrix.code.tex 2025-08-29 v3.1.11a (3.1.11a)
-\pgfmatrixcurrentrow=\count315
-\pgfmatrixcurrentcolumn=\count316
-\pgf@matrix@numberofcolumns=\count317
+\pgfmatrixcurrentrow=\count314
+\pgfmatrixcurrentcolumn=\count315
+\pgf@matrix@numberofcolumns=\count316
 )
-\tikz@expandcount=\count318
- (D:\realm\hoyovserse\light\latex\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibrarytopaths.code.tex
+\tikz@expandcount=\count317
+ (C:\Users\SABIN\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibrarytopaths.code.tex
 File: tikzlibrarytopaths.code.tex 2025-08-29 v3.1.11a (3.1.11a)
-))) (D:\realm\hoyovserse\light\latex\tex/latex/float\float.sty
+))) (C:\Users\SABIN\AppData\Local\Programs\MiKTeX\tex/latex/float\float.sty
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
-\c@float@type=\count319
+\c@float@type=\count318
 \float@exts=\toks37
 \float@box=\box66
 \@float@everytoks=\toks38
 \@floatcapt=\box67
-) (D:\realm\hoyovserse\light\latex\tex/latex/placeins\placeins.sty
+) (C:\Users\SABIN\AppData\Local\Programs\MiKTeX\tex/latex/placeins\placeins.sty
 Package: placeins 2005/04/18  v 2.2
-) (D:\realm\hoyovserse\light\latex\tex/latex/url\url.sty
+) (C:\Users\SABIN\AppData\Local\Programs\MiKTeX\tex/latex/url\url.sty
 \Urlmuskip=\muskip18
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
-) (D:\realm\hoyovserse\light\latex\tex/latex/caption\caption.sty
+) (C:\Users\SABIN\AppData\Local\Programs\MiKTeX\tex/latex/caption\caption.sty
 Package: caption 2023/08/05 v3.6o Customizing captions (AR)
- (D:\realm\hoyovserse\light\latex\tex/latex/caption\caption3.sty
+ (C:\Users\SABIN\AppData\Local\Programs\MiKTeX\tex/latex/caption\caption3.sty
 Package: caption3 2023/07/31 v2.4d caption3 kernel (AR)
-\caption@tempdima=\dimen268
-\captionmargin=\dimen269
-\caption@leftmargin=\dimen270
-\caption@rightmargin=\dimen271
-\caption@width=\dimen272
-\caption@indent=\dimen273
-\caption@parindent=\dimen274
-\caption@hangindent=\dimen275
+\caption@tempdima=\dimen266
+\captionmargin=\dimen267
+\caption@leftmargin=\dimen268
+\caption@rightmargin=\dimen269
+\caption@width=\dimen270
+\caption@indent=\dimen271
+\caption@parindent=\dimen272
+\caption@hangindent=\dimen273
 Package caption Info: Standard document class detected.
 )
-\c@caption@flags=\count320
-\c@continuedfloat=\count321
+\c@caption@flags=\count319
+\c@continuedfloat=\count320
 Package caption Info: float package is loaded.
-) (D:\realm\hoyovserse\light\latex\tex/latex/setspace\setspace.sty
+) (C:\Users\SABIN\AppData\Local\Programs\MiKTeX\tex/latex/setspace\setspace.sty
 Package: setspace 2022/12/04 v6.7b set line spacing
-) (D:\realm\hoyovserse\light\latex\tex/latex/tocloft\tocloft.sty
+) (C:\Users\SABIN\AppData\Local\Programs\MiKTeX\tex/latex/tocloft\tocloft.sty
 Package: tocloft 2017/08/31 v2.3i parameterised ToC, etc., typesetting
 Package tocloft Info: The document has chapter divisions on input line 51.
 \cftparskip=\skip56
@@ -381,16 +381,16 @@ Package tocloft Info: The document has chapter divisions on input line 51.
 \cftbeforefigskip=\skip82
 \cftfigindent=\skip83
 \cftfignumwidth=\skip84
-\c@lofdepth=\count322
-\c@lotdepth=\count323
+\c@lofdepth=\count321
+\c@lotdepth=\count322
 \cftbeforelottitleskip=\skip85
 \cftafterlottitleskip=\skip86
 \cftbeforetabskip=\skip87
 \cfttabindent=\skip88
 \cfttabnumwidth=\skip89
-) (D:\realm\hoyovserse\light\latex\tex/latex/psnfss\times.sty
+) (C:\Users\SABIN\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\times.sty
 Package: times 2020/03/25 PSNFSS-v9.3 (SPQR) 
-) (D:\realm\hoyovserse\light\latex\tex/latex/psnfss\mathptmx.sty
+) (C:\Users\SABIN\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\mathptmx.sty
 Package: mathptmx 2020/03/25 PSNFSS-v9.3 Times w/ Math, improved (SPQR, WaS) 
 LaTeX Font Info:    Redeclaring symbol font `operators' on input line 28.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
@@ -425,54 +425,54 @@ LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
 (Font)                  OT1/cmr/bx/it --> OT1/ptm/m/it on input line 35.
 LaTeX Info: Redefining \hbar on input line 50.
-) (D:\realm\hoyovserse\light\latex\tex/latex/geometry\geometry.sty
+) (C:\Users\SABIN\AppData\Local\Programs\MiKTeX\tex/latex/geometry\geometry.sty
 Package: geometry 2026/03/07 v6.0 Page Geometry
- (D:\realm\hoyovserse\light\latex\tex/generic/iftex\ifvtex.sty
+ (C:\Users\SABIN\AppData\Local\Programs\MiKTeX\tex/generic/iftex\ifvtex.sty
 Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
- (D:\realm\hoyovserse\light\latex\tex/generic/iftex\iftex.sty
+ (C:\Users\SABIN\AppData\Local\Programs\MiKTeX\tex/generic/iftex\iftex.sty
 Package: iftex 2024/12/12 v1.0g TeX engine tests
 ))
-\Gm@cnth=\count324
-\Gm@cntv=\count325
-\c@Gm@tempcnt=\count326
-\Gm@bindingoffset=\dimen276
-\Gm@wd@mp=\dimen277
-\Gm@odd@mp=\dimen278
-\Gm@even@mp=\dimen279
-\Gm@layoutwidth=\dimen280
-\Gm@layoutheight=\dimen281
-\Gm@layouthoffset=\dimen282
-\Gm@layoutvoffset=\dimen283
+\Gm@cnth=\count323
+\Gm@cntv=\count324
+\c@Gm@tempcnt=\count325
+\Gm@bindingoffset=\dimen274
+\Gm@wd@mp=\dimen275
+\Gm@odd@mp=\dimen276
+\Gm@even@mp=\dimen277
+\Gm@layoutwidth=\dimen278
+\Gm@layoutheight=\dimen279
+\Gm@layouthoffset=\dimen280
+\Gm@layoutvoffset=\dimen281
 \Gm@dimlist=\toks39
- (D:\realm\hoyovserse\light\latex\tex/latex/geometry\geometry.cfg)) (D:\realm\hoyovserse\light\latex\tex/latex/parskip\parskip.sty
+ (C:\Users\SABIN\AppData\Local\Programs\MiKTeX\tex/latex/geometry\geometry.cfg)) (C:\Users\SABIN\AppData\Local\Programs\MiKTeX\tex/latex/parskip\parskip.sty
 Package: parskip 2021-03-14 v2.0h non-zero parskip adjustments
- (D:\realm\hoyovserse\light\latex\tex/latex/kvoptions\kvoptions.sty
+ (C:\Users\SABIN\AppData\Local\Programs\MiKTeX\tex/latex/kvoptions\kvoptions.sty
 Package: kvoptions 2022-06-15 v3.15 Key value format for package options (HO)
- (D:\realm\hoyovserse\light\latex\tex/generic/ltxcmds\ltxcmds.sty
+ (C:\Users\SABIN\AppData\Local\Programs\MiKTeX\tex/generic/ltxcmds\ltxcmds.sty
 Package: ltxcmds 2023-12-04 v1.26 LaTeX kernel commands for general use (HO)
-) (D:\realm\hoyovserse\light\latex\tex/latex/kvsetkeys\kvsetkeys.sty
+) (C:\Users\SABIN\AppData\Local\Programs\MiKTeX\tex/latex/kvsetkeys\kvsetkeys.sty
 Package: kvsetkeys 2022-10-05 v1.19 Key value parser (HO)
-)) (D:\realm\hoyovserse\light\latex\tex/latex/etoolbox\etoolbox.sty
+)) (C:\Users\SABIN\AppData\Local\Programs\MiKTeX\tex/latex/etoolbox\etoolbox.sty
 Package: etoolbox 2025/10/02 v2.5m e-TeX tools for LaTeX (JAW)
-\etb@tempcnta=\count327
-)) (D:\realm\hoyovserse\light\latex\tex/latex/titlesec\titlesec.sty
+\etb@tempcnta=\count326
+)) (C:\Users\SABIN\AppData\Local\Programs\MiKTeX\tex/latex/titlesec\titlesec.sty
 Package: titlesec 2025/01/04 v2.17 Sectioning titles
 \ttl@box=\box68
 \beforetitleunit=\skip90
 \aftertitleunit=\skip91
-\ttl@plus=\dimen284
-\ttl@minus=\dimen285
+\ttl@plus=\dimen282
+\ttl@minus=\dimen283
 \ttl@toksa=\toks40
-\titlewidth=\dimen286
-\titlewidthlast=\dimen287
-\titlewidthfirst=\dimen288
+\titlewidth=\dimen284
+\titlewidthlast=\dimen285
+\titlewidthfirst=\dimen286
 )
 LaTeX Font Info:    Trying to load font information for OT1+ptm on input line 93.
- (D:\realm\hoyovserse\light\latex\tex/latex/psnfss\ot1ptm.fd
+ (C:\Users\SABIN\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ot1ptm.fd
 File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
-) (D:\realm\hoyovserse\light\latex\tex/latex/l3backend\l3backend-pdftex.def
-File: l3backend-pdftex.def 2026-02-18 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count328
+) (C:\Users\SABIN\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pdftex.def
+File: l3backend-pdftex.def 2025-10-09 L3 backend support: PDF output (pdfTeX)
+\l__color_backend_stack_int=\count327
 ) (main.aux (CoverPage.aux) (Introduction.aux) (LiteratureReview.aux) (Methodology.aux) (ExpectedResults.aux) (Timeline.aux) (References.aux))
 \openout1 = `main.aux'.
 
@@ -490,23 +490,23 @@ LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 93.
 LaTeX Font Info:    ... okay on input line 93.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 93.
 LaTeX Font Info:    ... okay on input line 93.
- (D:\realm\hoyovserse\light\latex\tex/context/base/mkii\supp-pdf.mkii
+ (C:\Users\SABIN\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count329
-\scratchdimen=\dimen289
+\scratchcounter=\count328
+\scratchdimen=\dimen287
 \scratchbox=\box69
-\nofMPsegments=\count330
-\nofMParguments=\count331
+\nofMPsegments=\count329
+\nofMParguments=\count330
 \everyMPshowfont=\toks41
-\MPscratchCnt=\count332
-\MPscratchDim=\dimen290
-\MPnumerator=\count333
-\makeMPintoPDFobject=\count334
+\MPscratchCnt=\count331
+\MPscratchDim=\dimen288
+\MPnumerator=\count332
+\makeMPintoPDFobject=\count333
 \everyMPtoPDFconversion=\toks42
-) (D:\realm\hoyovserse\light\latex\tex/latex/epstopdf-pkg\epstopdf-base.sty
+) (C:\Users\SABIN\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
- (D:\realm\hoyovserse\light\latex\tex/latex/00miktex\epstopdf-sys.cfg
+ (C:\Users\SABIN\AppData\Local\Programs\MiKTeX\tex/latex/00miktex\epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 ))
 Package caption Info: Begin \AtBeginDocument code.
@@ -590,21 +590,21 @@ Package pdftex.def Info: Graphics/TULogo.png  used on input line 6.
 
 
 
-{C:/Users/tonys/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}{D:/realm/hoyovserse/light/latex/fonts/enc/dvips/base/8r.enc} <./Graphics/TULogo.png>]) (main.toc
+{C:/Users/SABIN/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}{C:/Users/SABIN/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc} <./Graphics/TULogo.png>]) (main.toc
 LaTeX Font Info:    Trying to load font information for OT1+ztmcm on input line 1.
- (D:\realm\hoyovserse\light\latex\tex/latex/psnfss\ot1ztmcm.fd
+ (C:\Users\SABIN\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ot1ztmcm.fd
 File: ot1ztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OT1/ztmcm.
 )
 LaTeX Font Info:    Trying to load font information for OML+ztmcm on input line 1.
- (D:\realm\hoyovserse\light\latex\tex/latex/psnfss\omlztmcm.fd
+ (C:\Users\SABIN\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\omlztmcm.fd
 File: omlztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OML/ztmcm.
 )
 LaTeX Font Info:    Trying to load font information for OMS+ztmcm on input line 1.
- (D:\realm\hoyovserse\light\latex\tex/latex/psnfss\omsztmcm.fd
+ (C:\Users\SABIN\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\omsztmcm.fd
 File: omsztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OMS/ztmcm.
 )
 LaTeX Font Info:    Trying to load font information for OMX+ztmcm on input line 1.
- (D:\realm\hoyovserse\light\latex\tex/latex/psnfss\omxztmcm.fd
+ (C:\Users\SABIN\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\omxztmcm.fd
 File: omxztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OMX/ztmcm.
 )
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
@@ -627,17 +627,22 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7> not available
  (Introduction.tex
 Chapter 1.
 
-Overfull \hbox (13.85391pt too wide) in paragraph at lines 8--9
-\OT1/ptm/m/n/12 frame-work that com-pletely de-cou-ples util-ity trans-ac-tion com-pu-ta-tion from cen-tral database
+Overfull \hbox (1.43379pt too wide) in paragraph at lines 9--10
+\OT1/ptm/m/n/12 pre-paid elec-tric-ity en-force-ment with-out re-quir-ing a pro-duc-tion util-ity plat-form. A purely
  []
 
-LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 18.
-(D:\realm\hoyovserse\light\latex\tex/latex/psnfss\ts1ptm.fd
+LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 13.
+(C:\Users\SABIN\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ts1ptm.fd
 File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
 ) [1
 
 
-]) [2]
+]
+Overfull \hbox (26.31029pt too wide) in paragraph at lines 22--23
+\OT1/ptm/m/n/12 his-tory, lo-cal Hard-hat blockchain trans-ac-tions, pre-paid bal-ance de-duc-tion, current-differential
+ []
+
+) [2]
 \openout2 = `LiteratureReview.aux'.
 
  (LiteratureReview.tex
@@ -647,15 +652,12 @@ Overfull \hbox (14.71pt too wide) in paragraph at lines 17--34
  [][] 
  []
 
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-) [3
+[3
 
 
 
 
-] [4]
+]) [4]
 \openout2 = `Methodology.aux'.
 
  (Methodology.tex
@@ -670,20 +672,17 @@ File: Graphics/architecture.png Graphic file (type png)
 <use Graphics/architecture.png>
 Package pdftex.def Info: Graphics/architecture.png  used on input line 17.
 (pdftex.def)             Requested size: 333.46777pt x 320.95341pt.
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
 [5
 
 
 
 
- <./Graphics/Image 1.png>] [6 <./Graphics/architecture.png>]) [7]
+ <./Graphics/Image 1.png>] [6 <./Graphics/architecture.png>] [7]) [8]
 \openout2 = `ExpectedResults.aux'.
 
  (ExpectedResults.tex
 Chapter 4.
-) [8
+) [9
 
 
 
@@ -693,12 +692,12 @@ Chapter 4.
 
  (Timeline.tex
 Chapter 5.
-<Graphics/timeline.jpeg, id=51, 1606.0pt x 882.29625pt>
+<Graphics/timeline.jpeg, id=53, 1606.0pt x 882.29625pt>
 File: Graphics/timeline.jpeg Graphic file (type jpg)
 <use Graphics/timeline.jpeg>
 Package pdftex.def Info: Graphics/timeline.jpeg  used on input line 5.
 (pdftex.def)             Requested size: 416.83315pt x 229.00119pt.
-) [9
+) [10
 
 
 
@@ -711,29 +710,29 @@ Underfull \hbox (badness 4752) in paragraph at lines 20--22
 \OT1/ptm/m/n/12 based clus-ter-ing for elec-tri-cal load fore-cast-ing. In-ter-net of Things 17,
  []
 
-) [10
+) [11
 
 
 
 
 ] (main.aux (CoverPage.aux) (Introduction.aux) (LiteratureReview.aux) (Methodology.aux) (ExpectedResults.aux) (Timeline.aux) (References.aux))
  ***********
-LaTeX2e <2026-06-01>
-L3 programming layer <2026-05-26>
+LaTeX2e <2025-11-01>
+L3 programming layer <2025-12-24>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 17222 strings out of 467475
- 336710 string characters out of 5413705
- 726063 words of memory out of 5000000
- 46123 multiletter control sequences out of 15000+600000
+ 17223 strings out of 467872
+ 339844 string characters out of 5418392
+ 718965 words of memory out of 5000000
+ 45748 multiletter control sequences out of 15000+600000
  647818 words of font info for 82 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 84i,14n,109p,1309b,422s stack positions out of 10000i,1000n,20000p,200000b,200000s
-<D:/realm/hoyovserse/light/latex/fonts/type1/public/amsfonts/cm/cmr10.pfb><D:/realm/hoyovserse/light/latex/fonts/type1/public/amsfonts/cm/cmsy10.pfb><D:/realm/hoyovserse/light/latex/fonts/type1/urw/symbol/usyr.pfb><D:/realm/hoyovserse/light/latex/fonts/type1/urw/times/utmb8a.pfb><D:/realm/hoyovserse/light/latex/fonts/type1/urw/times/utmr8a.pfb><D:/realm/hoyovserse/light/latex/fonts/type1/urw/times/utmri8a.pfb>
-Output written on main.pdf (13 pages, 938564 bytes).
+ 84i,15n,109p,1299b,422s stack positions out of 10000i,1000n,20000p,200000b,200000s
+<C:/Users/SABIN/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/SABIN/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/SABIN/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmb8a.pfb><C:/Users/SABIN/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><C:/Users/SABIN/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmri8a.pfb>
+Output written on main.pdf (14 pages, 937673 bytes).
 PDF statistics:
- 87 PDF objects out of 1000 (max. 8388607)
+ 85 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  33 words of extra memory for PDF output out of 10000 (max. 10000000)
 

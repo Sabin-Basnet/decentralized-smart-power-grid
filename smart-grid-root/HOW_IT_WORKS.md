@@ -20,7 +20,7 @@ The ESP32 firmware in `firmware/src/main.cpp` reads meter values and posts JSON 
 
 ```json
 {
-  "device_id": "NEA-KTM-001",
+  "device_id": "DHARAN-001",
   "load": 2.5,
   "energy": 1.0,
   "is_tampered": 0
@@ -62,7 +62,7 @@ This is the trust layer for the prepaid model. The backend is effectively readin
 - system status
 - meter history log
 
-The default demo account is `NEA-KTM-001`.
+The default demo account is `DHARAN-001`.
 
 ## Why the system is built this way
 

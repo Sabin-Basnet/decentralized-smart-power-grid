@@ -100,12 +100,12 @@ def seed_test_account():
     # Add a mock customer profile with a starting credit balance of 500
     cursor.execute("""
     INSERT OR IGNORE INTO Accounts (account_id, owner_id, token_balance, monthly_units, system_status, last_updated)
-    VALUES ('NEA-KTM-001', ?, 500.0, 0.0, 'ACTIVE', datetime('now', 'localtime'));
+    VALUES ('DHARAN-001', ?, 320.0, 0.0, 'ACTIVE', datetime('now', 'localtime'));
     """, (default_user_id,))
     
     conn.commit()
     conn.close()
-    print("[SEED] Active testing profile 'NEA-KTM-001' configured.")
+    print("[SEED] Active Dharan profile 'DHARAN-001' configured.")
 
 
 if __name__ == "__main__":

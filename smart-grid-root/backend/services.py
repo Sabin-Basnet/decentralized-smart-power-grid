@@ -9,7 +9,7 @@ from fastapi import HTTPException
 from web3 import Web3
 
 from backend.database import append_meter_data, get_info_by_account_id, update_account
-from backend.ml_engine import detect_load_drop, predict_time_to_exhaustion
+from backend.ml_engine import ML_MODEL, classify_current_differential
 from backend.schemas import MeterHistoryInput
 
 Account.enable_unaudited_hdwallet_features()
@@ -21,16 +21,15 @@ ABI_PATH = BLOCKCHAIN_DIR / "contract-abi.json"
 LOAD_HISTORY = defaultdict(lambda: deque(maxlen=100))
 
 
-def _ml_outputs(meter_id: str, load: float, available_energy: float) -> dict:
+def _ml_outputs(meter_id: str, load: float, available_energy: float,
+                line_current: float, neutral_current: float) -> dict:
     history = LOAD_HISTORY[meter_id]
     history.append(load)
-    time_to_exhaustion, forecast_rmse = predict_time_to_exhaustion(
-        list(history), available_energy
-    )
+    anomaly = classify_current_differential(line_current, neutral_current)
     return {
-        "time_to_exhaustion": int(time_to_exhaustion),
-        "theft_flag": detect_load_drop(list(history)),
-        "forecast_rmse": float(forecast_rmse),
+        "time_to_exhaustion": ML_MODEL.predict_hours_remaining(meter_id, available_energy),
+        "theft_flag": anomaly["is_anomalous"],
+        "anomaly": anomaly,
     }
 
 
@@ -109,6 +108,7 @@ def _deduct_blockchain_energy(device_id: str, energy: float) -> dict:
 def handle_smart_meter_telemetry(data: MeterHistoryInput) -> dict:
     """Validate telemetry, deduct tokens from the blockchain, and update the local database."""
     meter_id = data.meter_id
+    line_current, neutral_current = data.currents
     if not meter_id:
         raise HTTPException(status_code=400, detail="Device ID is required.")
 
@@ -127,7 +127,7 @@ def handle_smart_meter_telemetry(data: MeterHistoryInput) -> dict:
             "remaining_balance": float(token_balance),
             "isolate_circuit": True,
         }
-        response.update(_ml_outputs(meter_id, data.load, token_balance))
+        response.update(_ml_outputs(meter_id, data.load, token_balance, line_current, neutral_current))
         return response
 
     deduction_result = _deduct_blockchain_energy(meter_id, data.energy)
@@ -145,7 +145,7 @@ def handle_smart_meter_telemetry(data: MeterHistoryInput) -> dict:
             "remaining_balance": remaining_balance,
             "isolate_circuit": True,
         }
-        response.update(_ml_outputs(meter_id, data.load, remaining_balance))
+        response.update(_ml_outputs(meter_id, data.load, remaining_balance, line_current, neutral_current))
         return response
 
     update_account(meter_id, remaining_balance, updated_units, current_status)
@@ -157,5 +157,5 @@ def handle_smart_meter_telemetry(data: MeterHistoryInput) -> dict:
         "remaining_balance": remaining_balance,
         "isolate_circuit": False,
     }
-    response.update(_ml_outputs(meter_id, data.load, remaining_balance))
+    response.update(_ml_outputs(meter_id, data.load, remaining_balance, line_current, neutral_current))
     return response

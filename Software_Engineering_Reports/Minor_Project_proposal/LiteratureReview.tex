@@ -1,19 +1,19 @@
 \chapter{LITERATURE REVIEW}
 \section{Historical Evolution}
-Utility metering evolved from electromechanical induction meters (requiring manual reads) to Advanced Metering Infrastructure (AMI) with digital smart meters and wireless telemetry. While AMI automated logging, it preserved centralized, black-box corporate databases. The emerging third generation (decentralized cyber-physical grids) converges IoT, blockchain, and ML to eliminate central middlemen, and executing automated prepaid billing. \cite{ref2}
+Utility metering has progressed from manually read electromechanical meters to digital meters and Advanced Metering Infrastructure (AMI), which supports frequent telemetry and remote monitoring. AMI improves collection and visibility but generally retains a centrally managed database and decision process. IoT devices, smart contracts, and data-driven monitoring provide complementary mechanisms for building more auditable and responsive prototypes. \cite{ref1,ref2}
 \section{Algorithms and Models}
-\subsection{Smart Contracts (State Machine)}
-A deterministic Solidity contract dynamically switches between Active (power authorized) and Inactive (credit depleted) states based on real-time hardware telemetry.
-\subsection{Predictive Budgeting (Linear Regression)}    
-A supervised regression framework processes incoming time-series data against historical logs to forecast the exact time of account balance exhaustion.\cite{ref3}
-\subsection{Anomaly Detection (Isolation Forest)}    
-An unsupervised model maps regular usage profiles and immediately isolates statistical deviations (e.g., sudden voltage drops indicating meter-bypassing).
+\subsection{Prepaid Smart Contracts}
+A smart contract can represent prepaid credit as an auditable ledger and expose controlled functions for funding, deduction, and balance checks. In this project, the local Solidity contract is the source of truth for credit deductions, while the backend mirrors operational status in SQLite.
+\subsection{Remaining-Time Estimation}
+Regression models are commonly used to relate consumption history to future load. The proposed prototype uses a linear regression model trained on seeded Dharan meter history and combines its learned baseline with the current account balance to estimate remaining service time. The estimate is advisory; the contract balance remains authoritative. \cite{ref3}
+\subsection{Explainable Tamper Detection}
+For a small prototype, a direct comparison between line and neutral current is easier to inspect and test than an opaque classifier. The system flags a reading when the absolute current differential exceeds a configurable threshold, and records the result with the meter event. More advanced anomaly models can be evaluated in future work. \cite{ref4}
 
 \section{Data Processing and Feature Engineering}
 The system processes two distinct data pipelines: live analog telemetry from the ESP32 edge node and structured synthetic datasets used for training the machine learning models.
 \begin{table}[h!]
     \centering
-    \renewcommand{\arraystretch}{1.5} % Adds vertical padding to make it readable
+    \renewcommand{\arraystretch}{1.5}
     \begin{tabular}{|l|l|p{8.5cm}|}
         \hline
         \textbf{Engineered Feature} & \textbf{Data Type} & \textbf{Description and Purpose} \\
@@ -22,11 +22,11 @@ The system processes two distinct data pipelines: live analog telemetry from the
         \hline
         $\text{Energy}_{\text{cum}}$ & Float & The cumulative energy consumed over the session in Watt-hours ($\text{Wh}$). \\
         \hline
-        $\text{Delta}_{\text{load}}$ & Float & The rate of change in power draw over the last 60 seconds. A sudden, massive drop without a total circuit break is the primary trigger for the theft anomaly detection model. \\
+        $\text{Delta}_{\text{current}}$ & Float & The absolute difference between line and neutral current, used as an explainable tamper indicator. \\
         \hline
         $\text{Hour}_{\text{tod}}$ & Integer & A Time-of-Day index (0-23) assigned to the data point to capture cyclical daily consumption habits. \\
         \hline
-        $\text{Bal}_{\text{token}}$ & Float & The remaining cryptographic token balance pulled via Web3.py from the smart contract, used as the dependent variable for the time-to-exhaustion forecasting model. \\
+        $\text{Bal}_{\text{token}}$ & Float & The remaining prepaid balance read from the smart contract and used with the estimated consumption rate. \\
         \hline
     \end{tabular}
     % \caption*{Table: Engineered features utilized for machine learning model training.}
@@ -34,4 +34,4 @@ The system processes two distinct data pipelines: live analog telemetry from the
 \end{table}
 
 \section{Gaps and Challenge}
-Existing AMI frameworks rely on vulnerable centralized databases, while pure Web3 frameworks lack physical control systems to enforce ledger states on actual power lines. This project bridges this gap by uniting IoT edge enforcement, ML anomaly detection, and blockchain validation into a single, low-latency automated pipeline.\cite{ref4}
+Existing AMI frameworks commonly rely on centralized operational services, while blockchain-only demonstrations do not control a physical load. This project addresses the prototype-level gap by connecting an ESP32 relay decision to validated telemetry and a prepaid blockchain transaction. The resulting workflow can be measured locally before larger-scale reliability, privacy, and security questions are considered.\cite{ref4}

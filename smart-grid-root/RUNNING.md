@@ -80,7 +80,7 @@ Use the form in the web dashboard to submit a payload like:
 
 ```json
 {
-  "device_id": "NEA-KTM-001",
+  "device_id": "DHARAN-001",
   "load": 2.5,
   "energy": 1.0,
   "is_tampered": 0
@@ -91,7 +91,7 @@ Example success response:
 
 ```json
 {
-  "device_id": "NEA-KTM-001",
+  "device_id": "DHARAN-001",
   "command": "KEEP_ALIVE",
   "reason": "All systems normal",
   "remaining_balance": 98.0,
