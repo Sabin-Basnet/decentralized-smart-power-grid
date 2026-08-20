@@ -1,2 +1,103 @@
 \chapter{EXPECTED RESULTS}
 
+\section{Overview}
+
+The proposed project is expected to result in a functional software prototype of a Decentralized Prepaid Smart Power Grid. The system will integrate prepaid electricity management, blockchain-based authorization, machine-learning-based analysis, database management, and web-based monitoring into a unified software environment.
+
+The expected results of the project are described below.
+
+
+\section{Prepaid Electricity Management}
+
+The system is expected to provide a functional prepaid electricity management mechanism through a blockchain smart contract. Users will be able to purchase prepaid tokens, retrieve their available balance, and have their balance reduced according to simulated electricity consumption.
+
+The system is also expected to maintain the authorization state of users and provide mechanisms for restricting and restoring authorization based on predefined conditions.
+
+
+\section{Blockchain-Based Balance and Authorization}
+
+The blockchain component is expected to provide a transparent and traceable mechanism for managing prepaid balances and authorization-related operations.
+
+The smart contract is expected to support token purchase, balance retrieval, balance deduction, authorization checking, and anomaly-related cutoff operations. This will demonstrate the decentralized component of the proposed system.
+
+
+\section{Electricity Consumption Monitoring}
+
+The proposed system is expected to successfully receive and process simulated electricity telemetry through the backend. The telemetry will provide information related to electricity consumption and system status.
+
+The processed information is expected to be stored in the database and made available for further analysis and visualization.
+
+
+\section{Anomaly Detection}
+
+The machine-learning module is expected to identify abnormal electricity consumption patterns using the Isolation Forest algorithm.
+
+The system is expected to generate anomaly information and anomaly scores for unusual consumption patterns and store the detected events in the database. The detected anomalies are also expected to be presented through the monitoring interface.
+
+
+\section{Electricity Consumption Forecasting}
+
+The proposed system is expected to generate short-term electricity consumption forecasts using Linear Regression.
+
+The forecasting module is expected to provide estimated future consumption and an approximate remaining usage duration based on the available prepaid balance and estimated consumption rate.
+
+
+\section{Web-Based Monitoring}
+
+The system is expected to provide a web-based monitoring interface through which users can observe important system information.
+
+The interface is expected to display:
+
+\begin{itemize}
+    \item Current electricity consumption
+    \item Prepaid balance
+    \item Authorization status
+    \item Estimated remaining time
+    \item Historical consumption information
+    \item Forecasted electricity consumption
+    \item Detected anomaly information
+\end{itemize}
+
+
+\section{Integration of System Components}
+
+The project is expected to demonstrate successful communication among the major software components, including the backend, database, blockchain, machine-learning module, and frontend.
+
+The integrated system is expected to provide a continuous software workflow from simulated telemetry generation to data processing, anomaly detection, forecasting, prepaid balance management, and user visualization.
+
+
+\section{Expected Benefits}
+
+The proposed system is expected to provide the following benefits:
+
+\begin{itemize}
+    \item Improved visibility of electricity consumption and prepaid balance.
+    \item Automated management of prepaid electricity credit.
+    \item Transparent and traceable prepaid transactions through blockchain.
+    \item Detection of unusual electricity consumption patterns.
+    \item Estimation of future electricity consumption.
+    \item Improved monitoring through a unified web-based interface.
+    \item A modular software architecture that can be extended in future work.
+\end{itemize}
+
+
+\section{Project Deliverables}
+
+At the completion of the project, the following deliverables are expected:
+
+\begin{itemize}
+    \item A functional blockchain smart contract for prepaid electricity management.
+    \item A FastAPI-based backend for system communication and data processing.
+    \item A SQLite database for storing telemetry, balance, and anomaly information.
+    \item An anomaly detection module based on Isolation Forest.
+    \item An electricity consumption forecasting module based on Linear Regression.
+    \item A React-based web monitoring interface.
+    \item A software-based simulation environment for evaluating the proposed system.
+\end{itemize}
+
+
+\section{Scope of Expected Results}
+
+The expected results are limited to the software-based implementation and simulation of the proposed smart power grid. The project is not expected to demonstrate physical electricity measurement, electrical load switching, or actual power distribution.
+
+Physical hardware integration, real electricity metering, deployment on a public blockchain network, and large-scale field testing may be considered as future extensions of the project.

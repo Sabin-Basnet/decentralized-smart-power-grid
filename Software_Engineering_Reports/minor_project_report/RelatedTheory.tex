@@ -1,5 +1,145 @@
 \chapter{RELATED THEORY}
-\section{Related Theory goes here}
+
+\section{Smart Grid}
+
+A smart grid is an advanced electricity management system that integrates electrical infrastructure with digital communication, monitoring, data processing, and control technologies. It enables electricity consumption and system conditions to be monitored more efficiently than in conventional power systems. Smart grid technologies can improve energy efficiency, reliability, transparency, and consumer awareness.
+
+The proposed system applies smart grid concepts through a software-based architecture. Rather than directly controlling physical electrical infrastructure, the system processes simulated electricity consumption telemetry and provides mechanisms for prepaid balance management, anomaly detection, consumption forecasting, and authorization control.
 
 
+\section{Prepaid Electricity Management}
 
+A prepaid electricity system requires consumers to purchase electricity credit before consuming electrical energy. The available credit is reduced according to the amount of electricity consumed. When the available balance becomes insufficient, access to electricity can be restricted according to predefined rules.
+
+Prepaid electricity management provides consumers with greater awareness of their electricity usage and can reduce issues associated with conventional postpaid billing. In the proposed system, prepaid electricity is represented using blockchain-based tokens. Each user is associated with a blockchain wallet address and a corresponding prepaid balance.
+
+
+\section{Blockchain Technology}
+
+Blockchain is a distributed ledger technology that records transactions in a verifiable and tamper-resistant manner. It provides a mechanism for maintaining transaction records without relying entirely on a single centralized authority.
+
+In the proposed system, blockchain is used for prepaid balance and authorization management. Token purchases, balance deductions, and authorization-related operations are handled through blockchain transactions. This provides traceability for important prepaid operations and forms the decentralized component of the proposed architecture.
+
+
+\section{Smart Contracts}
+
+A smart contract is a program deployed on a blockchain that defines and executes predefined rules through transactions and function calls. Smart contracts can automate operations and enforce conditions without requiring manual intervention for every transaction.
+
+The proposed system uses a Solidity smart contract named \texttt{PrepaidGrid}. The contract provides functions for purchasing prepaid tokens, retrieving balances, checking authorization, deducting balances, and managing anomaly-related cutoff operations.
+
+The major functions of the smart contract include:
+
+\begin{itemize}
+    \item \texttt{purchaseTokens()} for purchasing prepaid electricity tokens.
+    \item \texttt{getBalance()} for retrieving the current prepaid balance.
+    \item \texttt{checkAuthorization()} for checking the authorization state of a user.
+    \item \texttt{deductBalance()} for deducting the amount associated with electricity consumption.
+    \item \texttt{triggerAnomalyCutoff()} for triggering a cutoff when a significant anomaly is detected.
+    \item \texttt{clearAnomalyAndReauthorize()} for restoring authorization after an anomaly has been resolved.
+\end{itemize}
+
+
+\section{Blockchain-Based Decentralization}
+
+The proposed system incorporates decentralization primarily through the blockchain layer used for prepaid balance and authorization management. Instead of maintaining the complete prepaid state exclusively within the application database, important balance and authorization operations are implemented through a blockchain smart contract.
+
+The \texttt{PrepaidGrid} smart contract maintains user-related prepaid balances and authorization states and provides functions for token purchase, balance retrieval, balance deduction, authorization checking, and anomaly-triggered cutoff operations. These operations are recorded as blockchain transactions, providing traceability and reducing dependence on the application database for the authoritative prepaid state.
+
+However, the overall system is not fully decentralized. Telemetry ingestion, data storage, machine-learning processing, and dashboard services are handled by the FastAPI backend and SQLite database. Therefore, the proposed architecture is better described as a \textit{hybrid architecture} that combines centralized application services with blockchain-based decentralized state management.
+
+
+\section{Internet of Things}
+
+The Internet of Things (IoT) refers to interconnected physical devices that can collect, transmit, and exchange data through communication networks. IoT is widely used in smart energy systems to collect electricity consumption and operational data from distributed devices.
+
+The proposed architecture is designed to support telemetry generated by an edge device. However, physical IoT hardware is not implemented in the current project. Instead, electricity telemetry is simulated and submitted to the backend through an application programming interface. This provides a software representation of the data flow that could be generated by a physical smart-metering device in a future deployment.
+
+
+\section{Telemetry and Real-Time Monitoring}
+
+Telemetry refers to the collection and transmission of data from a remote source to a processing or monitoring system. In an electricity management system, telemetry may contain information such as power consumption, load percentage, device status, and authorization state.
+
+In the proposed system, simulated telemetry is used to represent electricity consumption data. The backend receives the telemetry through an HTTP endpoint and stores the information in the database. The stored data is then used for monitoring, anomaly detection, forecasting, and dashboard visualization.
+
+
+\section{Machine Learning}
+
+Machine learning is a branch of artificial intelligence in which computational models learn patterns from data and use those patterns to make predictions or decisions. Machine-learning techniques can be applied to smart energy systems for tasks such as consumption analysis, anomaly detection, and demand forecasting.
+
+The proposed system applies machine learning to two major tasks: anomaly detection using Isolation Forest and electricity consumption forecasting using Linear Regression.
+
+
+\section{Anomaly Detection}
+
+Anomaly detection is the process of identifying observations that significantly differ from expected or normal behavior. In electricity management systems, unusual consumption patterns may indicate electricity theft, equipment malfunction, abnormal usage, or data inconsistencies.
+
+The proposed system analyzes recent electricity consumption telemetry and identifies observations that deviate from the learned consumption pattern. The detected anomaly information is stored in the database and displayed through the monitoring dashboard. Significant anomalies can also be associated with the blockchain-based cutoff mechanism.
+
+
+\section{Isolation Forest}
+
+Isolation Forest is an unsupervised machine-learning algorithm designed for detecting anomalous observations. The algorithm isolates observations through recursive random partitioning. Observations that can be isolated using relatively few partitions are generally considered more likely to be anomalous.
+
+In the proposed system, Isolation Forest is applied to a recent collection of simulated electricity consumption samples. The model produces an anomaly result and score for incoming observations. The resulting information is stored in the database and used for anomaly monitoring and further system actions.
+
+
+\section{Energy Consumption Forecasting}
+
+Energy consumption forecasting is the process of estimating future electricity usage using historical consumption data. Forecasting can provide users with information about expected future demand and can also help estimate the approximate duration for which a prepaid balance may remain sufficient.
+
+The proposed system uses historical electricity consumption data to generate a short-term forecast. The forecast is used to estimate future consumption and calculate an approximate remaining usage duration based on the available prepaid balance and estimated average consumption rate.
+
+
+\section{Linear Regression}
+
+Linear Regression is a supervised machine-learning technique used to model relationships between variables and predict future values. It estimates a mathematical relationship from historical observations and uses the resulting model to generate predictions.
+
+In the proposed system, Linear Regression is used to estimate future electricity consumption. Historical consumption information is provided to the model, and the resulting prediction is used to generate an hourly consumption forecast. The predicted consumption rate is also used to estimate the approximate remaining usage time associated with the available prepaid balance.
+
+
+\section{RESTful API}
+
+A RESTful API is an application programming interface that enables communication between software components through standard HTTP operations. REST APIs commonly use methods such as \texttt{GET} and \texttt{POST} to retrieve and submit information.
+
+The proposed system uses RESTful communication for interaction between its major software components. Simulated telemetry is submitted to the backend using an HTTP request, while other endpoints provide access to balance information, machine-learning results, dashboard data, and system health information.
+
+
+\section{FastAPI Backend}
+
+FastAPI is a Python-based framework for developing web APIs. In the proposed system, FastAPI acts as the main backend application layer connecting telemetry processing, database management, machine-learning functions, blockchain interaction, and the frontend dashboard.
+
+The backend receives simulated telemetry, stores and retrieves system information, interacts with the blockchain layer, processes machine-learning operations, and provides structured data to the frontend.
+
+
+\section{Database Management}
+
+A database is used to store, organize, and retrieve information generated by an application. The proposed system uses SQLite for persistent storage of telemetry, user balance information, and anomaly alerts.
+
+The main logical entities maintained by the system are:
+
+\begin{itemize}
+    \item \texttt{TelemetryLog}, which stores simulated electricity telemetry and related system status information.
+    \item \texttt{UserBalance}, which stores wallet addresses, prepaid balances, authorization state, and related transaction information.
+    \item \texttt{AnomalyAlert}, which stores detected anomalies, anomaly scores, severity, resolution state, and associated actions.
+\end{itemize}
+
+
+\section{Web-Based Monitoring Dashboard}
+
+A web-based monitoring dashboard provides a graphical interface for displaying system information to users. Such dashboards can simplify the interpretation of current measurements, historical trends, warnings, and predictions.
+
+The proposed system uses React with Vite to implement the frontend dashboard. The dashboard displays current load, prepaid balance, estimated remaining time, anomaly score, recent consumption data, forecasted consumption, and recent anomaly alerts. Recharts is used to visualize consumption and forecasting information.
+
+
+\section{Software-Based Smart Grid Simulation}
+
+Since physical electrical measurement and power-control hardware are outside the scope of the current project, the proposed system uses simulated telemetry to represent electricity consumption.
+
+The simulation provides a controlled environment in which the complete software architecture can be evaluated. It allows the project to demonstrate telemetry processing, database storage, machine-learning analysis, prepaid balance management, blockchain interaction, anomaly handling, and dashboard visualization without requiring physical electrical infrastructure.
+
+
+\section{Summary}
+
+The concepts presented in this chapter provide the theoretical foundation for the proposed Decentralized Prepaid Smart Power Grid. Smart grid principles provide the overall context, while prepaid electricity management and blockchain-based smart contracts provide the basis for prepaid balance and authorization management. Machine-learning techniques support anomaly detection and electricity consumption forecasting, while RESTful APIs, database management, and web technologies provide the software infrastructure required to integrate these components.
+
+The resulting architecture is a hybrid system in which blockchain provides the decentralized component for prepaid balance and authorization management, while the backend, database, machine-learning engine, and frontend provide centralized application services. The project evaluates this architecture using simulated electricity telemetry rather than physical electrical hardware.

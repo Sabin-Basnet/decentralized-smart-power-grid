@@ -1,6 +1,235 @@
 \chapter{METHODOLOGY}
+
 \section{Overview}
-\section{Other section goes here}
+
+The proposed Decentralized Prepaid Smart Power Grid is developed as a software-based prototype that integrates prepaid electricity management, blockchain technology, machine learning, database management, and a web-based monitoring system.
+
+The project follows a hybrid architecture. Blockchain technology is used for prepaid balance and authorization management, while the backend, database, machine-learning components, and frontend are implemented as conventional software services. Since physical electrical hardware is outside the scope of the project, electricity consumption data is simulated and used as input to the system.
 
 
+\section{System Architecture}
 
+The proposed system consists of the following major components:
+
+\begin{itemize}
+    \item Simulated electricity telemetry
+    \item FastAPI backend
+    \item SQLite database
+    \item Blockchain smart contract
+    \item Machine-learning module
+    \item Web-based monitoring dashboard
+\end{itemize}
+
+Simulated electricity consumption data is submitted to the backend through a RESTful API. The backend processes and stores the received information and coordinates communication with the machine-learning and blockchain components. The processed information is then made available through the web-based dashboard.
+
+
+\section{Telemetry Simulation}
+
+Since physical electricity meters and power measurement hardware are not implemented in the current project, electricity consumption is represented through simulated telemetry.
+
+The simulated telemetry contains information such as:
+
+\begin{itemize}
+    \item Device identifier
+    \item Timestamp
+    \item Power consumption
+    \item Load percentage
+    \item Relay status
+    \item Authorization status
+\end{itemize}
+
+The simulated data is submitted to the backend at regular intervals. This allows the proposed system to reproduce the software-level data flow of a smart electricity monitoring system without requiring physical electrical infrastructure.
+
+
+\section{Backend Development}
+
+The backend is developed using Python and FastAPI. It acts as the primary application layer and provides communication between the telemetry source, database, machine-learning module, blockchain layer, and frontend.
+
+The backend provides interfaces for:
+
+\begin{itemize}
+    \item Receiving and retrieving telemetry data
+    \item Managing prepaid balance information
+    \item Providing machine-learning results
+    \item Providing dashboard information
+    \item Monitoring system health
+\end{itemize}
+
+The backend also communicates with the blockchain through a Web3-based interface to retrieve and update prepaid and authorization-related information.
+
+
+\section{Database Management}
+
+SQLite is used as the database for storing application data. SQLAlchemy is used to manage interaction between the backend and the database.
+
+The major database entities are:
+
+\subsection{Telemetry Log}
+
+The \texttt{TelemetryLog} entity stores simulated electricity telemetry, including power consumption, load percentage, timestamp, relay status, authorization state, anomaly information, and estimated remaining time.
+
+\subsection{User Balance}
+
+The \texttt{UserBalance} entity stores information related to users' blockchain wallets, prepaid balances, authorization status, and transaction information.
+
+\subsection{Anomaly Alert}
+
+The \texttt{AnomalyAlert} entity stores information related to detected abnormal consumption patterns, including anomaly type, severity, anomaly score, resolution status, and actions taken.
+
+
+\section{Blockchain Implementation}
+
+The blockchain component is implemented using Solidity and tested using the Hardhat development environment. The prepaid electricity functionality is represented through a smart contract named \texttt{PrepaidGrid}.
+
+The smart contract provides functions for:
+
+\begin{itemize}
+    \item Purchasing prepaid tokens
+    \item Retrieving the prepaid balance
+    \item Checking user authorization
+    \item Deducting prepaid balance
+    \item Triggering anomaly-related cutoff operations
+    \item Restoring authorization after an anomaly is resolved
+\end{itemize}
+
+The backend communicates with the smart contract using Web3.py. This provides an interface between the conventional application layer and the blockchain layer.
+
+
+\section{Prepaid Balance Management}
+
+A user purchases prepaid tokens through the smart contract. The purchased amount is associated with the user's blockchain wallet address.
+
+As simulated electricity consumption is received, the system calculates the corresponding consumption and updates the prepaid balance. The user's authorization state is also checked during the process.
+
+If the available balance becomes insufficient, or if a predefined security condition is satisfied, the system can change the user's authorization state through the smart contract.
+
+
+\section{Anomaly Detection}
+
+The proposed system uses machine learning to identify abnormal electricity consumption patterns. The Isolation Forest algorithm is used for anomaly detection.
+
+Recent consumption observations are provided to the model. The model evaluates the observations and determines whether a particular consumption pattern differs significantly from the normal pattern.
+
+The anomaly detection process consists of the following steps:
+
+\begin{enumerate}
+    \item Receive simulated electricity telemetry.
+    \item Extract the relevant consumption information.
+    \item Maintain a recent set of consumption observations.
+    \item Apply the Isolation Forest algorithm.
+    \item Generate the anomaly result and anomaly score.
+    \item Store the result in the database.
+    \item Display the detected anomaly through the monitoring interface.
+    \item Initiate the appropriate authorization action when required.
+\end{enumerate}
+
+
+\section{Energy Consumption Forecasting}
+
+The system uses Linear Regression to estimate future electricity consumption. Historical consumption data is used to train the forecasting model.
+
+The model generates an estimated consumption forecast for the upcoming period. The predicted consumption rate is also used to estimate the approximate amount of time for which the available prepaid balance may remain sufficient.
+
+The estimated remaining time is calculated using:
+
+\begin{equation}
+H_{\mathrm{remaining}} =
+\frac{B}{R_{\mathrm{avg}}}
+\end{equation}
+
+where $H_{\mathrm{remaining}}$ represents the estimated remaining time, $B$ represents the available prepaid balance, and $R_{\mathrm{avg}}$ represents the estimated average consumption rate.
+
+
+\section{Blockchain and Anomaly Management}
+
+The proposed system links the anomaly detection process with blockchain-based authorization management.
+
+When an abnormal consumption pattern is detected, the backend records the event and evaluates the associated condition. If the anomaly satisfies the required condition, the backend can invoke the smart contract function responsible for anomaly-related cutoff.
+
+After the anomaly has been investigated or resolved, authorization can be restored through the corresponding smart contract function.
+
+This integration connects machine-learning-based detection with rule-based authorization management.
+
+
+\section{Web-Based Monitoring System}
+
+A web-based monitoring interface is developed using React and Vite. The interface provides users with information about the current state of the proposed system.
+
+The monitoring interface presents:
+
+\begin{itemize}
+    \item Current electricity load
+    \item Prepaid balance
+    \item Estimated remaining time
+    \item Authorization status
+    \item Anomaly information
+    \item Historical consumption
+    \item Consumption forecast
+\end{itemize}
+
+The frontend obtains the required information from the FastAPI backend through HTTP requests.
+
+
+\section{System Workflow}
+
+The overall workflow of the proposed system is as follows:
+
+\begin{enumerate}
+
+    \item Simulated electricity consumption data is generated.
+
+    \item The telemetry data is submitted to the FastAPI backend.
+
+    \item The backend validates and stores the received data in the SQLite database.
+
+    \item The recent consumption data is analyzed by the anomaly detection model.
+
+    \item Historical consumption data is processed by the forecasting model.
+
+    \item The backend communicates with the blockchain layer to obtain prepaid balance and authorization information.
+
+    \item The prepaid balance is updated according to the simulated electricity consumption.
+
+    \item If a significant anomaly is detected, the corresponding authorization or cutoff operation can be initiated.
+
+    \item The processed information is provided to the frontend.
+
+    \item The web-based interface displays consumption, balance, forecast, and anomaly information to the user.
+
+\end{enumerate}
+
+
+\section{Testing and Evaluation}
+
+The proposed system is evaluated through software-based testing using simulated electricity telemetry.
+
+The evaluation includes:
+
+\begin{itemize}
+    \item Testing telemetry submission and processing
+    \item Testing database storage and retrieval
+    \item Testing prepaid token purchase and balance retrieval
+    \item Testing prepaid balance deduction
+    \item Testing authorization management
+    \item Testing anomaly detection
+    \item Testing electricity consumption forecasting
+    \item Testing anomaly-triggered cutoff operations
+    \item Testing communication between the backend and blockchain
+    \item Testing the information displayed by the monitoring interface
+\end{itemize}
+
+
+\section{Scope of Implementation}
+
+The current project focuses on the software implementation and simulation of the proposed Decentralized Prepaid Smart Power Grid.
+
+The implementation includes simulated electricity telemetry, backend processing, database management, blockchain-based prepaid balance management, machine-learning-based anomaly detection, electricity consumption forecasting, and web-based monitoring.
+
+Physical electricity meters, ESP32 devices, sensors, relays, and actual electrical distribution infrastructure are not included in the current implementation. The blockchain component is also evaluated using a local Hardhat development environment rather than a public production blockchain network.
+
+
+\section{Summary}
+
+The proposed methodology integrates simulated electricity telemetry, backend services, database management, blockchain-based prepaid management, machine-learning techniques, and a web-based monitoring interface into a single software prototype.
+
+The hybrid architecture allows blockchain to handle prepaid balance and authorization-related operations while the backend manages telemetry processing, data storage, machine-learning analysis, and communication with the frontend. The methodology provides a controlled environment for demonstrating the proposed system without requiring physical electrical hardware.
