@@ -1,24 +1,24 @@
 \pagenumbering{arabic}
 \chapter{INTRODUCTION}
 \section{Background}
-Electricity distribution systems require reliable measurement, timely payment processing, and rapid identification of unsafe or abnormal consumption. Conventional prepaid systems often depend on a central application to store balances and decide whether a consumer remains connected. This creates a single operational point of failure and makes it difficult to independently verify balance deductions and disconnection decisions.
+Electrical utility distribution domains traditionally rely on deeply centralized data hubs and infrastructure networks.
+In conventional systems, energy consumption data is metered at the consumer’s end, transferred across proprietary channels, and recorded on private databases controlled by the central authority.
+While this model has sustained basic distribution needs for decades, it introduces a systemic vulnerability: asymmetric information control. Consumers have zero real-time architectural visibility into the backend computations , resulting in frequent trust deficits, billing friction, and disputes regarding unexpected or hidden charges. \cite{ref1}
 
-This project proposes a local prototype of a decentralized prepaid smart power grid. An ESP32-based meter sends consumption and tamper telemetry to a FastAPI backend. The backend validates the meter, records operational history in SQLite, and uses a Solidity smart contract on a local Hardhat network to maintain and deduct prepaid energy credits. A React web dashboard presents the current balance, load, meter status, and system events. A lightweight machine-learning component estimates the remaining service time, while electrical current comparison provides an explainable tamper signal.
+To address this structural trust gap, this project introduces a decentralized smart grid framework that completely decouples utility transaction computation from central database manipulation. By converging the Internet of Things (IoT), Blockchain architecture, and Machine Learning (ML), the proposed system transitions utility management into a  transparent, and self-governing ecosystem.
 
 \section{Problem Definition}
-Small communities and prototype deployments need an affordable way to demonstrate prepaid electricity enforcement without requiring a production utility platform. A purely centralized implementation can hide the source of balance changes, continue operating when its ledger is inconsistent, and provide limited visibility into meter tampering. The problem addressed by this project is therefore the design and validation of an end-to-end prototype that links physical telemetry, transparent prepaid accounting, safety decisions, and human-readable monitoring in one workflow.
+Modern electrical utility structures suffer from a deep trust deficit rooted in asymmetric information control. Because traditional meters stream data into closed, centralized 
+corporate databases, consumers have no way to independently verify the math behind their electricity bills. 
+
+On the flip side, utility authorities face massive financial instability due to postpaid billing defaults, where consumers delay payments or completely default on their bills, forcing the utility into expensive and inefficient debt-recovery cycles.
 
 \section{Objectives}
 \begin{itemize}
-  \item To design an ESP32-based smart meter prototype that periodically reports load, energy, current, and tamper status.
-  \item To implement a FastAPI service that validates telemetry, stores meter history, and coordinates the grid-control workflow.
-  \item To implement a Solidity prepaid ledger that records meter credits and deducts energy consumption transparently.
-  \item To provide automatic disconnect decisions when tampering is detected or prepaid credit is depleted.
-  \item To estimate remaining operating time from historical consumption and display system status through a React dashboard.
+  \item To eliminate billing opacity, information asymmetry, and utility revenue collection risks by developing a decentralized energy management framework.
+  \item To resolve hidden energy leakages by integrating machine learning models for predictive budget forecasting and anomaly-based theft detection.
 \end{itemize}
 
 
 \section{Scope of Project}
-The project is limited to a working local prototype and simulation environment. It includes ESP32/Wokwi telemetry generation, meter registration and validation, SQLite history, local Hardhat blockchain transactions, prepaid balance deduction, current-differential tamper detection, remaining-hours estimation, and a React web dashboard. The default demonstration account represents a meter in Dharan.
-
-The project does not claim to replace certified utility meters, production blockchain infrastructure, tariff regulation, utility-scale grid protection, or a production security audit. The local blockchain and seeded data are used to evaluate the proposed workflow in a controlled environment.
+The project focuses on providing transparent energy distribution and secure automated prepaid billing from simulated low-voltage IoT edge load sources. It includes real-time analog load sampling, immutable smart contract ledger processing, cryptographic backend middleware routing, machine learning-based budget forecasting, anomaly-based theft detection, and a dual-interface review dashboard.

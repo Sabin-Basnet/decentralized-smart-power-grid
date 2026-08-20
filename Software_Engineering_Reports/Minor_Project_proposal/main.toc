@@ -6,24 +6,23 @@
 \contentsline {chapter}{\numberline {2}LITERATURE REVIEW}{3}{}%
 \contentsline {section}{\numberline {2.1}Historical Evolution}{3}{}%
 \contentsline {section}{\numberline {2.2}Algorithms and Models}{3}{}%
-\contentsline {subsection}{\numberline {2.2.1}Prepaid Smart Contracts}{3}{}%
-\contentsline {subsection}{\numberline {2.2.2}Remaining-Time Estimation}{3}{}%
-\contentsline {subsection}{\numberline {2.2.3}Explainable Tamper Detection}{3}{}%
-\contentsline {section}{\numberline {2.3}Data Processing and Feature Engineering}{4}{}%
+\contentsline {subsection}{\numberline {2.2.1}Smart Contracts (State Machine)}{3}{}%
+\contentsline {subsection}{\numberline {2.2.2}Predictive Budgeting (Linear Regression)}{3}{}%
+\contentsline {subsection}{\numberline {2.2.3}Anomaly Detection (Isolation Forest)}{3}{}%
+\contentsline {section}{\numberline {2.3}Data Processing and Feature Engineering}{3}{}%
 \contentsline {section}{\numberline {2.4}Gaps and Challenge}{4}{}%
 \contentsline {chapter}{\numberline {3}METHODOLOGY}{5}{}%
 \contentsline {section}{\numberline {3.1}Overview}{5}{}%
 \contentsline {section}{\numberline {3.2}Proposed Block Diagram}{5}{}%
-\contentsline {section}{\numberline {3.3}System Design}{6}{}%
+\contentsline {section}{\numberline {3.3}System Design}{5}{}%
 \contentsline {section}{\numberline {3.4}Tools and Techniques}{6}{}%
-\contentsline {section}{\numberline {3.5}Data Sources}{7}{}%
-\contentsline {subsection}{\numberline {3.5.1}Primary Sources}{7}{}%
+\contentsline {section}{\numberline {3.5}Data Sources}{6}{}%
+\contentsline {subsection}{\numberline {3.5.1}Primary Sources}{6}{}%
 \contentsline {subsection}{\numberline {3.5.2}Synthetic Data (Machine Learning Training)}{7}{}%
 \contentsline {section}{\numberline {3.6}Implementation}{7}{}%
 \contentsline {subsection}{\numberline {3.6.1}Hardware Layer Implementation}{7}{}%
 \contentsline {subsection}{\numberline {3.6.2}Blockchain Ledger Implementation}{7}{}%
-\contentsline {subsection}{\numberline {3.6.3}Backend Middleware and ML Integration}{8}{}%
-\contentsline {section}{\numberline {3.7}Testing and Evaluation}{8}{}%
-\contentsline {chapter}{\numberline {4}EXPECTED RESULTS}{9}{}%
-\contentsline {chapter}{\numberline {5}EXPECTED SCHEDULE}{10}{}%
-\contentsline {chapter}{REFERENCES}{11}{}%
+\contentsline {subsection}{\numberline {3.6.3}Backend Middleware and ML Integration}{7}{}%
+\contentsline {chapter}{\numberline {4}EXPECTED RESULTS}{8}{}%
+\contentsline {chapter}{\numberline {5}EXPECTED SCHEDULE}{9}{}%
+\contentsline {chapter}{REFERENCES}{10}{}%
