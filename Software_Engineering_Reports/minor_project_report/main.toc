@@ -1,0 +1,17 @@
+\contentsline {chapter}{LIST OF FIGURES}{ii}{}%
+\contentsline {chapter}{LIST OF TABLES}{iii}{}%
+\contentsline {chapter}{LIST OF ABBREVIATIONS}{iv}{}%
+\contentsline {chapter}{\numberline {1}INTRODUCTION}{1}{}%
+\contentsline {section}{\numberline {1.1}Background}{1}{}%
+\contentsline {section}{\numberline {1.2}Gap Identification}{1}{}%
+\contentsline {section}{\numberline {1.3}Motivation}{1}{}%
+\contentsline {section}{\numberline {1.4}Objectives}{1}{}%
+\contentsline {chapter}{\numberline {2}RELATED THEORY}{2}{}%
+\contentsline {section}{\numberline {2.1}Related Theory goes here}{2}{}%
+\contentsline {chapter}{\numberline {3}LITERATURE REVIEW}{3}{}%
+\contentsline {chapter}{\numberline {4}METHODOLOGY}{4}{}%
+\contentsline {section}{\numberline {4.1}Overview}{4}{}%
+\contentsline {section}{\numberline {4.2}Other section goes here}{4}{}%
+\contentsline {chapter}{\numberline {5}EXPECTED RESULTS}{5}{}%
+\contentsline {chapter}{REFERENCES}{6}{}%
+\contentsline {chapter}{APPENDIX}{7}{}%
