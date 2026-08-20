@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.5) (preloaded format=pdflatex 2026.6.10)  20 AUG 2026 15:28
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.5) (preloaded format=pdflatex 2026.6.10)  20 AUG 2026 15:45
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -552,7 +552,7 @@ Package caption Info: End \AtBeginDocument code.
 <Graphics/TULogo.png, id=4, 394.47375pt x 468.75125pt>
 File: Graphics/TULogo.png Graphic file (type png)
 <use Graphics/TULogo.png>
-Package pdftex.def Info: Graphics/TULogo.png  used on input line 5.
+Package pdftex.def Info: Graphics/TULogo.png  used on input line 6.
 (pdftex.def)             Requested size: 83.36536pt x 99.06293pt.
  [1
 
@@ -695,15 +695,15 @@ L3 programming layer <2026-05-26>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 17277 strings out of 467475
- 339846 string characters out of 5413705
+ 17275 strings out of 467475
+ 339784 string characters out of 5413705
  725602 words of memory out of 5000000
- 46150 multiletter control sequences out of 15000+600000
+ 46148 multiletter control sequences out of 15000+600000
  645671 words of font info for 77 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  84i,5n,104p,1307b,186s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <D:/realm/hoyovserse/light/latex/fonts/type1/urw/times/utmb8a.pfb><D:/realm/hoyovserse/light/latex/fonts/type1/urw/times/utmr8a.pfb>
-Output written on main.pdf (13 pages, 717963 bytes).
+Output written on main.pdf (13 pages, 718691 bytes).
 PDF statistics:
  62 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
