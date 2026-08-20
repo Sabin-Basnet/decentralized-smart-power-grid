@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.5) (preloaded format=pdflatex 2026.6.10)  20 AUG 2026 15:45
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.5) (preloaded format=pdflatex 2026.6.10)  20 AUG 2026 16:05
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -473,7 +473,7 @@ File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
 ) (D:\realm\hoyovserse\light\latex\tex/latex/l3backend\l3backend-pdftex.def
 File: l3backend-pdftex.def 2026-02-18 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count328
-) (main.aux (CoverPage.aux) (Abstract.aux) (ListofAbbreviations.aux) (Introduction.aux) (RelatedTheory.aux) (LiteratureReview.aux) (Methodology.aux) (ExpectedResults.aux) (Conclusion.aux) (References.aux) (Appendix.aux))
+) (main.aux (CoverPage.aux) (Abstract.aux) (ListofAbbreviations.aux) (Introduction.aux) (RelatedTheory.aux) (LiteratureReview.aux) (Methodology.aux) (ExpectedResults.aux) (ProjectSchedule.aux) (Budget.aux) (Conclusion.aux) (References.aux) (Appendix.aux))
 \openout1 = `main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 83.
@@ -560,9 +560,11 @@ Package pdftex.def Info: Graphics/TULogo.png  used on input line 6.
 {C:/Users/tonys/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}{D:/realm/hoyovserse/light/latex/fonts/enc/dvips/base/8r.enc} <./Graphics/TULogo.png>])
 \openout2 = `Abstract.aux'.
 
+ (Abstract.tex [1
 
-No file Abstract.tex.
-(main.toc
+
+
+]) (main.toc
 LaTeX Font Info:    Trying to load font information for OT1+ztmcm on input line 1.
  (D:\realm\hoyovserse\light\latex\tex/latex/psnfss\ot1ztmcm.fd
 File: ot1ztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OT1/ztmcm.
@@ -590,9 +592,6 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7> not available
 \openout4 = `main.toc'.
 
  [1
-
-
-
 
 
 ] (main.lof)
@@ -663,8 +662,14 @@ Chapter 5.
 
 
 ]
-\openout2 = `Conclusion.aux'.
+\openout2 = `ProjectSchedule.aux'.
 
+
+No file ProjectSchedule.tex.
+\openout2 = `Budget.aux'.
+
+No file Budget.tex.
+\openout2 = `Conclusion.aux'.
 
 No file Conclusion.tex.
 \openout2 = `References.aux'.
@@ -681,6 +686,12 @@ Package natbib Warning: Empty `thebibliography' environment on input line 24.
 
 
 
+
+
+
+
+
+
 ]
 \openout2 = `Appendix.aux'.
 
@@ -688,24 +699,24 @@ Package natbib Warning: Empty `thebibliography' environment on input line 24.
 
 
 
-]) [8] (main.aux (CoverPage.aux) (Abstract.aux) (ListofAbbreviations.aux) (Introduction.aux) (RelatedTheory.aux) (LiteratureReview.aux) (Methodology.aux) (ExpectedResults.aux) (Conclusion.aux) (References.aux) (Appendix.aux))
+]) [8] (main.aux (CoverPage.aux) (Abstract.aux) (ListofAbbreviations.aux) (Introduction.aux) (RelatedTheory.aux) (LiteratureReview.aux) (Methodology.aux) (ExpectedResults.aux) (ProjectSchedule.aux) (Budget.aux) (Conclusion.aux) (References.aux) (Appendix.aux))
  ***********
 LaTeX2e <2026-06-01>
 L3 programming layer <2026-05-26>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 17275 strings out of 467475
- 339784 string characters out of 5413705
- 725602 words of memory out of 5000000
- 46148 multiletter control sequences out of 15000+600000
+ 17326 strings out of 467475
+ 341650 string characters out of 5413705
+ 726346 words of memory out of 5000000
+ 46187 multiletter control sequences out of 15000+600000
  645671 words of font info for 77 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  84i,5n,104p,1307b,186s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <D:/realm/hoyovserse/light/latex/fonts/type1/urw/times/utmb8a.pfb><D:/realm/hoyovserse/light/latex/fonts/type1/urw/times/utmr8a.pfb>
-Output written on main.pdf (13 pages, 718691 bytes).
+Output written on main.pdf (14 pages, 721853 bytes).
 PDF statistics:
- 62 PDF objects out of 1000 (max. 8388607)
+ 65 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  18 words of extra memory for PDF output out of 10000 (max. 10000000)
 
