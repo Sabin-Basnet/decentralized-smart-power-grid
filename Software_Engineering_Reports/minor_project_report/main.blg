@@ -3,6 +3,8 @@ Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: main.aux
 Reallocating 'name_of_file' (item size: 1) to 14 items.
 A level-1 auxiliary file: CoverPage.aux
+Reallocating 'name_of_file' (item size: 1) to 20 items.
+A level-1 auxiliary file: letter_approval.aux
 Reallocating 'name_of_file' (item size: 1) to 13 items.
 A level-1 auxiliary file: Abstract.aux
 Reallocating 'name_of_file' (item size: 1) to 24 items.
@@ -44,7 +46,7 @@ Database file #1: refe.bib
 Done.
 You've used 0 entries,
             4087 wiz_defined-function locations,
-            834 strings with 7485 characters,
+            835 strings with 7504 characters,
 and the built_in function-call counts, 104 in all, are:
 = -- 0
 > -- 0
