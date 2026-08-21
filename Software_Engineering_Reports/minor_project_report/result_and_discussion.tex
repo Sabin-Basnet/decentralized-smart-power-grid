@@ -1,4 +1,4 @@
-\chapter{EXPECTED RESULTS}
+\chapter{Result And Discussion}
 
 \section{System Demonstration}
 
@@ -59,10 +59,22 @@ The React-based frontend successfully fulfilled the requirement for a dual-role,
 
     \item Client Interface: Logging in with consumer credentials routed the user to a dedicated dashboard prioritizing financial transparency. The interface successfully rendered a Recharts semi-circular gauge displaying the live token balance alongside the regression model's time-to-exhaustion forecast.
 
-    \item Insert Screenshot of Client Dashboard Here -- showing the gauge and estimated time. Image needs to be added.
+    \item Client Dashboard Screenshot:
+
+    \begin{figure}[H]
+        \centering
+        \includegraphics[width=\textwidth,keepaspectratio]{Graphics/consumer_dashboard.jpeg}
+        \caption{Consumer Dashboard Showing Token Balance and Estimated Time Remaining}\label{fig:consumer-dashboard}
+    \end{figure}
 
     \item Provider Interface: Logging in with administrative credentials routed the user to the grid management dashboard. The interface successfully displayed aggregate system loads and an active meter table. When the differential theft test was executed, the interface successfully rendered a flashing red "Theft Detected" alert panel, precisely identifying the compromised meter ID and the timestamp of the anomaly.
 
-    \item Insert Screenshot of Provider Dashboard Here -- showing the red "Theft Detected" alert.
+    \item Administrator Dashboard Screenshot:
+
+    \begin{figure}[H]
+        \centering
+        \includegraphics[width=\textwidth,keepaspectratio]{Graphics/administrator_dashboard.jpeg}
+        \caption{Administrator Dashboard Showing Grid Monitoring and Theft Alert}\label{fig:administrator-dashboard}
+    \end{figure}
 
 \end{itemize}
