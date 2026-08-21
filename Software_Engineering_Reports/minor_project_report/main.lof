@@ -10,6 +10,7 @@
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {4.1}{\ignorespaces End-to-End Demonstration of the Simulated Smart Grid System}}{16}{}%
 \contentsline {figure}{\numberline {4.2}{\ignorespaces Functional Outcomes Validated Through System Testing}}{16}{}%
-\contentsline {figure}{\numberline {4.3}{\ignorespaces Consumer Dashboard Showing Token Balance and Estimated Time Remaining}}{18}{}%
-\contentsline {figure}{\numberline {4.4}{\ignorespaces Provider Dashboard Showing Grid Monitoring and Theft Alert}}{19}{}%
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Theft Detection using current differences}}{18}{}%
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Consumer Dashboard Showing Token Balance and Estimated Time Remaining}}{19}{}%
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Provider Dashboard Showing Grid Monitoring and Theft Alert}}{19}{}%
 \addvspace {10\p@ }
