@@ -1,29 +1,88 @@
+\usepackage{tikz}
+\usetikzlibrary{positioning,arrows.meta,shapes.geometric}
+\usepackage{float}
+
 \chapter{METHODOLOGY}
 
 \section{System Architecture}
 
-The proposed Decentralized Smart Power Grid is built upon a hybrid four-tier architecture. It integrates physical hardware simulation at the edge, a centralized middleware API for data routing and intelligence, a decentralized blockchain network for secure financial state execution, and a role-based presentation layer for real-time monitoring. By decoupling the transaction logic from a centralized database, the architecture ensures that all billing deductions are immutably processed while retaining high-speed data analysis at the middleware level.
+The proposed Decentralized Smart Power Grid is implemented as a software-based simulation architecture consisting of a telemetry simulation module, a centralized middleware API for data routing and intelligence, a decentralized blockchain network for secure financial state execution, and a role-based presentation layer for real-time monitoring. Since physical high-voltage deployment is outside the scope of this project, the behavior of the smart meter and energy consumption process is simulated through software-generated telemetry data. By decoupling the transaction logic from a centralized database, the architecture ensures that all billing deductions are immutably processed while retaining high-speed data analysis at the middleware level.
 
-\section{Hardware and Edge Layer}
+The overall system architecture is illustrated in Figure~\ref{fig:system-architecture}.
 
-Because physical high-voltage deployment falls outside the scope of this project, the edge layer is implemented using the Wokwi IoT simulation environment. The core of this layer is an ESP32 microcontroller, programmed in C++ using the Arduino IDE.
+\begin{figure}[H]
+\centering
+\begin{tikzpicture}[
+    node distance=1.5cm and 2.5cm,
+    box/.style={
+        rectangle,
+        rounded corners,
+        draw,
+        minimum width=4.2cm,
+        minimum height=1.2cm,
+        align=center
+    },
+    arrow/.style={
+        -{Latex[length=3mm]},
+        thick
+    }
+]
 
-The edge node performs three primary functions:
+\node[box] (simulation)
+{Smart Meter Simulation\\Telemetry Generation};
+
+\node[box, below=of simulation] (backend)
+{FastAPI Backend\\Data Processing and API Services};
+
+\node[box, below left=of backend] (ml)
+{Machine Learning Engine\\Theft Detection and Forecasting};
+
+\node[box, below right=of backend] (blockchain)
+{Blockchain Layer\\Hardhat + Solidity Smart Contract};
+
+\node[box, below=4cm of backend] (frontend)
+{React Frontend\\Client and Provider Dashboards};
+
+\draw[arrow] (simulation) -- 
+node[right, font=\small] {HTTP / JSON} (backend);
+
+\draw[arrow] (backend) -- (ml);
+
+\draw[arrow] (backend) -- (blockchain);
+
+\draw[arrow] (ml) |- (frontend);
+
+\draw[arrow] (blockchain) |- (frontend);
+
+\end{tikzpicture}
+\caption{Overall System Architecture of the Proposed Decentralized Smart Power Grid}
+\label{fig:system-architecture}
+\end{figure}
+
+
+\section{Telemetry Simulation}
+
+Because physical smart-meter and high-voltage deployment falls outside the scope of this project, the electrical consumption process is implemented through a software-based simulation. The simulation generates variable consumer load values and represents the behavior of a smart meter without requiring physical electrical equipment.
+
+The telemetry simulation performs three primary functions:
 
 \begin{itemize}
-\item Telemetry Generation: A linear potentiometer is used to simulate variable consumer load demand. The ESP32's Analog-to-Digital Converter (ADC) samples this voltage variation and mathematically maps it to simulated line and neutral currents.
 
-\item Data Transmission: The microcontroller packages the current metrics, cumulative energy, and the unique meter ID into a JSON payload and transmits it to the backend via an HTTP POST request over a simulated Wi-Fi connection.
+\item \textbf{Telemetry Generation:} Variable load values are generated to represent changing consumer electricity demand. The simulated values are used to calculate corresponding line current, neutral current, and cumulative energy consumption.
 
-\item Physical Enforcement: The edge node is equipped with a simulated electromechanical relay and an I2C LCD display. It continuously listens for authorization state changes from the backend. If an "Inactive" or "Zero Balance" signal is received, the ESP32 instantly actuates the relay to open the circuit, effectively cutting the power simulation.
+\item \textbf{Data Preparation:} The simulated meter generates the current metrics, cumulative energy, and unique meter ID and packages them into a JSON payload.
+
+\item \textbf{Data Transmission:} The generated telemetry data is transmitted to the FastAPI backend through an HTTP POST request, allowing the backend to process the simulated smart-meter readings in real time.
 
 \end{itemize}
 
+
 \section{Backend Service Layer}
 
-The middleware acts as the central coordinator of the system, engineered using the Python FastAPI framework. This RESTful service layer operates statelessly and handles high-frequency I/O operations. When the FastAPI server receives a telemetry payload from the ESP32, it executes a concurrent routing process:
+The middleware acts as the central coordinator of the system, engineered using the Python FastAPI framework. This RESTful service layer operates statelessly and handles high-frequency I/O operations. When the FastAPI server receives a telemetry payload from the simulated smart meter, it executes a concurrent routing process:
 
 \begin{itemize}
+
 \item It passes the raw current arrays to the machine learning engine for anomaly classification and budget forecasting.
 
 \item It utilizes the web3.py library to establish a Remote Procedure Call (RPC) connection to the local blockchain ledger, forwarding the cumulative energy data to the smart contract for token deduction.
@@ -32,22 +91,133 @@ The middleware acts as the central coordinator of the system, engineered using t
 
 \end{itemize}
 
+
 \section{Blockchain Layer}
 
-The secure billing and transaction layer is decentralized using a local Hardhat test network environment. The core logic is governed by a custom Solidity smart contract (PowerGrid.sol). The contract initializes state variables that map specific cryptographic wallet addresses to physical smart meter IDs (e.g., DHARAN-001).
+The secure billing and transaction layer is decentralized using a local Hardhat test network environment. The core logic is governed by a custom Solidity smart contract (\texttt{PowerGrid.sol}). The contract initializes state variables that map specific cryptographic wallet addresses to smart meter IDs (e.g., \texttt{DHARAN-001}).
 
-When the backend submits the energy consumption payload, the smart contract executes a deterministic state change. It calculates the required tariff deduction and subtracts it from the user's prepaid token balance. If the computation results in a balance of less than or equal to zero, the contract immutably updates the meter's status flag to "Inactive." By handling the financial mathematics entirely on-chain, the system completely bypasses the vulnerability of a centralized, easily manipulated corporate database.
+When the backend submits the energy consumption payload, the smart contract executes a deterministic state change. It calculates the required tariff deduction and subtracts it from the user's prepaid token balance. If the computation results in a balance of less than or equal to zero, the contract immutably updates the meter's status flag to ``Inactive.'' By handling the financial mathematics entirely on-chain, the system completely bypasses the vulnerability of a centralized, easily manipulated corporate database.
+
+The blockchain transaction flow is illustrated in Figure~\ref{fig:blockchain-flow}.
+
+\begin{figure}[H]
+\centering
+\begin{tikzpicture}[
+    node distance=1.2cm,
+    box/.style={
+        rectangle,
+        rounded corners,
+        draw,
+        minimum width=4.5cm,
+        minimum height=1cm,
+        align=center
+    },
+    arrow/.style={
+        -{Latex[length=3mm]},
+        thick
+    }
+]
+
+\node[box] (submit)
+{Backend Submits Energy Consumption};
+
+\node[box, below=of submit] (calculate)
+{Smart Contract Calculates Tariff};
+
+\node[box, below=of calculate] (deduct)
+{Deduct Prepaid Token Balance};
+
+\node[
+    diamond,
+    draw,
+    aspect=2,
+    below=of deduct,
+    align=center,
+    minimum width=4cm,
+    minimum height=1cm
+] (decision)
+{Balance $>0$?};
+
+\node[box, below left=1.5cm and 2cm of decision] (active)
+{Meter Status\\Active};
+
+\node[box, below right=1.5cm and 2cm of decision] (inactive)
+{Meter Status\\Inactive};
+
+\draw[arrow] (submit) -- (calculate);
+\draw[arrow] (calculate) -- (deduct);
+\draw[arrow] (deduct) -- (decision);
+
+\draw[arrow] (decision) --
+node[left, font=\small] {Yes} (active);
+
+\draw[arrow] (decision) --
+node[right, font=\small] {No} (inactive);
+
+\end{tikzpicture}
+\caption{Blockchain-Based Prepaid Token Deduction Process}
+\label{fig:blockchain-flow}
+\end{figure}
+
 
 \section{Machine Learning Pipeline}
 
 The grid's intelligence is handled by a Python-based Scikit-Learn pipeline operating within the backend, leveraging a localized synthetic dataset mapping historical consumption patterns of Dharan-based grid users.
 
 \begin{itemize}
-\item Anomaly Detection (Classification): To detect energy theft, the system analyzes the incoming telemetry against Kirchhoff's Current Law. The classifier calculates the absolute difference between the simulated line current and neutral current. If the differential exceeds the pre-calibrated safety threshold, the algorithm classifies the event as an unmetered bypass and instantly flags a boolean anomaly alert.
 
-\item Consumption Forecasting (Regression): To enhance the consumer experience, a supervised Linear Regression model maps the consumer's real-time load demand against their historical Dharan dataset. The model calculates a trajectory of usage to forecast the exact number of hours remaining before the smart contract token balance reaches zero.
+\item \textbf{Anomaly Detection (Classification):} To detect energy theft, the system analyzes the incoming telemetry against Kirchhoff's Current Law. The classifier calculates the absolute difference between the simulated line current and neutral current. If the differential exceeds the pre-calibrated safety threshold, the algorithm classifies the event as an unmetered bypass and instantly flags a boolean anomaly alert.
+
+\item \textbf{Consumption Forecasting (Regression):} To enhance the consumer experience, a supervised Linear Regression model maps the consumer's real-time load demand against their historical Dharan dataset. The model calculates a trajectory of usage to forecast the exact number of hours remaining before the smart contract token balance reaches zero.
 
 \end{itemize}
+
+The machine learning pipeline is illustrated in Figure~\ref{fig:ml-pipeline}.
+
+\begin{figure}[H]
+\centering
+\begin{tikzpicture}[
+    node distance=1.5cm and 2cm,
+    box/.style={
+        rectangle,
+        rounded corners,
+        draw,
+        minimum width=4cm,
+        minimum height=1cm,
+        align=center
+    },
+    arrow/.style={
+        -{Latex[length=3mm]},
+        thick
+    }
+]
+
+\node[box] (input)
+{Simulated Telemetry Data};
+
+\node[box, below left=of input] (anomaly)
+{Anomaly Detection\\Line-Neutral Current Difference};
+
+\node[box, below right=of input] (forecast)
+{Linear Regression\\Consumption Forecasting};
+
+\node[box, below=of anomaly] (alert)
+{Theft Alert};
+
+\node[box, below=of forecast] (time)
+{Estimated Time Remaining};
+
+\draw[arrow] (input) -- (anomaly);
+\draw[arrow] (input) -- (forecast);
+
+\draw[arrow] (anomaly) -- (alert);
+\draw[arrow] (forecast) -- (time);
+
+\end{tikzpicture}
+\caption{Machine Learning Processing Pipeline}
+\label{fig:ml-pipeline}
+\end{figure}
+
 
 \section{Role-Based Frontend Dashboards}
 
@@ -55,12 +225,122 @@ The presentation layer is built using React and Vite, utilizing a strict route-g
 
 \begin{itemize}
 
-\item Client Dashboard: Designed for the end-consumer, this view prioritizes financial visibility. It features a responsive Recharts semi-circular gauge displaying the live token balance, a daily power usage graph, and an active readout of the regression model's "Estimated Time Remaining."
+\item \textbf{Client Dashboard:} Designed for the end-consumer, this view prioritizes financial visibility. It features a responsive Recharts semi-circular gauge displaying the live token balance, a daily power usage graph, and an active readout of the regression model's ``Estimated Time Remaining.''
 
-\item Provider Dashboard: Designed for grid administrators, this interface monitors the entire localized network. It features an aggregate system load chart, a searchable table of active user balances, and a critical alert panel. If the machine learning pipeline triggers a differential anomaly, this panel instantly flashes a red "Theft Detected" warning, logging the specific meter ID and the exact timestamp of the leak.
+\item \textbf{Provider Dashboard:} Designed for grid administrators, this interface monitors the entire localized network. It features an aggregate system load chart, a searchable table of active user balances, and a critical alert panel. If the machine learning pipeline triggers a differential anomaly, this panel instantly flashes a red ``Theft Detected'' warning, logging the specific meter ID and the exact timestamp of the leak.
 
 \end{itemize}
 
+
+\section{Use Case Model}
+
+The interaction between the system users and the major functions of the proposed system is represented in Figure~\ref{fig:use-case}.
+
+\begin{figure}[H]
+\centering
+\begin{tikzpicture}[
+    actor/.style={
+        draw,
+        ellipse,
+        minimum width=2.5cm,
+        minimum height=1cm,
+        align=center
+    },
+    usecase/.style={
+        draw,
+        ellipse,
+        minimum width=4cm,
+        minimum height=1cm,
+        align=center
+    }
+]
+
+\node[actor] (client) at (-6,2) {Client};
+
+\node[actor] (provider) at (-6,-3) {Provider};
+
+\node[usecase] (balance) at (1,4) {View Token Balance};
+
+\node[usecase] (usage) at (1,2.5) {View Power Usage};
+
+\node[usecase] (remaining) at (1,1) {View Estimated\\Time Remaining};
+
+\node[usecase] (alerts) at (1,-1) {View Theft Alerts};
+
+\node[usecase] (monitor) at (1,-2.5) {Monitor Consumer\\Accounts};
+
+\node[usecase] (transactions) at (1,-4) {Monitor Blockchain\\Transactions};
+
+\draw (client) -- (balance);
+\draw (client) -- (usage);
+\draw (client) -- (remaining);
+
+\draw (provider) -- (alerts);
+\draw (provider) -- (monitor);
+\draw (provider) -- (transactions);
+\draw (provider) -- (usage);
+
+\end{tikzpicture}
+\caption{Use Case Diagram of the Proposed System}
+\label{fig:use-case}
+\end{figure}
+
+
 \section{Working Flow Summary}
 
-The complete automated cycle executes as follows: The ESP32 edge node samples analog load variations and POSTs the telemetry to the FastAPI backend. FastAPI routes this data through Scikit-Learn for theft classification and budget regression forecasting. Simultaneously, web3.py pushes the load data to the Solidity smart contract, which mathematically deducts the prepaid token balance. The backend returns this updated balance and intelligence data to the frontend for visualization. If the contract calculates a zero balance, the backend immediately signals the ESP32 to open the relay, cutting the power and completing the decentralized control loop.
+The complete automated cycle executes as follows: The simulated smart meter generates analog load variations and POSTs the telemetry to the FastAPI backend. FastAPI routes this data through Scikit-Learn for theft classification and budget regression forecasting. Simultaneously, web3.py pushes the load data to the Solidity smart contract, which mathematically deducts the prepaid token balance. The backend returns this updated balance and intelligence data to the frontend for visualization. If the contract calculates a zero balance, the meter status is updated to ``Inactive,'' indicating that the simulated electricity service is suspended.
+
+The complete working flow is illustrated in Figure~\ref{fig:working-flow}.
+
+\begin{figure}[H]
+\centering
+\begin{tikzpicture}[
+    node distance=1.3cm and 2.5cm,
+    box/.style={
+        rectangle,
+        rounded corners,
+        draw,
+        minimum width=4.2cm,
+        minimum height=1cm,
+        align=center
+    },
+    arrow/.style={
+        -{Latex[length=3mm]},
+        thick
+    }
+]
+
+\node[box] (simulation)
+{Simulated Smart Meter\\Generates Telemetry};
+
+\node[box, below=of simulation] (backend)
+{FastAPI Backend};
+
+\node[box, below left=of backend] (ml)
+{Scikit-Learn\\Theft Detection + Forecasting};
+
+\node[box, below right=of backend] (blockchain)
+{web3.py + Solidity\\Token Deduction};
+
+\node[box, below=3cm of backend] (result)
+{Updated Balance +\\ML Results};
+
+\node[box, below=of result] (frontend)
+{React Client / Provider\\Dashboard};
+
+\draw[arrow] (simulation) -- (backend);
+
+\draw[arrow] (backend) -- (ml);
+
+\draw[arrow] (backend) -- (blockchain);
+
+\draw[arrow] (ml) |- (result);
+
+\draw[arrow] (blockchain) |- (result);
+
+\draw[arrow] (result) -- (frontend);
+
+\end{tikzpicture}
+\caption{Complete System Working Flow}
+\label{fig:working-flow}
+\end{figure}
