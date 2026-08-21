@@ -2,7 +2,41 @@
 
 \section{System Demonstration}
 
-The Decentralized Smart Power Grid was successfully deployed and tested in a localized simulation environment. The edge layer was simulated using Wokwi, running the ESP32 C++ firmware. The middleware was hosted locally via a Uvicorn server running the FastAPI application. The decentralized ledger was simulated using a local Hardhat Ethereum node, which successfully compiled and deployed the PowerGrid.sol smart contract. Finally, the role-based presentation layer was served via a Vite development server, communicating smoothly with the backend REST endpoints. The successful integration of these four layers demonstrated a complete, end-to-end data cycle from physical load simulation to immutable blockchain deduction and web-based visualization.
+\begin{figure}[H]
+\centering
+\begin{tikzpicture}[
+    node distance=2.2cm and 2.4cm,
+    box/.style={
+        rectangle,
+        rounded corners,
+        draw,
+        minimum width=3.2cm,
+        minimum height=1.0cm,
+        align=center,
+        text width=2.8cm
+    },
+    arrow/.style={
+        -{Latex[length=3mm]},
+        thick
+    }
+]
+
+\node[box] (wokwi) {Wokwi ESP32\\Load Simulation};
+\node[box, right=of wokwi] (api) {FastAPI Backend};
+\node[box, below=of api] (chain) {Hardhat Blockchain};
+\node[box, left=of chain] (ui) {React Dashboard};
+
+\draw[arrow] (wokwi) -- node[above, font=\small] {Telemetry} (api);
+\draw[arrow] (api) -- node[right, font=\small] {Billing} (chain);
+\draw[arrow] (api) -- node[below, font=\small] { Data} (ui);
+
+
+\end{tikzpicture}
+\caption{End-to-End Demonstration of the Simulated Smart Grid System}
+\label{fig:system-demonstration}
+\end{figure}
+
+The Decentralized Smart Power Grid was successfully deployed and tested in a localized simulation environment. The edge layer was modeled in Wokwi using the ESP32 firmware to generate live load changes, while the backend was served locally through FastAPI for telemetry processing, theft detection, and user response handling. The blockchain layer was implemented on a local Hardhat Ethereum node for secure prepaid balance deduction, and the frontend was delivered through a Vite-based dashboard for role-specific monitoring and control.
 
 \section{Functional Outcomes}
 

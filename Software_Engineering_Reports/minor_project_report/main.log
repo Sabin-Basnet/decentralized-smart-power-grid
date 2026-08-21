@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.5) (preloaded format=pdflatex 2026.6.10)  21 AUG 2026 13:28
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.5) (preloaded format=pdflatex 2026.6.10)  21 AUG 2026 14:05
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -679,18 +679,28 @@ Overfull \hbox (24.92284pt too wide) detected at line 8
  []
 
 
-Overfull \hbox (24.92284pt too wide) detected at line 10
-\OT1/ptm/m/n/12 Figure 4.1: 
- []
-
-
-Overfull \hbox (6.53392pt too wide) in paragraph at lines 10--10
- [][] [] \OT1/ptm/m/n/12 Con-sumer Dash-board Show-ing To-ken Bal-ance and Es-ti-mated Time 
+Overfull \hbox (24.92284pt too wide) detected at line 9
+\OT1/ptm/m/n/12 Figure 3.6: 
  []
 
 
 Overfull \hbox (24.92284pt too wide) detected at line 11
+\OT1/ptm/m/n/12 Figure 4.1: 
+ []
+
+
+Overfull \hbox (24.92284pt too wide) detected at line 12
 \OT1/ptm/m/n/12 Figure 4.2: 
+ []
+
+
+Overfull \hbox (6.53392pt too wide) in paragraph at lines 12--12
+ [][] [] \OT1/ptm/m/n/12 Con-sumer Dash-board Show-ing To-ken Bal-ance and Es-ti-mated Time 
+ []
+
+
+Overfull \hbox (24.92284pt too wide) detected at line 13
+\OT1/ptm/m/n/12 Figure 4.3: 
  []
 
 )
@@ -761,7 +771,7 @@ Overfull \hbox (0.60559pt too wide) in paragraph at lines 18--19
  []
 
 [5] [6]
-Overfull \hbox (25.45871pt too wide) in paragraph at lines 38--38
+Overfull \hbox (25.45871pt too wide) in paragraph at lines 40--40
 \OT1/ptm/m/n/12 must equal the cur-rent re-turn-ing through the neu-tral wire. To de-tect en-ergy theft|specifically
  []
 
@@ -775,85 +785,86 @@ Chapter 3.
 
 
 
-]
-Overfull \hbox (14.11726pt too wide) in paragraph at lines 87--88
+] [10]
+Overfull \hbox (14.11726pt too wide) in paragraph at lines 129--130
 []\OT1/ptm/m/n/12 It for-mats the con-sol-i-dated re-sults (the up-dated to-ken bal-ance, the time-to-exhaustion
  []
 
-LaTeX Font Info:    Trying to load font information for OT1+pcr on input line 94.
+LaTeX Font Info:    Trying to load font information for OT1+pcr on input line 136.
 (D:\realm\hoyovserse\light\latex\tex/latex/psnfss\ot1pcr.fd
 File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
-) [10]
-Overfull \hbox (10.95811pt too wide) in paragraph at lines 154--155
+)
+Overfull \hbox (10.95811pt too wide) in paragraph at lines 196--197
  [][] 
  []
 
 [11]
-Overfull \hbox (21.65218pt too wide) in paragraph at lines 214--215
+Overfull \hbox (21.65218pt too wide) in paragraph at lines 256--257
  [][] 
  []
 
-<Graphics/usecase.jpeg, id=85, 960.58875pt x 697.60625pt>
+[12]
+<Graphics/usecase.jpeg, id=88, 960.58875pt x 697.60625pt>
 File: Graphics/usecase.jpeg Graphic file (type jpg)
 <use Graphics/usecase.jpeg>
-Package pdftex.def Info: Graphics/usecase.jpeg  used on input line 238.
+Package pdftex.def Info: Graphics/usecase.jpeg  used on input line 280.
 (pdftex.def)             Requested size: 416.83315pt x 302.72179pt.
-[12]
-<Graphics/activity.jpeg, id=89, 883.3pt x 738.76pt>
+ [13]
+<Graphics/activity.jpeg, id=92, 883.3pt x 738.76pt>
 File: Graphics/activity.jpeg Graphic file (type jpg)
 <use Graphics/activity.jpeg>
-Package pdftex.def Info: Graphics/activity.jpeg  used on input line 251.
+Package pdftex.def Info: Graphics/activity.jpeg  used on input line 293.
 (pdftex.def)             Requested size: 416.83315pt x 348.62631pt.
-) [13 <./Graphics/usecase.jpeg>] [14 <./Graphics/activity.jpeg>]
+) [14 <./Graphics/usecase.jpeg>] [15 <./Graphics/activity.jpeg>]
 \openout2 = `result_and_discussion.aux'.
 
  (result_and_discussion.tex
 Chapter 4.
 
-Overfull \hbox (1.17822pt too wide) in paragraph at lines 15--16
+Overfull \hbox (1.17822pt too wide) in paragraph at lines 49--50
 []\OT1/ptm/m/n/12 During nor-mal sim-u-lated op-
  []
 
-[15
+[16
 
 
 
 
 ]
-Overfull \hbox (1.21371pt too wide) in paragraph at lines 23--24
+Overfull \hbox (1.21371pt too wide) in paragraph at lines 57--58
 []\OT1/ptm/m/n/12 The su-per-vised Lin-ear Re-gres-sion model suc-cess-fully
  []
 
 
-Overfull \hbox (111.92981pt too wide) in paragraph at lines 37--50
+Overfull \hbox (111.92981pt too wide) in paragraph at lines 71--84
  [][] 
  []
 
-<Graphics/consumer_dashboard.jpeg, id=100, 1606.0pt x 773.89125pt>
+[17]
+<Graphics/consumer_dashboard.jpeg, id=106, 1606.0pt x 773.89125pt>
 File: Graphics/consumer_dashboard.jpeg Graphic file (type jpg)
 <use Graphics/consumer_dashboard.jpeg>
-Package pdftex.def Info: Graphics/consumer_dashboard.jpeg  used on input line 66.
+Package pdftex.def Info: Graphics/consumer_dashboard.jpeg  used on input line 100.
 (pdftex.def)             Requested size: 416.83315pt x 200.86452pt.
-[16]
-<Graphics/administrator_dashboard.jpeg, id=104, 1606.0pt x 774.895pt>
+<Graphics/administrator_dashboard.jpeg, id=107, 1606.0pt x 774.895pt>
 File: Graphics/administrator_dashboard.jpeg Graphic file (type jpg)
 <use Graphics/administrator_dashboard.jpeg>
-Package pdftex.def Info: Graphics/administrator_dashboard.jpeg  used on input line 76.
+Package pdftex.def Info: Graphics/administrator_dashboard.jpeg  used on input line 110.
 (pdftex.def)             Requested size: 416.83315pt x 201.12505pt.
-) [17 <./Graphics/consumer_dashboard.jpeg> <./Graphics/administrator_dashboard.jpeg>]
+ [18 <./Graphics/consumer_dashboard.jpeg>]) [19 <./Graphics/administrator_dashboard.jpeg>]
 \openout2 = `Conclusion.aux'.
 
  (Conclusion.tex
 Chapter 5.
-[18
+[20
 
 
 
 
-]) [19]
+]) [21]
 \openout2 = `References.aux'.
 
- (References.tex (main.bbl)) [20
+ (References.tex (main.bbl)) [22
 
 
 
@@ -861,28 +872,28 @@ Chapter 5.
 ]
 \openout2 = `Appendix.aux'.
 
- (Appendix.tex [21
+ (Appendix.tex [23
 
 
 
-]) [22] (main.aux (CoverPage.aux) (letter_approval.aux) (Acknowledgement.aux) (copyright_page.aux) (Declaration.aux) (Abstract.aux) (ListofAbbreviations.aux) (Introduction.aux) (LiteratureReview_Theory.aux) (Methodology.aux) (result_and_discussion.aux) (Conclusion.aux) (References.aux) (Appendix.aux))
+]) [24] (main.aux (CoverPage.aux) (letter_approval.aux) (Acknowledgement.aux) (copyright_page.aux) (Declaration.aux) (Abstract.aux) (ListofAbbreviations.aux) (Introduction.aux) (LiteratureReview_Theory.aux) (Methodology.aux) (result_and_discussion.aux) (Conclusion.aux) (References.aux) (Appendix.aux))
  ***********
 LaTeX2e <2026-06-01>
 L3 programming layer <2026-05-26>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 18568 strings out of 467475
- 373378 string characters out of 5413705
- 762053 words of memory out of 5000000
- 47386 multiletter control sequences out of 15000+600000
+ 18629 strings out of 467475
+ 374351 string characters out of 5413705
+ 763147 words of memory out of 5000000
+ 47447 multiletter control sequences out of 15000+600000
  653565 words of font info for 93 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  84i,8n,104p,1307b,805s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <D:/realm/hoyovserse/light/latex/fonts/type1/public/amsfonts/cm/cmmi10.pfb><D:/realm/hoyovserse/light/latex/fonts/type1/public/amsfonts/cm/cmr10.pfb><D:/realm/hoyovserse/light/latex/fonts/type1/public/amsfonts/cm/cmsy10.pfb><D:/realm/hoyovserse/light/latex/fonts/type1/urw/courier/ucrr8a.pfb><D:/realm/hoyovserse/light/latex/fonts/type1/urw/symbol/usyr.pfb><D:/realm/hoyovserse/light/latex/fonts/type1/urw/times/utmb8a.pfb><D:/realm/hoyovserse/light/latex/fonts/type1/urw/times/utmr8a.pfb><D:/realm/hoyovserse/light/latex/fonts/type1/urw/times/utmri8a.pfb>
-Output written on main.pdf (33 pages, 1202788 bytes).
+Output written on main.pdf (35 pages, 1206590 bytes).
 PDF statistics:
- 159 PDF objects out of 1000 (max. 8388607)
+ 165 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  38 words of extra memory for PDF output out of 10000 (max. 10000000)
 

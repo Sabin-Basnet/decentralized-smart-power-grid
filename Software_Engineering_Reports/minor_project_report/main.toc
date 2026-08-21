@@ -18,26 +18,26 @@
 \contentsline {section}{\numberline {2.2}Theoretical Background}{6}{}%
 \contentsline {subsection}{\numberline {2.2.1}Internet of Things Edge Sensing}{6}{}%
 \contentsline {subsection}{\numberline {2.2.2}RESTful Backend Architecture}{6}{}%
-\contentsline {subsection}{\numberline {2.2.3}Blockchain and Smart Contracts}{6}{}%
+\contentsline {subsection}{\numberline {2.2.3}Blockchain and Smart Contracts}{7}{}%
 \contentsline {subsection}{\numberline {2.2.4}Machine Learning Components}{7}{}%
 \contentsline {subsubsection}{Current-Differential Anomaly Detection}{7}{}%
-\contentsline {subsubsection}{Linear Regression for Consumption Forecasting}{7}{}%
+\contentsline {subsubsection}{Linear Regression for Consumption Forecasting}{8}{}%
 \contentsline {chapter}{\numberline {3}METHODOLOGY}{9}{}%
 \contentsline {section}{\numberline {3.1}System Architecture}{9}{}%
 \contentsline {section}{\numberline {3.2}Telemetry Simulation}{9}{}%
 \contentsline {section}{\numberline {3.3}Backend Service Layer}{10}{}%
-\contentsline {section}{\numberline {3.4}Blockchain Layer}{10}{}%
-\contentsline {section}{\numberline {3.5}Machine Learning Pipeline}{11}{}%
-\contentsline {section}{\numberline {3.6}Role-Based Frontend Dashboards}{12}{}%
+\contentsline {section}{\numberline {3.4}Blockchain Layer}{11}{}%
+\contentsline {section}{\numberline {3.5}Machine Learning Pipeline}{12}{}%
+\contentsline {section}{\numberline {3.6}Role-Based Frontend Dashboards}{13}{}%
 \contentsline {section}{\numberline {3.7}Use Case Model}{13}{}%
-\contentsline {section}{\numberline {3.8}Working Flow Summary}{13}{}%
-\contentsline {chapter}{\numberline {4}Result And Discussion}{15}{}%
-\contentsline {section}{\numberline {4.1}System Demonstration}{15}{}%
-\contentsline {section}{\numberline {4.2}Functional Outcomes}{15}{}%
-\contentsline {section}{\numberline {4.3}Performance Metrics}{16}{}%
-\contentsline {section}{\numberline {4.4}Dashboard Visualization}{16}{}%
-\contentsline {chapter}{\numberline {5}CONCLUSION AND FUTURE ENHANCEMENT}{18}{}%
-\contentsline {section}{\numberline {5.1}Conclusion}{18}{}%
-\contentsline {section}{\numberline {5.2}FUTURE ENHANCEMENT}{18}{}%
-\contentsline {chapter}{REFERENCES}{20}{}%
-\contentsline {chapter}{APPENDIX}{21}{}%
+\contentsline {section}{\numberline {3.8}Working Flow Summary}{14}{}%
+\contentsline {chapter}{\numberline {4}Result And Discussion}{16}{}%
+\contentsline {section}{\numberline {4.1}System Demonstration}{16}{}%
+\contentsline {section}{\numberline {4.2}Functional Outcomes}{16}{}%
+\contentsline {section}{\numberline {4.3}Performance Metrics}{17}{}%
+\contentsline {section}{\numberline {4.4}Dashboard Visualization}{17}{}%
+\contentsline {chapter}{\numberline {5}CONCLUSION AND FUTURE ENHANCEMENT}{20}{}%
+\contentsline {section}{\numberline {5.1}Conclusion}{20}{}%
+\contentsline {section}{\numberline {5.2}Future Enhancements}{20}{}%
+\contentsline {chapter}{REFERENCES}{22}{}%
+\contentsline {chapter}{APPENDIX}{23}{}%

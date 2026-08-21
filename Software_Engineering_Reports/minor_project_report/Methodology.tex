@@ -73,6 +73,48 @@ The telemetry simulation performs three primary functions:
 
 \end{itemize}
 
+The telemetry generation and transmission process is illustrated in Figure~\ref{fig:telemetry-simulation}.
+
+\begin{figure}[H]
+\centering
+\begin{tikzpicture}[
+    scale=0.82,
+    transform shape,
+    node distance=1.3cm and 2.2cm,
+    box/.style={
+        rectangle,
+        rounded corners,
+        draw,
+        minimum width=3.8cm,
+        minimum height=1cm,
+        align=center
+    },
+    arrow/.style={
+        -{Latex[length=3mm]},
+        thick
+    }
+]
+
+\node[box] (load)
+{Variable Load Generation};
+
+\node[box, below=of load] (metrics)
+{Phase Current, Neutral Current, Cumulative Energy};
+
+\node[box, below=of metrics] (payload)
+{JSON Telemetry Payload};
+
+\node[box, below=of payload] (post)
+{HTTP POST to FastAPI Backend};
+
+\draw[arrow] (load) -- (metrics);
+\draw[arrow] (metrics) -- (payload);
+\draw[arrow] (payload) -- (post);
+
+\end{tikzpicture}
+\caption{Telemetry Simulation and Transmission Workflow}
+\label{fig:telemetry-simulation}
+\end{figure}
 
 \section{Backend Service Layer}
 

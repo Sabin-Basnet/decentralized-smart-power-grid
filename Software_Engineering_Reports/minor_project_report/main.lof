@@ -2,11 +2,13 @@
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {3.1}{\ignorespaces Overall System Architecture of the Proposed Decentralized Smart Power Grid}}{9}{}%
-\contentsline {figure}{\numberline {3.2}{\ignorespaces Blockchain-Based Prepaid Token Deduction Process}}{11}{}%
-\contentsline {figure}{\numberline {3.3}{\ignorespaces Machine Learning Processing Pipeline}}{12}{}%
-\contentsline {figure}{\numberline {3.4}{\ignorespaces Use Case Diagram of the Proposed System}}{13}{}%
-\contentsline {figure}{\numberline {3.5}{\ignorespaces Activity Diagram}}{14}{}%
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Telemetry Simulation and Transmission Workflow}}{10}{}%
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Blockchain-Based Prepaid Token Deduction Process}}{12}{}%
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Machine Learning Processing Pipeline}}{13}{}%
+\contentsline {figure}{\numberline {3.5}{\ignorespaces Use Case Diagram of the Proposed System}}{14}{}%
+\contentsline {figure}{\numberline {3.6}{\ignorespaces Activity Diagram}}{15}{}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Consumer Dashboard Showing Token Balance and Estimated Time Remaining}}{17}{}%
-\contentsline {figure}{\numberline {4.2}{\ignorespaces Administrator Dashboard Showing Grid Monitoring and Theft Alert}}{17}{}%
+\contentsline {figure}{\numberline {4.1}{\ignorespaces End-to-End Demonstration of the Simulated Smart Grid System}}{16}{}%
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Consumer Dashboard Showing Token Balance and Estimated Time Remaining}}{18}{}%
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Administrator Dashboard Showing Grid Monitoring and Theft Alert}}{19}{}%
 \addvspace {10\p@ }
