@@ -22,6 +22,20 @@ From a consumer standpoint, the reliance on closed, corporate databases creates 
 
 We were motivated to build this system because modern technology allows us to completely engineer these problems out of existence. By replacing trust with mathematics, a blockchain smart contract can guarantee absolute billing transparency, while edge-based machine learning can autonomously secure the grid against physical theft. This project demonstrates a future where utility grids are trustless, self-governing, and inherently secure.
 
+<<<<<<< HEAD
+=======
+\section{Problem Statement}
+
+Modern electrical utility structures suffer from deep operational challenges rooted in their centralized architecture: 
+\begin{itemize}
+
+    \item Information Asymmetry & Trust Deficits: Because traditional meters stream data into closed corporate databases, consumers cannot independently verify billing logs, causing trust deficits.  
+    \item Revenue Collection Risks: Postpaid billing causes payment delays and frequent defaults, trapping utility companies in inefficient debt-recovery cycles.
+    \item Unresolved Distribution Leakages: Line-tampering, meter-bypassing, and infrastructure anomalies often go unflagged due to a lack of automated edge-analysis tools.  
+    \item Data Integrity Risks: Central databases represent single-point-of-failure vulnerabilities that are open to internal manipulation or external security threats.
+\end{itemize}
+
+>>>>>>> ffb65aceebd27d1653ac97bc955407e5eee3c8ed
 \section{Objectives}
 
 The main objective of this project is to design and develop a software-based \textbf{Decentralized Prepaid Smart Power Grid} that integrates prepaid electricity management, blockchain technology, machine learning, and real-time monitoring.
@@ -32,9 +46,10 @@ The specific objectives of the project are:
 
     \item To develop an automated, decentralized billing framework: To eliminate billing opacity and postpaid collection risks by integrating an IoT edge node (ESP32) for real-time load sampling with an immutable blockchain smart contract that executes transparent, prepaid token deductions and autonomous physical circuit isolation.
 
-    \item To enhance grid security and consumer visibility: To resolve hidden energy leakages and trust deficits by integrating machine learning models for predictive budget forecasting and current-differential theft detection, presenting these insights through a dual-role (Client and Provider) web dashboard.
+    \item To implement a prepaid electricity mechanism using blockchain and smart contracts.
 
 \end{itemize}
+<<<<<<< HEAD
 \section{Scope}
 
 The scope of this project focuses on providing transparent energy distribution and secure automated prepaid billing using a simulated low-voltage IoT environment. The system demonstrates:
@@ -49,3 +64,10 @@ The scope of this project focuses on providing transparent energy distribution a
 Because the deployment of actual utility meters on live high-voltage power lines requires industrial certification, the physical hardware layer is constrained to a low-voltage ESP32 simulation.
 
 Furthermore, all blockchain calculations operate within a localized Hardhat test environment to bypass the live transaction gas costs associated with public mainnet deployments.
+=======
+
+\section{Scope and Limitations}
+The scope of this project focuses on providing transparent energy distribution and secure automated prepaid billing using a simulated low-voltage IoT environment. The system successfully demonstrates real-time analog load sampling, immutable smart contract ledger processing, cryptographic backend middleware routing, and machine learning-based intelligence.
+
+Because the deployment of actual utility meters on live high-voltage power lines requires industrial certification, the physical hardware layer is constrained to a low-voltage ESP32 simulation. Furthermore, all blockchain calculations operate within a localized Hardhat test environment to bypass the live transaction gas costs associated with public mainnet deployments.
+>>>>>>> ffb65aceebd27d1653ac97bc955407e5eee3c8ed

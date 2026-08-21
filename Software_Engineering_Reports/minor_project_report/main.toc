@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 \contentsline {chapter}{LIST OF FIGURES}{iv}{}%
 \contentsline {chapter}{LIST OF TABLES}{v}{}%
 \contentsline {chapter}{LIST OF ABBREVIATIONS}{vi}{}%
@@ -63,3 +64,46 @@
 \contentsline {chapter}{\numberline {6}CONCLUSION}{25}{}%
 \contentsline {chapter}{REFERENCES}{27}{}%
 \contentsline {chapter}{APPENDIX}{28}{}%
+=======
+\contentsline {chapter}{LIST OF FIGURES}{ii}{}%
+\contentsline {chapter}{LIST OF TABLES}{iii}{}%
+\contentsline {chapter}{LIST OF ABBREVIATIONS}{iv}{}%
+\contentsline {chapter}{\numberline {1}INTRODUCTION}{1}{}%
+\contentsline {section}{\numberline {1.1}Background}{1}{}%
+\contentsline {section}{\numberline {1.2}Motivation}{1}{}%
+\contentsline {section}{\numberline {1.3}Problem Statement}{2}{}%
+\contentsline {section}{\numberline {1.4}Objectives}{2}{}%
+\contentsline {section}{\numberline {1.5}Scope and Limitations}{3}{}%
+\contentsline {chapter}{\numberline {2}LITERATURE REVIEW AND THEORETICAL BACKGROUND}{4}{}%
+\contentsline {section}{\numberline {2.1}Literature Review}{4}{}%
+\contentsline {subsection}{\numberline {2.1.1}Traditional and Smart Prepaid Metering}{4}{}%
+\contentsline {subsection}{\numberline {2.1.2}IoT-Based Energy Monitoring}{4}{}%
+\contentsline {subsection}{\numberline {2.1.3}Blockchain for Decentralized Energy Systems}{5}{}%
+\contentsline {subsection}{\numberline {2.1.4}Research Gaps}{5}{}%
+\contentsline {section}{\numberline {2.2}Theoretical Background}{6}{}%
+\contentsline {subsection}{\numberline {2.2.1}Internet of Things Edge Sensing}{6}{}%
+\contentsline {subsection}{\numberline {2.2.2}RESTful Backend Architecture}{6}{}%
+\contentsline {subsection}{\numberline {2.2.3}Blockchain and Smart Contracts}{6}{}%
+\contentsline {subsection}{\numberline {2.2.4}Machine Learning Components}{7}{}%
+\contentsline {subsubsection}{Current-Differential Anomaly Detection}{7}{}%
+\contentsline {subsubsection}{Linear Regression for Consumption Forecasting}{7}{}%
+\contentsline {chapter}{\numberline {3}METHODOLOGY}{9}{}%
+\contentsline {section}{\numberline {3.1}System Architecture}{9}{}%
+\contentsline {section}{\numberline {3.2}System Architecture}{9}{}%
+\contentsline {section}{\numberline {3.3}Hardware and Edge Layer}{9}{}%
+\contentsline {section}{\numberline {3.4}Backend Service Layer}{10}{}%
+\contentsline {section}{\numberline {3.5}Blockchain Layer}{10}{}%
+\contentsline {section}{\numberline {3.6}Machine Learning Pipeline}{11}{}%
+\contentsline {section}{\numberline {3.7}Role-Based Frontend Dashboards}{11}{}%
+\contentsline {section}{\numberline {3.8}Working Flow Summary}{12}{}%
+\contentsline {chapter}{\numberline {4}EXPECTED RESULTS}{13}{}%
+\contentsline {section}{\numberline {4.1}System Demonstration}{13}{}%
+\contentsline {section}{\numberline {4.2}Functional Outcomes}{13}{}%
+\contentsline {section}{\numberline {4.3}Performance Metrics}{14}{}%
+\contentsline {section}{\numberline {4.4}Dashboard Visualization}{14}{}%
+\contentsline {chapter}{\numberline {5}CONCLUSION AND RECOMMENDATIONS}{16}{}%
+\contentsline {section}{\numberline {5.1}Conclusion}{16}{}%
+\contentsline {section}{\numberline {5.2}Recommendations for Future Work}{16}{}%
+\contentsline {chapter}{REFERENCES}{18}{}%
+\contentsline {chapter}{APPENDIX}{19}{}%
+>>>>>>> ffb65aceebd27d1653ac97bc955407e5eee3c8ed
