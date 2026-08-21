@@ -21,40 +21,48 @@
 \providecommand{\BIBdecl}{\relax}
 \BIBdecl
 
-\bibitem{smith2022smartmeter}
-J.~Smith and A.~Kumar, ``Iot-based smart energy meter for real-time monitoring
-  and automated billing,'' \emph{International Journal of Smart Grid
-  Technologies}, vol.~10, no.~3, pp. 150--158, 2022.
-
 \bibitem{zhao2020energy}
 L.~Zhao and Y.~Chen, ``Real-time energy consumption monitoring using iot and
   cloud computing,'' \emph{IEEE Transactions on Industrial Informatics},
   vol.~16, no.~7, pp. 4562--4570, 2020.
 
-\bibitem{mulani2017watermarking}
-A.~O. Mulani and P.~B. Mane, ``Watermarking and cryptography based image
-  authentication on reconfigurable platform,'' \emph{Bulletin of Electrical
-  Engineering and Informatics}, vol.~6, no.~2, pp. 181--187, 2017.
+\bibitem{mololoth2023blockchain}
+V.~K. Mololoth, S.~Saguna, and C.~{\AA}hlund, ``Blockchain and machine learning
+  for future smart grids: A review,'' \emph{Energies}, vol.~16, no.~1, p. 528,
+  2023.
+
+\bibitem{dong2023blockchain}
+S.~Dong, K.~Abbas, M.~Li, and J.~Kamruzzaman, ``Blockchain technology and
+  application: An overview,'' \emph{PeerJ Computer Science}, vol.~9, p. e1705,
+  2023.
 
 \bibitem{jithish2023anomaly}
 J.~Jithish, B.~Alangot, N.~Mahalingam, and K.~S. Yeo, ``Distributed anomaly
   detection in smart grids: A federated learning-based approach,'' \emph{IEEE
   Access}, vol.~11, pp. 9824--9838, 2023.
 
-\bibitem{choudhary2020prepaid}
-N.~Choudhary and R.~Singh, ``Implementation of iot-based prepaid smart energy
-  meter,'' \emph{International Journal of Advanced Computer Science and
-  Applications}, vol.~11, no.~5, pp. 310--316, 2020.
+\bibitem{husnoo2023misbehaviour}
+M.~A. Husnoo, A.~Anwar, N.~Hosseinzadeh, R.~Doss, and B.~Sikdar, ``Misbehaviour
+  detection for smart grids using a privacy-centric and computationally
+  efficient federated learning approach,'' in \emph{GLOBECOM 2023 - 2023 IEEE
+  Global Communications Conference}.\hskip 1em plus 0.5em minus 0.4em\relax
+  IEEE, 2023, pp. 2269--2274.
+
+\bibitem{ayanlade2021energytheft}
+S.~O. Ayanlade and D.~T. Sawyer, ``Application of current differential
+  principle in the detection of energy theft in a gsm-based single-phase smart
+  meter,'' \emph{International Journal of Engineering Technology and Scientific
+  Innovation}, vol.~6, no.~4, pp. 80--90, 2021.
 
 \bibitem{gholizadeh2022federated}
 N.~Gholizadeh and P.~Musilek, ``Federated learning with hyperparameter-based
   clustering for electrical load forecasting,'' \emph{Internet of Things},
   vol.~17, p. 100470, 2022.
 
-\bibitem{husnoo2023misbehaviour}
-M.~A. Husnoo, A.~Anwar, N.~Hosseinzadeh, R.~Doss, and B.~Sikdar, ``Misbehaviour
-  detection for smart grids using a privacy-centric and computationally
-  efficient federated learning approach,'' in \emph{GLOBECOM 2023 - 2023 IEEE
-  Global Communications Conference}, 2023, pp. 2269--2274.
+\bibitem{zheng2024federated}
+R.~Zheng, A.~Sumper, M.~Arag{\"u}es-Pe{\~n}alba, and S.~Galceran-Arellano,
+  ``Advancing power system services with privacy-preserving federated learning
+  techniques: A review,'' \emph{IEEE Access}, vol.~12, pp. 76\,753--76\,780,
+  2024.
 
 \end{thebibliography}
