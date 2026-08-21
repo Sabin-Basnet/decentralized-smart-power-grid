@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.5) (preloaded format=pdflatex 2026.6.10)  21 AUG 2026 12:01
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.5) (preloaded format=pdflatex 2026.6.10)  21 AUG 2026 12:41
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -318,7 +318,19 @@ File: pgfmodulematrix.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 \tikz@expandcount=\count318
  (D:\realm\hoyovserse\light\latex\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibrarytopaths.code.tex
 File: tikzlibrarytopaths.code.tex 2025-08-29 v3.1.11a (3.1.11a)
-))) (D:\realm\hoyovserse\light\latex\tex/latex/float\float.sty
+))) (D:\realm\hoyovserse\light\latex\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibrarypositioning.code.tex
+File: tikzlibrarypositioning.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+) (D:\realm\hoyovserse\light\latex\tex/generic/pgf/libraries\pgflibraryarrows.meta.code.tex
+File: pgflibraryarrows.meta.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+\pgfarrowinset=\dimen268
+\pgfarrowlength=\dimen269
+\pgfarrowwidth=\dimen270
+\pgfarrowlinewidth=\dimen271
+) (D:\realm\hoyovserse\light\latex\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibraryshapes.geometric.code.tex
+File: tikzlibraryshapes.geometric.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+ (D:\realm\hoyovserse\light\latex\tex/generic/pgf/libraries/shapes\pgflibraryshapes.geometric.code.tex
+File: pgflibraryshapes.geometric.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+)) (D:\realm\hoyovserse\light\latex\tex/latex/float\float.sty
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \c@float@type=\count319
 \float@exts=\toks37
@@ -334,14 +346,14 @@ Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 Package: caption 2023/08/05 v3.6o Customizing captions (AR)
  (D:\realm\hoyovserse\light\latex\tex/latex/caption\caption3.sty
 Package: caption3 2023/07/31 v2.4d caption3 kernel (AR)
-\caption@tempdima=\dimen268
-\captionmargin=\dimen269
-\caption@leftmargin=\dimen270
-\caption@rightmargin=\dimen271
-\caption@width=\dimen272
-\caption@indent=\dimen273
-\caption@parindent=\dimen274
-\caption@hangindent=\dimen275
+\caption@tempdima=\dimen272
+\captionmargin=\dimen273
+\caption@leftmargin=\dimen274
+\caption@rightmargin=\dimen275
+\caption@width=\dimen276
+\caption@indent=\dimen277
+\caption@parindent=\dimen278
+\caption@hangindent=\dimen279
 Package caption Info: Standard document class detected.
 )
 \c@caption@flags=\count320
@@ -435,14 +447,14 @@ Package: iftex 2024/12/12 v1.0g TeX engine tests
 \Gm@cnth=\count324
 \Gm@cntv=\count325
 \c@Gm@tempcnt=\count326
-\Gm@bindingoffset=\dimen276
-\Gm@wd@mp=\dimen277
-\Gm@odd@mp=\dimen278
-\Gm@even@mp=\dimen279
-\Gm@layoutwidth=\dimen280
-\Gm@layoutheight=\dimen281
-\Gm@layouthoffset=\dimen282
-\Gm@layoutvoffset=\dimen283
+\Gm@bindingoffset=\dimen280
+\Gm@wd@mp=\dimen281
+\Gm@odd@mp=\dimen282
+\Gm@even@mp=\dimen283
+\Gm@layoutwidth=\dimen284
+\Gm@layoutheight=\dimen285
+\Gm@layouthoffset=\dimen286
+\Gm@layoutvoffset=\dimen287
 \Gm@dimlist=\toks39
  (D:\realm\hoyovserse\light\latex\tex/latex/geometry\geometry.cfg)) (D:\realm\hoyovserse\light\latex\tex/latex/parskip\parskip.sty
 Package: parskip 2021-03-14 v2.0h non-zero parskip adjustments
@@ -460,46 +472,46 @@ Package: titlesec 2025/01/04 v2.17 Sectioning titles
 \ttl@box=\box68
 \beforetitleunit=\skip90
 \aftertitleunit=\skip91
-\ttl@plus=\dimen284
-\ttl@minus=\dimen285
+\ttl@plus=\dimen288
+\ttl@minus=\dimen289
 \ttl@toksa=\toks40
-\titlewidth=\dimen286
-\titlewidthlast=\dimen287
-\titlewidthfirst=\dimen288
+\titlewidth=\dimen290
+\titlewidthlast=\dimen291
+\titlewidthfirst=\dimen292
 )
-LaTeX Font Info:    Trying to load font information for OT1+ptm on input line 82.
+LaTeX Font Info:    Trying to load font information for OT1+ptm on input line 83.
  (D:\realm\hoyovserse\light\latex\tex/latex/psnfss\ot1ptm.fd
 File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
 ) (D:\realm\hoyovserse\light\latex\tex/latex/l3backend\l3backend-pdftex.def
 File: l3backend-pdftex.def 2026-02-18 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count328
-) (main.aux)
+) (main.aux (CoverPage.aux) (letter_approval.aux) (Acknowledgement.aux) (copyright_page.aux) (Declaration.aux) (Abstract.aux) (ListofAbbreviations.aux) (Introduction.aux) (LiteratureReview_Theory.aux) (Methodology.aux) (result_and_discussion.aux) (Conclusion.aux) (References.aux) (Appendix.aux))
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 82.
-LaTeX Font Info:    ... okay on input line 82.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 82.
-LaTeX Font Info:    ... okay on input line 82.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 82.
-LaTeX Font Info:    ... okay on input line 82.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 82.
-LaTeX Font Info:    ... okay on input line 82.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 82.
-LaTeX Font Info:    ... okay on input line 82.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 82.
-LaTeX Font Info:    ... okay on input line 82.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 82.
-LaTeX Font Info:    ... okay on input line 82.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 83.
+LaTeX Font Info:    ... okay on input line 83.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 83.
+LaTeX Font Info:    ... okay on input line 83.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 83.
+LaTeX Font Info:    ... okay on input line 83.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 83.
+LaTeX Font Info:    ... okay on input line 83.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 83.
+LaTeX Font Info:    ... okay on input line 83.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 83.
+LaTeX Font Info:    ... okay on input line 83.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 83.
+LaTeX Font Info:    ... okay on input line 83.
  (D:\realm\hoyovserse\light\latex\tex/context/base/mkii\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count329
-\scratchdimen=\dimen289
+\scratchdimen=\dimen293
 \scratchbox=\box69
 \nofMPsegments=\count330
 \nofMParguments=\count331
 \everyMPshowfont=\toks41
 \MPscratchCnt=\count332
-\MPscratchDim=\dimen290
+\MPscratchDim=\dimen294
 \MPnumerator=\count333
 \makeMPintoPDFobject=\count334
 \everyMPtoPDFconversion=\toks42
@@ -629,28 +641,60 @@ Overfull \hbox (14.38222pt too wide) in paragraph at lines 9--10
 
 
 
+]) (main.toc [1
+
+
 ])
-No file main.toc.
 \tf@toc=\write4
 \openout4 = `main.toc'.
 
-[1
+ [2] (main.lof
+Overfull \hbox (24.92284pt too wide) detected at line 4
+\OT1/ptm/m/n/12 Figure 3.1: 
+ []
 
 
-]
-No file main.lof.
+Overfull \hbox (0.12508pt too wide) in paragraph at lines 4--4
+ [][] [] \OT1/ptm/m/n/12 Over-all Sys-tem Ar-chi-tec-ture of the Pro-posed De-cen-tral-ized Smart 
+ []
+
+
+Overfull \hbox (24.92284pt too wide) detected at line 5
+\OT1/ptm/m/n/12 Figure 3.2: 
+ []
+
+
+Overfull \hbox (24.92284pt too wide) detected at line 6
+\OT1/ptm/m/n/12 Figure 3.3: 
+ []
+
+
+Overfull \hbox (24.92284pt too wide) detected at line 7
+\OT1/ptm/m/n/12 Figure 3.4: 
+ []
+
+
+Overfull \hbox (24.92284pt too wide) detected at line 8
+\OT1/ptm/m/n/12 Figure 3.5: 
+ []
+
+)
 \tf@lof=\write5
 \openout5 = `main.lof'.
 
-[2]
-No file main.lot.
+ [3] (main.lot
+Overfull \hbox (19.95494pt too wide) detected at line 5
+\OT1/ptm/m/n/12 Table 4.1: 
+ []
+
+)
 \tf@lot=\write6
 \openout6 = `main.lot'.
 
-[3]
+ [4]
 \openout2 = `ListofAbbreviations.aux'.
 
- (ListofAbbreviations.tex) [4
+ (ListofAbbreviations.tex) [5
 
 
 ]
@@ -710,101 +754,41 @@ Overfull \hbox (25.45871pt too wide) in paragraph at lines 38--38
 \openout2 = `Methodology.aux'.
 
  (Methodology.tex
+Chapter 3.
 
-Methodology.tex:1: LaTeX Error: Can be used only in preamble.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.1 \usepackage
-               {tikz}
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-(D:\realm\hoyovserse\light\latex\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibrarypositioning.code.tex
-File: tikzlibrarypositioning.code.tex 2025-08-29 v3.1.11a (3.1.11a)
-) (D:\realm\hoyovserse\light\latex\tex/generic/pgf/libraries\pgflibraryarrows.meta.code.tex
-File: pgflibraryarrows.meta.code.tex 2025-08-29 v3.1.11a (3.1.11a)
-\pgfarrowinset=\dimen291
-\pgfarrowlength=\dimen292
-\pgfarrowwidth=\dimen293
-\pgfarrowlinewidth=\dimen294
-) (D:\realm\hoyovserse\light\latex\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibraryshapes.geometric.code.tex
-File: tikzlibraryshapes.geometric.code.tex 2025-08-29 v3.1.11a (3.1.11a)
- (D:\realm\hoyovserse\light\latex\tex/generic/pgf/libraries/shapes\pgflibraryshapes.geometric.code.tex
-File: pgflibraryshapes.geometric.code.tex 2025-08-29 v3.1.11a (3.1.11a)
-))
-
-Methodology.tex:3: LaTeX Error: Can be used only in preamble.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.3 \usepackage
-               {float}
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
+Overfull \hbox (234.81065pt too wide) in paragraph at lines 53--54
+ [][] 
+ []
 
 [9
 
 
 
-]
-Chapter 3.
-
-LaTeX Warning: Reference `fig:system-architecture' on page 10 undefined on input line 11.
-
-
-Overfull \hbox (234.81065pt too wide) in paragraph at lines 57--58
- [][] 
- []
-
-[10
 
 ]
-Overfull \hbox (14.11726pt too wide) in paragraph at lines 90--91
+Overfull \hbox (14.11726pt too wide) in paragraph at lines 86--87
 []\OT1/ptm/m/n/12 It for-mats the con-sol-i-dated re-sults (the up-dated to-ken bal-ance, the time-to-exhaustion
  []
 
-LaTeX Font Info:    Trying to load font information for OT1+pcr on input line 97.
+LaTeX Font Info:    Trying to load font information for OT1+pcr on input line 93.
 (D:\realm\hoyovserse\light\latex\tex/latex/psnfss\ot1pcr.fd
 File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
-) [11]
-
-LaTeX Warning: Reference `fig:blockchain-flow' on page 12 undefined on input line 101.
-
-
-Overfull \hbox (10.95811pt too wide) in paragraph at lines 157--158
+) [10]
+Overfull \hbox (10.95811pt too wide) in paragraph at lines 153--154
  [][] 
  []
 
-[12]
-
-LaTeX Warning: Reference `fig:ml-pipeline' on page 13 undefined on input line 175.
-
-
-Overfull \hbox (131.15446pt too wide) in paragraph at lines 216--217
+[11]
+Overfull \hbox (131.15446pt too wide) in paragraph at lines 212--213
  [][] 
  []
 
-[13]
-
-LaTeX Warning: Reference `fig:use-case' on page 14 undefined on input line 237.
-
-[14]
-
-LaTeX Warning: Reference `fig:working-flow' on page 15 undefined on input line 293.
-
-
-Overfull \hbox (117.85905pt too wide) in paragraph at lines 343--344
+[12] [13]
+Overfull \hbox (117.85905pt too wide) in paragraph at lines 339--340
  [][] 
  []
 
-) [15]
+) [14]
 \openout2 = `result_and_discussion.aux'.
 
  (result_and_discussion.tex
@@ -814,7 +798,7 @@ Overfull \hbox (1.17822pt too wide) in paragraph at lines 15--16
 []\OT1/ptm/m/n/12 During nor-mal sim-u-lated op-
  []
 
-[16
+[15
 
 
 
@@ -829,19 +813,19 @@ Overfull \hbox (111.92981pt too wide) in paragraph at lines 37--50
  [][] 
  []
 
-[17]) [18]
+[16]) [17]
 \openout2 = `Conclusion.aux'.
 
  (Conclusion.tex
 Chapter 5.
-[19
+[18
 
 
 
 
 ]
 Chapter 6.
-) [20
+) [19
 
 ]
 \openout2 = `References.aux'.
@@ -850,7 +834,7 @@ Chapter 6.
 
 Package natbib Warning: Empty `thebibliography' environment on input line 24.
 
-)) [21
+)) [20
 
 
 
@@ -858,33 +842,26 @@ Package natbib Warning: Empty `thebibliography' environment on input line 24.
 ]
 \openout2 = `Appendix.aux'.
 
- (Appendix.tex [22
+ (Appendix.tex [21
 
 
 
-]) [23] (main.aux (CoverPage.aux) (letter_approval.aux) (Acknowledgement.aux) (copyright_page.aux) (Declaration.aux) (Abstract.aux) (ListofAbbreviations.aux) (Introduction.aux) (LiteratureReview_Theory.aux) (Methodology.aux) (result_and_discussion.aux) (Conclusion.aux) (References.aux) (Appendix.aux))
+]) [22] (main.aux (CoverPage.aux) (letter_approval.aux) (Acknowledgement.aux) (copyright_page.aux) (Declaration.aux) (Abstract.aux) (ListofAbbreviations.aux) (Introduction.aux) (LiteratureReview_Theory.aux) (Methodology.aux) (result_and_discussion.aux) (Conclusion.aux) (References.aux) (Appendix.aux))
  ***********
 LaTeX2e <2026-06-01>
 L3 programming layer <2026-05-26>
  ***********
-
-
-LaTeX Warning: There were undefined references.
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
  ) 
 Here is how much of TeX's memory you used:
- 18544 strings out of 467475
- 370423 string characters out of 5413705
- 745241 words of memory out of 5000000
- 47396 multiletter control sequences out of 15000+600000
+ 18595 strings out of 467475
+ 373184 string characters out of 5413705
+ 761848 words of memory out of 5000000
+ 47413 multiletter control sequences out of 15000+600000
  653565 words of font info for 93 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  84i,8n,104p,1307b,787s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <D:/realm/hoyovserse/light/latex/fonts/type1/public/amsfonts/cm/cmmi10.pfb><D:/realm/hoyovserse/light/latex/fonts/type1/public/amsfonts/cm/cmr10.pfb><D:/realm/hoyovserse/light/latex/fonts/type1/public/amsfonts/cm/cmsy10.pfb><D:/realm/hoyovserse/light/latex/fonts/type1/urw/courier/ucrr8a.pfb><D:/realm/hoyovserse/light/latex/fonts/type1/urw/symbol/usyr.pfb><D:/realm/hoyovserse/light/latex/fonts/type1/urw/times/utmb8a.pfb><D:/realm/hoyovserse/light/latex/fonts/type1/urw/times/utmr8a.pfb><D:/realm/hoyovserse/light/latex/fonts/type1/urw/times/utmri8a.pfb>
-Output written on main.pdf (33 pages, 825484 bytes).
+Output written on main.pdf (33 pages, 826902 bytes).
 PDF statistics:
  155 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)

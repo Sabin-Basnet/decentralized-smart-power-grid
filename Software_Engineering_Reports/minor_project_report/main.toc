@@ -1,8 +1,8 @@
 \contentsline {chapter}{ACKNOWLEDGEMENT}{i}{}%
 \contentsline {chapter}{DECLARATION}{iii}{}%
-\contentsline {chapter}{LIST OF FIGURES}{ii}{}%
-\contentsline {chapter}{LIST OF TABLES}{iii}{}%
-\contentsline {chapter}{LIST OF ABBREVIATIONS}{iv}{}%
+\contentsline {chapter}{LIST OF FIGURES}{iii}{}%
+\contentsline {chapter}{LIST OF TABLES}{iv}{}%
+\contentsline {chapter}{LIST OF ABBREVIATIONS}{v}{}%
 \contentsline {chapter}{\numberline {1}INTRODUCTION}{1}{}%
 \contentsline {section}{\numberline {1.1}Background}{1}{}%
 \contentsline {section}{\numberline {1.2}Problem Statement}{1}{}%
@@ -22,22 +22,22 @@
 \contentsline {subsection}{\numberline {2.2.4}Machine Learning Components}{7}{}%
 \contentsline {subsubsection}{Current-Differential Anomaly Detection}{7}{}%
 \contentsline {subsubsection}{Linear Regression for Consumption Forecasting}{7}{}%
-\contentsline {chapter}{\numberline {3}METHODOLOGY}{10}{}%
-\contentsline {section}{\numberline {3.1}System Architecture}{10}{}%
-\contentsline {section}{\numberline {3.2}Telemetry Simulation}{11}{}%
-\contentsline {section}{\numberline {3.3}Backend Service Layer}{11}{}%
-\contentsline {section}{\numberline {3.4}Blockchain Layer}{12}{}%
-\contentsline {section}{\numberline {3.5}Machine Learning Pipeline}{13}{}%
-\contentsline {section}{\numberline {3.6}Role-Based Frontend Dashboards}{13}{}%
-\contentsline {section}{\numberline {3.7}Use Case Model}{14}{}%
-\contentsline {section}{\numberline {3.8}Working Flow Summary}{14}{}%
-\contentsline {chapter}{\numberline {4}EXPECTED RESULTS}{16}{}%
-\contentsline {section}{\numberline {4.1}System Demonstration}{16}{}%
-\contentsline {section}{\numberline {4.2}Functional Outcomes}{16}{}%
-\contentsline {section}{\numberline {4.3}Performance Metrics}{17}{}%
-\contentsline {section}{\numberline {4.4}Dashboard Visualization}{17}{}%
-\contentsline {chapter}{\numberline {5}CONCLUSION AND FUTURE ENHANCEMENT}{19}{}%
-\contentsline {section}{\numberline {5.1}Conclusion}{19}{}%
-\contentsline {chapter}{\numberline {6}FUTURE ENHANCEMENT}{20}{}%
-\contentsline {chapter}{REFERENCES}{21}{}%
-\contentsline {chapter}{APPENDIX}{22}{}%
+\contentsline {chapter}{\numberline {3}METHODOLOGY}{9}{}%
+\contentsline {section}{\numberline {3.1}System Architecture}{9}{}%
+\contentsline {section}{\numberline {3.2}Telemetry Simulation}{10}{}%
+\contentsline {section}{\numberline {3.3}Backend Service Layer}{10}{}%
+\contentsline {section}{\numberline {3.4}Blockchain Layer}{11}{}%
+\contentsline {section}{\numberline {3.5}Machine Learning Pipeline}{12}{}%
+\contentsline {section}{\numberline {3.6}Role-Based Frontend Dashboards}{12}{}%
+\contentsline {section}{\numberline {3.7}Use Case Model}{13}{}%
+\contentsline {section}{\numberline {3.8}Working Flow Summary}{13}{}%
+\contentsline {chapter}{\numberline {4}EXPECTED RESULTS}{15}{}%
+\contentsline {section}{\numberline {4.1}System Demonstration}{15}{}%
+\contentsline {section}{\numberline {4.2}Functional Outcomes}{15}{}%
+\contentsline {section}{\numberline {4.3}Performance Metrics}{16}{}%
+\contentsline {section}{\numberline {4.4}Dashboard Visualization}{16}{}%
+\contentsline {chapter}{\numberline {5}CONCLUSION AND FUTURE ENHANCEMENT}{18}{}%
+\contentsline {section}{\numberline {5.1}Conclusion}{18}{}%
+\contentsline {chapter}{\numberline {6}FUTURE ENHANCEMENT}{19}{}%
+\contentsline {chapter}{REFERENCES}{20}{}%
+\contentsline {chapter}{APPENDIX}{21}{}%
