@@ -1,26 +1,39 @@
 \chapter{EXPECTED RESULTS}
 
 \section{System Demonstration}
+
 The Decentralized Smart Power Grid was successfully deployed and tested in a localized simulation environment. The edge layer was simulated using Wokwi, running the ESP32 C++ firmware. The middleware was hosted locally via a Uvicorn server running the FastAPI application. The decentralized ledger was simulated using a local Hardhat Ethereum node, which successfully compiled and deployed the PowerGrid.sol smart contract. Finally, the role-based presentation layer was served via a Vite development server, communicating smoothly with the backend REST endpoints. The successful integration of these four layers demonstrated a complete, end-to-end data cycle from physical load simulation to immutable blockchain deduction and web-based visualization.
 
 \section{Functional Outcomes}
+
 The system was subjected to various operational scenarios to validate its core engineering objectives:
+
 \begin{description}
+
     \item[Automated Token Deduction and Relay Enforcement:]
+
     During normal simulated operation, the ESP32 successfully transmitted power consumption telemetry to the backend. The FastAPI middleware seamlessly triggered the smart contract via RPC calls, correctly deducting tokens from the simulated user's cryptographic wallet based on the predefined tariff rate. When the token balance was manually forced to zero during testing, the backend immediately returned an "Inactive" authorization state. The ESP32 successfully parsed this response and triggered the electromechanical relay, instantly opening the circuit and stopping the power flow.
+
     \item[Current-Differential Theft Detection:]
+
     To test the security intelligence, the linear potentiometer in the Wokwi environment was adjusted to create an intentional disparity between the line current ($I_{line}$) and the neutral current ($I_{neutral}$). As soon as the differential exceeded the predefined leakage threshold, the Scikit-Learn classification algorithm successfully flagged the anomaly.
-    \item[Predictive Budget Forecasting:] 
+
+    \item[Predictive Budget Forecasting:]
+
     The supervised Linear Regression model successfully processed the incoming telemetry against the synthetic historical dataset. It accurately generated a continuous trajectory of consumption, translating raw data into a human-readable "Estimated Time Remaining" output (measured in hours) that dynamically updated as simulated load demand fluctuated.
+
 \end{description}
 
 \section{Performance Metrics}
+
 The system's performance was evaluated based on latency, responsiveness, and algorithmic precision. Because the project utilized local test networks rather than public mainnets, the execution speeds were highly optimized. The quantitative results are summarized in the table below:
+
 \begin{table}[htbp]
     \centering
     \caption{System Performance Metrics Validation}
-    \vspace{0.2cm} % Adds a little space between caption and table
-    \renewcommand{\arraystretch}{1.4} % Adds vertical padding to the rows for readability
+    \vspace{0.2cm}
+    \renewcommand{\arraystretch}{1.4}
+
     \begin{tabular}{|l|l|l|c|}
         \hline
         \textbf{Performance Metric} & \textbf{Target / Requirement} & \textbf{Measured Result} & \textbf{Status} \\
@@ -34,16 +47,22 @@ The system's performance was evaluated based on latency, responsiveness, and alg
         \textbf{Frontend Dashboard Refresh Rate} & $< 2.0$ s per API cycle & $\sim 1.2$ s & Passed \\
         \hline
     \end{tabular}
+
     \label{tab:performance}
 \end{table}
 
 \section{Dashboard Visualization}
+
 The React-based frontend successfully fulfilled the requirement for a dual-role, transparent presentation layer.
+
 \begin{itemize}
+
     \item Client Interface: Logging in with consumer credentials routed the user to a dedicated dashboard prioritizing financial transparency. The interface successfully rendered a Recharts semi-circular gauge displaying the live token balance alongside the regression model's time-to-exhaustion forecast.
-    \item Insert Screenshot of Client Dashboard Here - showing the gauge and estimated time. image halnu cha hai.....
+
+    \item Insert Screenshot of Client Dashboard Here -- showing the gauge and estimated time. Image needs to be added.
+
     \item Provider Interface: Logging in with administrative credentials routed the user to the grid management dashboard. The interface successfully displayed aggregate system loads and an active meter table. When the differential theft test was executed, the interface successfully rendered a flashing red "Theft Detected" alert panel, precisely identifying the compromised meter ID and the timestamp of the anomaly.
-    \item Insert Screenshot of Provider Dashboard Here - showing the red Theft Detected alert
+
+    \item Insert Screenshot of Provider Dashboard Here -- showing the red "Theft Detected" alert.
+
 \end{itemize}
-
-

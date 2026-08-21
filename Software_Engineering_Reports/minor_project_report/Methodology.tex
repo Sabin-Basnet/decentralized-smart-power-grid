@@ -2,37 +2,35 @@
 
 \section{System Architecture}
 
-The proposed Decentralized Prepaid Smart Power Grid is developed as a software-based prototype that integrates prepaid electricity management, blockchain technology, machine learning, database management, and a web-based monitoring system.
-
-The project follows a hybrid architecture. Blockchain technology is used for prepaid balance and authorization management, while the backend, database, machine-learning components, and frontend are implemented as conventional software services. Since physical electrical hardware is outside the scope of the project, electricity consumption data is simulated and used as input to the system.
-
-
-\section{System Architecture}
-
 The proposed Decentralized Smart Power Grid is built upon a hybrid four-tier architecture. It integrates physical hardware simulation at the edge, a centralized middleware API for data routing and intelligence, a decentralized blockchain network for secure financial state execution, and a role-based presentation layer for real-time monitoring. By decoupling the transaction logic from a centralized database, the architecture ensures that all billing deductions are immutably processed while retaining high-speed data analysis at the middleware level.
 
 \section{Hardware and Edge Layer}
+
 Because physical high-voltage deployment falls outside the scope of this project, the edge layer is implemented using the Wokwi IoT simulation environment. The core of this layer is an ESP32 microcontroller, programmed in C++ using the Arduino IDE.
 
 The edge node performs three primary functions:
 
 \begin{itemize}
-    \item Telemetry Generation: A linear potentiometer is used to simulate variable consumer load demand. The ESP32's Analog-to-Digital Converter (ADC) samples this voltage variation and mathematically maps it to simulated line and neutral currents.
-    \item Data Transmission: The microcontroller packages the current metrics, cumulative energy, and the unique meter ID into a JSON payload and transmits it to the backend via an HTTP POST request over a simulated Wi-Fi connection.
-    \item Physical Enforcement: The edge node is equipped with a simulated electromechanical relay and an I2C LCD display. It continuously listens for authorization state changes from the backend. If an "Inactive" or "Zero Balance" signal is received, the ESP32 instantly actuates the relay to open the circuit, effectively cutting the power simulation.
-\end{itemize}
+\item Telemetry Generation: A linear potentiometer is used to simulate variable consumer load demand. The ESP32's Analog-to-Digital Converter (ADC) samples this voltage variation and mathematically maps it to simulated line and neutral currents.
 
+\item Data Transmission: The microcontroller packages the current metrics, cumulative energy, and the unique meter ID into a JSON payload and transmits it to the backend via an HTTP POST request over a simulated Wi-Fi connection.
+
+\item Physical Enforcement: The edge node is equipped with a simulated electromechanical relay and an I2C LCD display. It continuously listens for authorization state changes from the backend. If an "Inactive" or "Zero Balance" signal is received, the ESP32 instantly actuates the relay to open the circuit, effectively cutting the power simulation.
+
+\end{itemize}
 
 \section{Backend Service Layer}
 
 The middleware acts as the central coordinator of the system, engineered using the Python FastAPI framework. This RESTful service layer operates statelessly and handles high-frequency I/O operations. When the FastAPI server receives a telemetry payload from the ESP32, it executes a concurrent routing process:
 
 \begin{itemize}
-    \item It passes the raw current arrays to the machine learning engine for anomaly classification and budget forecasting.
-    \item It utilizes the web3.py library to establish a Remote Procedure Call (RPC) connection to the local blockchain ledger, forwarding the cumulative energy data to the smart contract for token deduction.
-    \item It formats the consolidated results (the updated token balance, the time-to-exhaustion forecast, and the theft alert boolean) and returns them to the React frontend via REST endpoints.
-\end{itemize}
+\item It passes the raw current arrays to the machine learning engine for anomaly classification and budget forecasting.
 
+\item It utilizes the web3.py library to establish a Remote Procedure Call (RPC) connection to the local blockchain ledger, forwarding the cumulative energy data to the smart contract for token deduction.
+
+\item It formats the consolidated results (the updated token balance, the time-to-exhaustion forecast, and the theft alert boolean) and returns them to the React frontend via REST endpoints.
+
+\end{itemize}
 
 \section{Blockchain Layer}
 
@@ -41,18 +39,28 @@ The secure billing and transaction layer is decentralized using a local Hardhat 
 When the backend submits the energy consumption payload, the smart contract executes a deterministic state change. It calculates the required tariff deduction and subtracts it from the user's prepaid token balance. If the computation results in a balance of less than or equal to zero, the contract immutably updates the meter's status flag to "Inactive." By handling the financial mathematics entirely on-chain, the system completely bypasses the vulnerability of a centralized, easily manipulated corporate database.
 
 \section{Machine Learning Pipeline}
+
 The grid's intelligence is handled by a Python-based Scikit-Learn pipeline operating within the backend, leveraging a localized synthetic dataset mapping historical consumption patterns of Dharan-based grid users.
+
 \begin{itemize}
-    \item Anomaly Detection (Classification): To detect energy theft, the system analyzes the incoming telemetry against Kirchhoff's Current Law. The classifier calculates the absolute difference between the simulated line current and neutral current. If the differential exceeds the pre-calibrated safety threshold, the algorithm classifies the event as an unmetered bypass and instantly flags a boolean anomaly alert.
-    \item Consumption Forecasting (Regression): To enhance the consumer experience, a supervised Linear Regression model maps the consumer's real-time load demand against their historical Dharan dataset. The model calculates a trajectory of usage to forecast the exact number of hours remaining before the smart contract token balance reaches zero.
+\item Anomaly Detection (Classification): To detect energy theft, the system analyzes the incoming telemetry against Kirchhoff's Current Law. The classifier calculates the absolute difference between the simulated line current and neutral current. If the differential exceeds the pre-calibrated safety threshold, the algorithm classifies the event as an unmetered bypass and instantly flags a boolean anomaly alert.
+
+\item Consumption Forecasting (Regression): To enhance the consumer experience, a supervised Linear Regression model maps the consumer's real-time load demand against their historical Dharan dataset. The model calculates a trajectory of usage to forecast the exact number of hours remaining before the smart contract token balance reaches zero.
+
 \end{itemize}
 
 \section{Role-Based Frontend Dashboards}
+
 The presentation layer is built using React and Vite, utilizing a strict route-guard architecture to serve distinct experiences based on authentication credentials.
+
 \begin{itemize}
-    \item Client Dashboard: Designed for the end-consumer, this view prioritizes financial visibility. It features a responsive Recharts semi-circular gauge displaying the live token balance, a daily power usage graph, and an active readout of the regression model's "Estimated Time Remaining."
-    \item Provider Dashboard: Designed for grid administrators, this interface monitors the entire localized network. It features an aggregate system load chart, a searchable table of active user balances, and a critical alert panel. If the machine learning pipeline triggers a differential anomaly, this panel instantly flashes a red "Theft Detected" warning, logging the specific meter ID and the exact timestamp of the leak.
+
+\item Client Dashboard: Designed for the end-consumer, this view prioritizes financial visibility. It features a responsive Recharts semi-circular gauge displaying the live token balance, a daily power usage graph, and an active readout of the regression model's "Estimated Time Remaining."
+
+\item Provider Dashboard: Designed for grid administrators, this interface monitors the entire localized network. It features an aggregate system load chart, a searchable table of active user balances, and a critical alert panel. If the machine learning pipeline triggers a differential anomaly, this panel instantly flashes a red "Theft Detected" warning, logging the specific meter ID and the exact timestamp of the leak.
+
 \end{itemize}
 
 \section{Working Flow Summary}
+
 The complete automated cycle executes as follows: The ESP32 edge node samples analog load variations and POSTs the telemetry to the FastAPI backend. FastAPI routes this data through Scikit-Learn for theft classification and budget regression forecasting. Simultaneously, web3.py pushes the load data to the Solidity smart contract, which mathematically deducts the prepaid token balance. The backend returns this updated balance and intelligence data to the frontend for visualization. If the contract calculates a zero balance, the backend immediately signals the ESP32 to open the relay, cutting the power and completing the decentralized control loop.
