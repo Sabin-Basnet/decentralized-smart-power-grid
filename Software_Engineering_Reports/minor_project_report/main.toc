@@ -31,12 +31,12 @@
 \contentsline {section}{\numberline {3.6}Role-Based Frontend Dashboards}{13}{}%
 \contentsline {section}{\numberline {3.7}Use Case Model}{13}{}%
 \contentsline {section}{\numberline {3.8}Working Flow Summary}{14}{}%
-\contentsline {chapter}{\numberline {4}Result And Discussion}{16}{}%
+\contentsline {chapter}{\numberline {4}Results and Discussion}{16}{}%
 \contentsline {section}{\numberline {4.1}System Demonstration}{16}{}%
 \contentsline {section}{\numberline {4.2}Functional Outcomes}{16}{}%
 \contentsline {section}{\numberline {4.3}Performance Metrics}{17}{}%
 \contentsline {section}{\numberline {4.4}Dashboard Visualization}{17}{}%
-\contentsline {chapter}{\numberline {5}CONCLUSION AND FUTURE ENHANCEMENT}{20}{}%
+\contentsline {chapter}{\numberline {5}CONCLUSION AND FUTURE ENHANCEMENTS}{20}{}%
 \contentsline {section}{\numberline {5.1}Conclusion}{20}{}%
 \contentsline {section}{\numberline {5.2}Future Enhancements}{20}{}%
 \contentsline {chapter}{REFERENCES}{22}{}%

@@ -56,13 +56,13 @@
 \renewcommand{\cftbeforechapskip}{9pt} % Space before each chapter entry
 \renewcommand{\cftbeforesecskip}{9pt} % Space before each section entry
 \renewcommand{\cftbeforesubsecskip}{9pt} % Space before each section entry
-\renewcommand{\contentsname}{\fontsize{14}{16}\bfseries TABLE OF CONTENTS}
+\renewcommand{\contentsname}{TABLE OF CONTENTS}
 
 % Adjust the spacing for the LIST OF FIGURES
 \renewcommand{\cftbeforeloftitleskip}{-18pt} % Space before the LOF title
 \renewcommand{\cftafterloftitleskip}{12pt} % Space after the LOF title
 \renewcommand{\cftbeforefigskip}{10pt} % Space before each figure entry
-\renewcommand{\listfigurename}{\fontsize{14}{16}\bfseries LIST OF FIGURES}
+\renewcommand{\listfigurename}{LIST OF FIGURES}
 \renewcommand{\cftfigpresnum}{\figurename\ }
 \renewcommand{\cftfigaftersnum}{:}
 \renewcommand{\cftfigaftersnumb}{\hspace{2.5em}} 
@@ -71,7 +71,7 @@
 \renewcommand{\cftbeforelottitleskip}{-18pt} % Space before the LOT title
 \renewcommand{\cftafterlottitleskip}{12pt} % Space after the LOT title
 \renewcommand{\cftbeforetabskip}{10pt} % Space before each table entry
-\renewcommand{\listtablename}{\fontsize{14}{16}\bfseries LIST OF TABLES}
+\renewcommand{\listtablename}{LIST OF TABLES}
 \renewcommand{\cfttabpresnum}{Table\ }
 \renewcommand{\cfttabaftersnum}{:}
 \renewcommand{\cfttabaftersnumb}{\hspace{2.5em}}
@@ -92,10 +92,13 @@
 %\include{DeptAcceptance}
 
 \include{Abstract}
-{\centering{\tableofcontents}}\newpage
-{\centering\listoffigures\addcontentsline{toc}{chapter}{LIST OF FIGURES}}
+\tableofcontents
 \newpage
-{\centering\listoftables\addcontentsline{toc}{chapter}{LIST OF TABLES}}
+\listoffigures
+\addcontentsline{toc}{chapter}{LIST OF FIGURES}
+\newpage
+\listoftables
+\addcontentsline{toc}{chapter}{LIST OF TABLES}
 \newpage
 \include{ListofAbbreviations}
 \include{Introduction} 

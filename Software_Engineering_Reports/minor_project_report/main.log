@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.5) (preloaded format=pdflatex 2026.6.10)  21 AUG 2026 14:29
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.5) (preloaded format=pdflatex 2026.6.10)  21 AUG 2026 14:42
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -630,10 +630,7 @@ File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
 File: l3backend-pdftex.def 2026-02-18 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count328
 )
-(main.aux (CoverPage.aux) (letter_approval.aux) (Acknowledgement.aux)
-(copyright_page.aux) (Declaration.aux) (Abstract.aux) (ListofAbbreviations.aux)
-(Introduction.aux) (LiteratureReview_Theory.aux) (Methodology.aux)
-(result_and_discussion.aux) (Conclusion.aux) (References.aux) (Appendix.aux))
+(main.aux)
 \openout1 = `main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 83.
@@ -650,8 +647,7 @@ LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 83.
 LaTeX Font Info:    ... okay on input line 83.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 83.
 LaTeX Font Info:    ... okay on input line 83.
-
-(D:\realm\hoyovserse\light\latex\tex/context/base/mkii\supp-pdf.mkii
+ (D:\realm\hoyovserse\light\latex\tex/context/base/mkii\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count329
 \scratchdimen=\dimen293
@@ -794,6 +790,12 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7> not available
 
 
 (Abstract.tex
+Overfull \hbox (1.39763pt too wide) in paragraph at lines 5--6
+\OT1/ptm/m/n/12 remaining-time es-ti-ma-tion, while a threshold-based current-d
+ifferential de-tec-tor ac-tively
+ []
+
+
 Overfull \hbox (14.38222pt too wide) in paragraph at lines 9--10
 []\OT1/ptm/m/n/12 Ultimately, this pro-to-type proves the tech-ni-cal fea-si-bi
 l-ity of merg-ing im-mutable blockchain
@@ -947,9 +949,15 @@ s-tems of-ten rely on cloud-
  []
 
 [5] [6]
-Overfull \hbox (25.45871pt too wide) in paragraph at lines 40--40
+Overfull \hbox (25.45871pt too wide) in paragraph at lines 43--44
 \OT1/ptm/m/n/12 must equal the cur-rent re-turn-ing through the neu-tral wire. 
 To de-tect en-ergy theft|specifically
+ []
+
+
+Overfull \hbox (21.85838pt too wide) in paragraph at lines 43--44
+\OT1/ptm/m/n/12 me-ter by-pass-ing or line hook-ing|this project em-ploys a thr
+eshold-based current-differential
  []
 
 [7]) [8]
@@ -957,12 +965,21 @@ To de-tect en-ergy theft|specifically
 
  (Methodology.tex
 Chapter 3.
+
+LaTeX Warning: Reference `fig:system-architecture' on page 9 undefined on input
+ line 7.
+
 [9
 
 
 
 
-] [10]
+]
+
+LaTeX Warning: Reference `fig:telemetry-simulation' on page 10 undefined on inp
+ut line 76.
+
+[10]
 Overfull \hbox (14.11726pt too wide) in paragraph at lines 129--130
 []\OT1/ptm/m/n/12 It for-mats the con-sol-i-dated re-sults (the up-dated to-ken
  bal-ance, the time-to-exhaustion
@@ -973,22 +990,40 @@ LaTeX Font Info:    Trying to load font information for OT1+pcr on input line 1
 (D:\realm\hoyovserse\light\latex\tex/latex/psnfss\ot1pcr.fd
 File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
 )
+
+LaTeX Warning: Reference `fig:blockchain-flow' on page 11 undefined on input li
+ne 140.
+
+
 Overfull \hbox (10.95811pt too wide) in paragraph at lines 196--197
  [][] 
  []
 
 [11]
+
+LaTeX Warning: Reference `fig:ml-pipeline' on page 12 undefined on input line 2
+13.
+
+
 Overfull \hbox (21.65218pt too wide) in paragraph at lines 256--257
  [][] 
  []
 
 [12]
+
+LaTeX Warning: Reference `fig:use-case' on page 13 undefined on input line 276.
+
+
 <Graphics/usecase.jpeg, id=88, 960.58875pt x 697.60625pt>
 File: Graphics/usecase.jpeg Graphic file (type jpg)
 <use Graphics/usecase.jpeg>
 Package pdftex.def Info: Graphics/usecase.jpeg  used on input line 280.
 (pdftex.def)             Requested size: 416.83315pt x 302.72179pt.
- [13]
+[13]
+
+LaTeX Warning: Reference `fig:working-flow' on page 14 undefined on input line 
+289.
+
 <Graphics/activity.jpeg, id=92, 883.3pt x 738.76pt>
 File: Graphics/activity.jpeg Graphic file (type jpg)
 <use Graphics/activity.jpeg>
@@ -1047,7 +1082,35 @@ Chapter 5.
 ]) [21]
 \openout2 = `References.aux'.
 
- (References.tex (main.bbl)) [22
+ (References.tex
+
+Package natbib Warning: Citation `smith2022smartmeter' undefined on input line 
+4.
+
+
+Package natbib Warning: Citation `zhao2020energy' undefined on input line 4.
+
+
+Package natbib Warning: Citation `mulani2017watermarking' undefined on input li
+ne 4.
+
+
+Package natbib Warning: Citation `jithish2023anomaly' undefined on input line 4
+.
+
+
+Package natbib Warning: Citation `choudhary2020prepaid' undefined on input line
+ 4.
+
+
+Package natbib Warning: Citation `gholizadeh2022federated' undefined on input l
+ine 4.
+
+
+Package natbib Warning: Citation `husnoo2023misbehaviour' undefined on input li
+ne 4.
+
+(main.bbl)) [22
 
 
 
@@ -1059,22 +1122,37 @@ Chapter 5.
 
 
 
-]) [24] (main.aux
-(CoverPage.aux) (letter_approval.aux) (Acknowledgement.aux) (copyright_page.aux
-) (Declaration.aux) (Abstract.aux) (ListofAbbreviations.aux) (Introduction.aux)
-(LiteratureReview_Theory.aux) (Methodology.aux) (result_and_discussion.aux)
-(Conclusion.aux) (References.aux) (Appendix.aux))
+]) [24]
+
+Package natbib Warning: There were undefined citations.
+
+(main.aux (CoverPage.aux) (letter_approval.aux) (Acknowledgement.aux)
+(copyright_page.aux) (Declaration.aux) (Abstract.aux) (ListofAbbreviations.aux)
+(Introduction.aux) (LiteratureReview_Theory.aux) (Methodology.aux)
+(result_and_discussion.aux) (Conclusion.aux) (References.aux
+
+Package natbib Warning: Citation(s) may have changed.
+(natbib)                Rerun to get citations correct.
+
+) (Appendix.aux))
  ***********
 LaTeX2e <2026-06-01>
 L3 programming layer <2026-05-26>
  ***********
+
+
+LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
  ) 
 Here is how much of TeX's memory you used:
- 18652 strings out of 467475
- 374469 string characters out of 5413705
- 765193 words of memory out of 5000000
- 47472 multiletter control sequences out of 15000+600000
- 653565 words of font info for 93 fonts, out of 8000000 for 9000
+ 18612 strings out of 467475
+ 372214 string characters out of 5413705
+ 759339 words of memory out of 5000000
+ 47459 multiletter control sequences out of 15000+600000
+ 654672 words of font info for 94 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  84i,8n,104p,1195b,805s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <D:/realm/hoyovserse/light/latex/fonts/type1/public/amsfonts/cm/cmmi10.pfb><D
@@ -1085,7 +1163,7 @@ ight/latex/fonts/type1/urw/symbol/usyr.pfb><D:/realm/hoyovserse/light/latex/fon
 ts/type1/urw/times/utmb8a.pfb><D:/realm/hoyovserse/light/latex/fonts/type1/urw/
 times/utmr8a.pfb><D:/realm/hoyovserse/light/latex/fonts/type1/urw/times/utmri8a
 .pfb>
-Output written on main.pdf (35 pages, 1207515 bytes).
+Output written on main.pdf (35 pages, 1208208 bytes).
 PDF statistics:
  165 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)

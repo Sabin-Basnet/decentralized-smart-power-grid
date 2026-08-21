@@ -200,13 +200,13 @@ node[right, font=\small] {No} (inactive);
 
 \section{Machine Learning Pipeline}
 
-The grid's intelligence is handled by a Python-based Scikit-Learn pipeline operating within the backend, leveraging a localized synthetic dataset mapping historical consumption patterns of Dharan-based grid users.
+The grid's intelligence is handled by a Python-based machine-learning component operating within the backend, leveraging a localized synthetic dataset mapping historical consumption patterns of Dharan-based grid users.
 
 \begin{itemize}
 
 \item \textbf{Anomaly Detection (Classification):} To detect energy theft, the system analyzes the incoming telemetry against Kirchhoff's Current Law. The classifier calculates the absolute difference between the simulated line current and neutral current. If the differential exceeds the pre-calibrated safety threshold, the algorithm classifies the event as an unmetered bypass and instantly flags a boolean anomaly alert.
 
-\item \textbf{Consumption Forecasting (Regression):} To enhance the consumer experience, a supervised Linear Regression model maps the consumer's real-time load demand against their historical Dharan dataset. The model calculates a trajectory of usage to forecast the exact number of hours remaining before the smart contract token balance reaches zero.
+\item \textbf{Consumption Forecasting (Regression):} To enhance the consumer experience, a supervised Linear Regression model maps the consumer's real-time load demand against their historical Dharan dataset. The resulting usage estimate supports an approximate calculation of the number of hours remaining before the smart contract token balance reaches zero.
 
 \end{itemize}
 
@@ -284,7 +284,7 @@ The interaction between the system users and the major functions of the proposed
 
 \section{Working Flow Summary}
 
-The complete automated cycle executes as follows: The simulated smart meter generates analog load variations and POSTs the telemetry to the FastAPI backend. FastAPI routes this data through Scikit-Learn for theft classification and budget regression forecasting. Simultaneously, web3.py pushes the load data to the Solidity smart contract, which mathematically deducts the prepaid token balance. The backend returns this updated balance and intelligence data to the frontend for visualization. If the contract calculates a zero balance, the meter status is updated to ``Inactive,'' indicating that the simulated electricity service is suspended.
+The complete automated cycle executes as follows: The simulated smart meter generates analog load variations and POSTs the telemetry to the FastAPI backend. FastAPI routes this data through the threshold-based detector for theft identification and the regression component for budget forecasting. Simultaneously, web3.py pushes the load data to the Solidity smart contract, which mathematically deducts the prepaid token balance. The backend returns this updated balance and intelligence data to the frontend for visualization. If the contract calculates a zero balance, the meter status is updated to ``Inactive,'' indicating that the simulated electricity service is suspended.
 
 The complete working flow is illustrated in Figure~\ref{fig:working-flow}.
 

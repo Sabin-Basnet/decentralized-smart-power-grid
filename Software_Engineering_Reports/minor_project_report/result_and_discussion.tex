@@ -1,4 +1,4 @@
-\chapter{Result And Discussion}
+\chapter{Results and Discussion}
 
 \section{System Demonstration}
 
@@ -85,7 +85,7 @@ The system was subjected to various operational scenarios to validate its core e
 
     \item[Current-Differential Theft Detection:]
 
-    To test the security intelligence, the linear potentiometer in the Wokwi environment was adjusted to create an intentional disparity between the line current ($I_{line}$) and the neutral current ($I_{neutral}$). As soon as the differential exceeded the predefined leakage threshold, the Scikit-Learn classification algorithm successfully flagged the anomaly.
+    To test the security intelligence, the linear potentiometer in the Wokwi environment was adjusted to create an intentional disparity between the line current ($I_{line}$) and the neutral current ($I_{neutral}$). As soon as the differential exceeded the predefined leakage threshold, the threshold-based detector successfully flagged the anomaly.
 
     \item[Predictive Budget Forecasting:]
 
@@ -138,12 +138,12 @@ The React-based frontend successfully fulfilled the requirement for a dual-role,
 
     \item Provider Interface: Logging in with administrative credentials routed the user to the grid management dashboard. The interface successfully displayed aggregate system loads and an active meter table. When the differential theft test was executed, the interface successfully rendered a flashing red "Theft Detected" alert panel, precisely identifying the compromised meter ID and the timestamp of the anomaly.
 
-    \item Administrator Dashboard Screenshot:
+    \item Provider Dashboard Screenshot:
 
     \begin{figure}[H]
         \centering
         \includegraphics[width=\textwidth,keepaspectratio]{Graphics/administrator_dashboard.jpeg}
-        \caption{Administrator Dashboard Showing Grid Monitoring and Theft Alert}\label{fig:administrator-dashboard}
+        \caption{Provider Dashboard Showing Grid Monitoring and Theft Alert}\label{fig:provider-dashboard}
     \end{figure}
 
 \end{itemize}
