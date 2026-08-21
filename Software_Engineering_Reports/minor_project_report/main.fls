@@ -1,6 +1,6 @@
-PWD d:\realm\projects\local\projects\decentralized-smart-power-grid\Software_Engineering_Reports\minor_project_report
+PWD D:\realm\projects\local\projects\decentralized-smart-power-grid\Software_Engineering_Reports\minor_project_report
 INPUT C:\Users\tonys\AppData\Local\MiKTeX\miktex\data\le\pdftex\pdflatex.fmt
-INPUT d:\realm\projects\local\projects\decentralized-smart-power-grid\Software_Engineering_Reports\minor_project_report\main.tex
+INPUT main.tex
 OUTPUT main.log
 INPUT D:\realm\hoyovserse\light\latex\tex\latex\base\report.cls
 INPUT D:\realm\hoyovserse\light\latex\tex\latex\base\report.cls

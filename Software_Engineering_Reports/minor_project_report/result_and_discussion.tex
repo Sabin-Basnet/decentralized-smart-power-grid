@@ -42,6 +42,41 @@ The Decentralized Smart Power Grid was successfully deployed and tested in a loc
 
 The system was subjected to various operational scenarios to validate its core engineering objectives:
 
+\begin{figure}[H]
+\centering
+\begin{tikzpicture}[
+    node distance=1.3cm and 0.8cm,
+    box/.style={
+        rectangle,
+        rounded corners,
+        draw,
+        minimum height=1cm,
+        text width=3.6cm,
+        align=center
+    },
+    arrow/.style={
+        -{Latex[length=3mm]},
+        thick
+    }
+]
+
+\node[box] (telemetry) {Simulated Telemetry};
+\node[box, below left=of telemetry] (billing)
+{Token Deduction\\and Relay Control};
+\node[box, below=of telemetry] (theft)
+{Current-Differential\\Theft Detection};
+\node[box, below right=of telemetry] (forecast)
+{Consumption\\Time Forecast};
+
+\draw[arrow] (telemetry) -- (billing);
+\draw[arrow] (telemetry) -- (theft);
+\draw[arrow] (telemetry) -- (forecast);
+
+\end{tikzpicture}
+\caption{Functional Outcomes Validated Through System Testing}
+\label{fig:functional-outcomes}
+\end{figure}
+
 \begin{description}
 
     \item[Automated Token Deduction and Relay Enforcement:]
