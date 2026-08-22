@@ -25,7 +25,7 @@ export const DEMO_ACCOUNTS = {
   },
 }
 
-export const LEAKAGE_THRESHOLD_AMPS = 0.15
+export const LEAKAGE_THRESHOLD_AMPS = 0.2
 
 export const SESSION_KEY = 'dharan_grid_session'
 

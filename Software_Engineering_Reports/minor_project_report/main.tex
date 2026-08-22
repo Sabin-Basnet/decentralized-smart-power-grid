@@ -51,18 +51,26 @@
 %----------------------------------------------------------------------
 
 % Adjust the spacing for the TABLE OF CONTENT
-\renewcommand{\cftbeforetoctitleskip}{-18pt} % Space before the TOC title
-\renewcommand{\cftaftertoctitleskip}{12pt} % Space after the TOC title
-\renewcommand{\cftbeforechapskip}{9pt} % Space before each chapter entry
-\renewcommand{\cftbeforesecskip}{9pt} % Space before each section entry
-\renewcommand{\cftbeforesubsecskip}{9pt} % Space before each section entry
+\renewcommand{\cftbeforetoctitleskip}{-18pt} 
+\renewcommand{\cftaftertoctitleskip}{12pt} 
+\renewcommand{\cftbeforechapskip}{9pt} 
+\renewcommand{\cftbeforesecskip}{9pt} 
+\renewcommand{\cftbeforesubsecskip}{9pt} 
+
+% 1. Set the plain text
 \renewcommand{\contentsname}{TABLE OF CONTENTS}
+
+% 2. Push from the left
+\renewcommand{\cfttoctitlefont}{\hfill\fontsize{14}{16}\bfseries}
+
+% 3. Push from the right (The \null prevents LaTeX from deleting this space!)
+\renewcommand{\cftaftertoctitle}{\hfill\null}
 
 % Adjust the spacing for the LIST OF FIGURES
 \renewcommand{\cftbeforeloftitleskip}{-18pt} % Space before the LOF title
 \renewcommand{\cftafterloftitleskip}{12pt} % Space after the LOF title
 \renewcommand{\cftbeforefigskip}{10pt} % Space before each figure entry
-\renewcommand{\listfigurename}{LIST OF FIGURES}
+\renewcommand{\listfigurename}{\fontsize{14}{16}\bfseries LIST OF FIGURES}
 \renewcommand{\cftfigpresnum}{\figurename\ }
 \renewcommand{\cftfigaftersnum}{:}
 \renewcommand{\cftfigaftersnumb}{\hspace{2.5em}} 
@@ -71,7 +79,7 @@
 \renewcommand{\cftbeforelottitleskip}{-18pt} % Space before the LOT title
 \renewcommand{\cftafterlottitleskip}{12pt} % Space after the LOT title
 \renewcommand{\cftbeforetabskip}{10pt} % Space before each table entry
-\renewcommand{\listtablename}{LIST OF TABLES}
+\renewcommand{\listtablename}{\fontsize{14}{16}\bfseries LIST OF TABLES}
 \renewcommand{\cfttabpresnum}{Table\ }
 \renewcommand{\cfttabaftersnum}{:}
 \renewcommand{\cfttabaftersnumb}{\hspace{2.5em}}

@@ -5,7 +5,7 @@ import numpy as np
 import pandas as pd
 from sklearn.linear_model import LinearRegression
 
-LEAKAGE_THRESHOLD_AMPS = 0.15
+LEAKAGE_THRESHOLD_AMPS = 0.2
 DATA_PATH = Path(__file__).resolve().parent.parent / "data" / "dharan_meter_history.csv"
 
 

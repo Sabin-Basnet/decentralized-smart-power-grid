@@ -1,0 +1,550 @@
+[
+    {
+        "id": "b471cefc9ae886a6",
+        "type": "tab",
+        "label": "Flow 4",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "ui_base",
+        "type": "ui-base",
+        "name": "Grid Base",
+        "path": "/dashboard"
+    },
+    {
+        "id": "ui_theme",
+        "type": "ui-theme",
+        "name": "Grid Theme",
+        "colors": {
+            "surface": "#ffffff",
+            "primary": "#0094ce",
+            "bgPage": "#eeeeee",
+            "groupBg": "#ffffff",
+            "groupOutline": "#cccccc"
+        }
+    },
+    {
+        "id": "ui_page",
+        "type": "ui-page",
+        "name": "Smart Grid Demo",
+        "ui": "ui_base",
+        "path": "/monitor",
+        "icon": "home",
+        "layout": "grid",
+        "theme": "ui_theme"
+    },
+    {
+        "id": "grp_map",
+        "type": "ui-group",
+        "name": "Live Grid Flow",
+        "page": "ui_page",
+        "width": "12",
+        "height": "4",
+        "order": 1,
+        "showTitle": false
+    },
+    {
+        "id": "grp_h1",
+        "type": "ui-group",
+        "name": "🏠 House 1",
+        "page": "ui_page",
+        "width": "4",
+        "height": "6",
+        "order": 2,
+        "showTitle": true
+    },
+    {
+        "id": "grp_h2",
+        "type": "ui-group",
+        "name": "🏠 House 2",
+        "page": "ui_page",
+        "width": "4",
+        "height": "6",
+        "order": 3,
+        "showTitle": true
+    },
+    {
+        "id": "grp_h3",
+        "type": "ui-group",
+        "name": "🏠 House 3",
+        "page": "ui_page",
+        "width": "4",
+        "height": "6",
+        "order": 4,
+        "showTitle": true
+    },
+    {
+        "id": "tick",
+        "type": "inject",
+        "z": "b471cefc9ae886a6",
+        "name": "Grid Clock (1s)",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "1",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "tick",
+        "payload": "",
+        "payloadType": "date",
+        "x": 120,
+        "y": 80,
+        "wires": [
+            [
+                "engine"
+            ]
+        ]
+    },
+    {
+        "id": "btn_buy1",
+        "type": "ui-button",
+        "z": "b471cefc9ae886a6",
+        "group": "grp_h1",
+        "name": "",
+        "label": "➕ Add 50 Units",
+        "order": 1,
+        "width": "4",
+        "height": "1",
+        "color": "white",
+        "bgcolor": "#2ECC71",
+        "payload": "true",
+        "payloadType": "bool",
+        "topic": "buy1",
+        "x": 120,
+        "y": 140,
+        "wires": [
+            [
+                "engine"
+            ]
+        ]
+    },
+    {
+        "id": "btn_buy2",
+        "type": "ui-button",
+        "z": "b471cefc9ae886a6",
+        "group": "grp_h2",
+        "name": "",
+        "label": "➕ Add 50 Units",
+        "order": 1,
+        "width": "4",
+        "height": "1",
+        "emulateClick": false,
+        "color": "white",
+        "bgcolor": "#2ECC71",
+        "className": "",
+        "icon": "",
+        "iconPosition": "left",
+        "payload": "true",
+        "payloadType": "bool",
+        "topic": "buy2",
+        "topicType": "str",
+        "buttonColor": "",
+        "textColor": "",
+        "iconColor": "",
+        "enableClick": true,
+        "enablePointerdown": false,
+        "pointerdownPayload": "",
+        "pointerdownPayloadType": "str",
+        "enablePointerup": false,
+        "pointerupPayload": "",
+        "pointerupPayloadType": "str",
+        "x": 120,
+        "y": 180,
+        "wires": [
+            [
+                "engine"
+            ]
+        ]
+    },
+    {
+        "id": "btn_buy3",
+        "type": "ui-button",
+        "z": "b471cefc9ae886a6",
+        "group": "grp_h3",
+        "name": "",
+        "label": "➕ Add 50 Units",
+        "order": 1,
+        "width": "4",
+        "height": "1",
+        "color": "white",
+        "bgcolor": "#2ECC71",
+        "payload": "true",
+        "payloadType": "bool",
+        "topic": "buy3",
+        "x": 120,
+        "y": 220,
+        "wires": [
+            [
+                "engine"
+            ]
+        ]
+    },
+    {
+        "id": "sw_f1",
+        "type": "ui-switch",
+        "z": "b471cefc9ae886a6",
+        "name": "",
+        "label": "Fan (2 u/s)",
+        "group": "grp_h1",
+        "order": 3,
+        "width": "4",
+        "height": "1",
+        "passthru": false,
+        "topic": "f1",
+        "onvalue": "true",
+        "onvalueType": "bool",
+        "offvalue": "false",
+        "offvalueType": "bool",
+        "x": 120,
+        "y": 280,
+        "wires": [
+            [
+                "engine"
+            ]
+        ]
+    },
+    {
+        "id": "sw_l1",
+        "type": "ui-switch",
+        "z": "b471cefc9ae886a6",
+        "name": "",
+        "label": "Light (1 u/s)",
+        "group": "grp_h1",
+        "order": 4,
+        "width": "4",
+        "height": "1",
+        "passthru": false,
+        "topic": "l1",
+        "onvalue": "true",
+        "onvalueType": "bool",
+        "offvalue": "false",
+        "offvalueType": "bool",
+        "x": 120,
+        "y": 320,
+        "wires": [
+            [
+                "engine"
+            ]
+        ]
+    },
+    {
+        "id": "sw_f2",
+        "type": "ui-switch",
+        "z": "b471cefc9ae886a6",
+        "name": "",
+        "label": "Fan (2 u/s)",
+        "group": "grp_h2",
+        "order": 3,
+        "width": "4",
+        "height": "1",
+        "passthru": false,
+        "topic": "f2",
+        "onvalue": "true",
+        "onvalueType": "bool",
+        "offvalue": "false",
+        "offvalueType": "bool",
+        "x": 120,
+        "y": 360,
+        "wires": [
+            [
+                "engine"
+            ]
+        ]
+    },
+    {
+        "id": "sw_l2",
+        "type": "ui-switch",
+        "z": "b471cefc9ae886a6",
+        "name": "",
+        "label": "Light (1 u/s)",
+        "group": "grp_h2",
+        "order": 4,
+        "width": "4",
+        "height": "1",
+        "passthru": false,
+        "topic": "l2",
+        "onvalue": "true",
+        "onvalueType": "bool",
+        "offvalue": "false",
+        "offvalueType": "bool",
+        "x": 120,
+        "y": 400,
+        "wires": [
+            [
+                "engine"
+            ]
+        ]
+    },
+    {
+        "id": "sw_f3",
+        "type": "ui-switch",
+        "z": "b471cefc9ae886a6",
+        "name": "",
+        "label": "Fan (2 u/s)",
+        "group": "grp_h3",
+        "order": 3,
+        "width": "4",
+        "height": "1",
+        "passthru": false,
+        "topic": "f3",
+        "onvalue": "true",
+        "onvalueType": "bool",
+        "offvalue": "false",
+        "offvalueType": "bool",
+        "x": 120,
+        "y": 440,
+        "wires": [
+            [
+                "engine"
+            ]
+        ]
+    },
+    {
+        "id": "sw_l3",
+        "type": "ui-switch",
+        "z": "b471cefc9ae886a6",
+        "name": "",
+        "label": "Light (1 u/s)",
+        "group": "grp_h3",
+        "order": 4,
+        "width": "4",
+        "height": "1",
+        "passthru": false,
+        "topic": "l3",
+        "onvalue": "true",
+        "onvalueType": "bool",
+        "offvalue": "false",
+        "offvalueType": "bool",
+        "x": 120,
+        "y": 480,
+        "wires": [
+            [
+                "engine"
+            ]
+        ]
+    },
+    {
+        "id": "engine",
+        "type": "function",
+        "z": "b471cefc9ae886a6",
+        "name": "Physics Engine",
+        "func": "let s = flow.get('grid_state') || {h1:{b:0,f:false,l:false}, h2:{b:0,f:false,l:false}, h3:{b:0,f:false,l:false}};\nif (msg.topic === 'buy1') s.h1.b += 50;\nif (msg.topic === 'buy2') s.h2.b += 50;\nif (msg.topic === 'buy3') s.h3.b += 50;\nif (msg.topic === 'f1') s.h1.f = msg.payload;\nif (msg.topic === 'l1') s.h1.l = msg.payload;\nif (msg.topic === 'f2') s.h2.f = msg.payload;\nif (msg.topic === 'l2') s.h2.l = msg.payload;\nif (msg.topic === 'f3') s.h3.f = msg.payload;\nif (msg.topic === 'l3') s.h3.l = msg.payload;\nif (msg.topic === 'tick') {\n    ['h1','h2','h3'].forEach(h => {\n        if (s[h].b > 0) {\n            let drain = 0;\n            if (s[h].f) drain += 2;\n            if (s[h].l) drain += 1;\n            s[h].b -= drain;\n        }\n        if (s[h].b <= 0) {\n            s[h].b = 0;\n            s[h].f = false;\n            s[h].l = false;\n        }\n    });\n}\nflow.set('grid_state', s);\nreturn [{payload: s}, {payload: s.h1.b}, {payload: s.h2.b}, {payload: s.h3.b}, {payload: s.h1.f}, {payload: s.h1.l}, {payload: s.h2.f}, {payload: s.h2.l}, {payload: s.h3.f}, {payload: s.h3.l}];",
+        "outputs": 10,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 420,
+        "y": 280,
+        "wires": [
+            [
+                "ui_map"
+            ],
+            [
+                "g_h1"
+            ],
+            [
+                "g_h2"
+            ],
+            [
+                "g_h3"
+            ],
+            [
+                "sw_f1"
+            ],
+            [
+                "sw_l1"
+            ],
+            [
+                "sw_f2"
+            ],
+            [
+                "sw_l2"
+            ],
+            [
+                "sw_f3"
+            ],
+            [
+                "sw_l3"
+            ]
+        ]
+    },
+    {
+        "id": "ui_map",
+        "type": "ui-template",
+        "z": "b471cefc9ae886a6",
+        "group": "grp_map",
+        "name": "Compact Flow Map",
+        "order": 1,
+        "width": "12",
+        "height": "4",
+        "format": "<template>\n  <div v-if=\"msg?.payload?.h1\" style=\"background:#1e1e1e; padding:10px; border-radius:8px; color:white; text-align:center; font-family:sans-serif; height: 100%; box-sizing: border-box;\">\n    <div style=\"font-weight:bold; font-size:16px; margin-bottom:10px;\">⚡ Central Grid Substation</div>\n    <div style=\"display:flex; justify-content:space-around;\">\n      <div v-for=\"(house, key) in msg.payload\" :key=\"key\" style=\"width:30%;\">\n        <div :class=\"house.b > 0 ? 'f-active' : 'f-cut'\" style=\"height:15px; margin-bottom:5px;\"></div>\n        <div style=\"border: 1px solid #444; border-radius: 6px; padding: 5px; background:#2a2a2a;\">\n          <div style=\"font-weight:bold; text-transform:uppercase; font-size:14px; margin-bottom:5px;\">🏠 {{key}}</div>\n          <div style=\"display:flex; justify-content:space-around; font-size:11px;\">\n            <div>\n              <div :class=\"(house.b > 0 && house.f) ? 'f-active' : 'f-cut'\" style=\"height:15px; margin-bottom:2px;\"></div>\n              <span :class=\"(house.b > 0 && house.f) ? 'on':'off'\">{{ (house.b > 0 && house.f) ? 'FAN (2u/s)' : 'FAN OFF' }}</span>\n            </div>\n            <div>\n              <div :class=\"(house.b > 0 && house.l) ? 'f-active' : 'f-cut'\" style=\"height:15px; margin-bottom:2px;\"></div>\n              <span :class=\"(house.b > 0 && house.l) ? 'on':'off'\">{{ (house.b > 0 && house.l) ? 'LIGHT (1u/s)' : 'LIGHT OFF' }}</span>\n            </div>\n          </div>\n        </div>\n      </div>\n    </div>\n  </div>\n  <div v-else style=\"padding: 10px; color: white; background:#1e1e1e;\">⏳ Connecting...</div>\n</template>\n<style>\n  .f-active { width:4px; background: repeating-linear-gradient(to bottom, #2ECC71, #2ECC71 8px, transparent 8px, transparent 16px); background-size: 100% 16px; animation: flowAnim 0.8s linear infinite; margin: 0 auto; }\n  .f-cut { width:4px; background: #444; margin: 0 auto; }\n  @keyframes flowAnim { 0% { background-position: 0 0; } 100% { background-position: 0 16px; } }\n  .on { color: #2ECC71; font-weight:bold; } .off { color: #E74C3C; font-weight:bold; }\n</style>",
+        "storeOutMessages": true,
+        "templateScope": "local",
+        "x": 670,
+        "y": 140,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "g_h1",
+        "type": "ui-gauge",
+        "z": "b471cefc9ae886a6",
+        "name": "",
+        "group": "grp_h1",
+        "order": 2,
+        "value": "payload",
+        "valueType": "msg",
+        "width": "4",
+        "height": "3",
+        "gtype": "gauge",
+        "title": "Live Balance",
+        "alwaysShowTitle": false,
+        "units": "",
+        "icon": "",
+        "prefix": "",
+        "suffix": "",
+        "segments": [
+            {
+                "from": "0",
+                "color": "#ca3838",
+                "text": "",
+                "textType": "label"
+            },
+            {
+                "from": "30",
+                "color": "#e6e600",
+                "text": "",
+                "textType": "label"
+            },
+            {
+                "from": "60",
+                "color": "#2ecc71",
+                "text": "",
+                "textType": "label"
+            }
+        ],
+        "min": 0,
+        "max": 100,
+        "sizeThickness": "",
+        "sizeGap": "",
+        "sizeKeyThickness": "",
+        "className": "",
+        "x": 670,
+        "y": 200,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "g_h2",
+        "type": "ui-gauge",
+        "z": "b471cefc9ae886a6",
+        "name": "",
+        "group": "grp_h2",
+        "order": 2,
+        "value": "payload",
+        "valueType": "msg",
+        "width": "4",
+        "height": "3",
+        "gtype": "gauge",
+        "title": "Live Balance",
+        "alwaysShowTitle": false,
+        "units": "",
+        "icon": "",
+        "prefix": "",
+        "suffix": "",
+        "segments": [
+            {
+                "from": "0",
+                "color": "#ca3838",
+                "text": "",
+                "textType": "label"
+            },
+            {
+                "from": "30",
+                "color": "#e6e600",
+                "text": "",
+                "textType": "label"
+            },
+            {
+                "from": "60",
+                "color": "#2ecc71",
+                "text": "",
+                "textType": "label"
+            }
+        ],
+        "min": 0,
+        "max": 100,
+        "sizeThickness": "",
+        "sizeGap": "",
+        "sizeKeyThickness": "",
+        "className": "",
+        "x": 670,
+        "y": 240,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "g_h3",
+        "type": "ui-gauge",
+        "z": "b471cefc9ae886a6",
+        "name": "",
+        "group": "grp_h3",
+        "order": 2,
+        "value": "payload",
+        "valueType": "msg",
+        "width": "4",
+        "height": "3",
+        "gtype": "gauge",
+        "title": "Live Balance",
+        "alwaysShowTitle": false,
+        "units": "",
+        "icon": "",
+        "prefix": "",
+        "suffix": "",
+        "segments": [
+            {
+                "from": "0",
+                "color": "#ca3838",
+                "text": "",
+                "textType": "label"
+            },
+            {
+                "from": "30",
+                "color": "#e6e600",
+                "text": "",
+                "textType": "label"
+            },
+            {
+                "from": "60",
+                "color": "#2ecc71",
+                "text": "",
+                "textType": "label"
+            }
+        ],
+        "min": 0,
+        "max": 100,
+        "sizeThickness": "",
+        "sizeGap": "",
+        "sizeKeyThickness": "",
+        "className": "",
+        "x": 670,
+        "y": 280,
+        "wires": [
+            []
+        ]
+    }
+]

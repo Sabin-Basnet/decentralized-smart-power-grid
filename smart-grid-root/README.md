@@ -10,6 +10,7 @@ This project simulates a prepaid smart electricity system with four connected la
 ## Project layout
 
 - `backend/` — FastAPI service, SQLite logic, telemetry processing
+- `ML_README.md` — ML models, features, runtime usage, and limitations
 - `blockchain/` — Solidity smart contract and Hardhat deployment/test setup
 - `firmware/` — ESP32 firmware that posts meter telemetry
 - `mobile-app/` — optional Expo mobile UI
@@ -50,6 +51,8 @@ The API allows the Vite development origins (`localhost:5173` and `127.0.0.1:517
 Use the React web app as the main testing interface. It is independent of the Expo mobile project and makes it easy to test the backend and blockchain flow from the browser.
 
 See [RUNNING.md](RUNNING.md) for the full setup sequence.
+
+See [ML_README.md](ML_README.md) for the machine-learning implementation, including the usage baseline, hours-remaining forecast, and current-differential anomaly rule.
 
 ## Notes
 

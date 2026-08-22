@@ -50,7 +50,7 @@ src/
   demo data since the backend has no endpoints for them yet — this is clearly
   labeled in the UI via the offline/demo banner and network status indicator.
 - Theft detection mirrors the backend rule exactly:
-  `abs(line_current - neutral_current) > 0.15` → `Theft Detected`.
+  `abs(line_current - neutral_current) > 0.2` → `Theft Detected`.
 - This project was scaffolded and written in an offline sandbox (no npm
   registry access), so `npm install`/`npm run build` have not been executed
   against real dependencies. All files were syntax-checked with the
