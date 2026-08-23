@@ -48,7 +48,7 @@ Open a third terminal:
 ```bash
 conda activate myenv
 cd <project-root>
-python -m uvicorn backend.main:app --host 127.0.0.1 --port 8000 --reload
+python -m uvicorn backend.main:app --host 0.0.0.0 --port 8000 --reload
 ```
 
 You should be able to open:
@@ -117,7 +117,19 @@ For the ESP32 firmware, open the project in PlatformIO and upload the firmware f
 firmware/
 ```
 
+Wokwi loads the compiled binary configured in `firmware/wokwi.toml`, so rebuild it
+after changing `firmware/src/main.cpp`:
+
+```powershell
+cd firmware
+pio run
+```
+
 The firmware sends telemetry to the backend and reacts to the `isolate_circuit` field by toggling the relay.
+
+For Wokwi, keep the backend running with `--host 0.0.0.0`. The firmware uses
+`http://host.wokwi.internal:8000/api/v1/telemetry` to reach the host machine;
+binding Uvicorn to `127.0.0.1` prevents that Wokwi host bridge from connecting.
 
 ## Common issue
 

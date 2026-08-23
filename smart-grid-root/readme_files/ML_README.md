@@ -18,7 +18,7 @@ At startup it loads `data/dharan_meter_history.csv` and trains scikit-learn's `L
 
 The training features are:
 
-```text
+```text 
 power_consumed, hour, day_of_week
 ```
 
